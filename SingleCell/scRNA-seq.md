@@ -73,7 +73,7 @@ Picelli S1, Faridani OR1, Björklund AK2, Winberg G2, Sagasser S2, Sandberg R2. 
 
 ## Data Analysis
 
-![AnalysisWorkflow](./image/scRNA-seq/analysisworkflow.png)
+![AnalysisWorkflow](./image/scRNA-seq/AnalysisWorkflow.png)
 
 总体数据分析流程如下图所示，前面三步（黄色）对于任何高通量测序数据是通用的，紧随其后的四步（橙色）是要将传统RNA-Seq分析中已有的方法和新开发的方法结合起来解决scRNA-seq的技术差异问题，最后的部分（蓝色）是使用专门为scRNA-seq开发的方法来进行生物分析解读。
 
