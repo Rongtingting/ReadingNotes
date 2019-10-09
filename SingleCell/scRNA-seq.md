@@ -143,13 +143,34 @@ Picelli S1, Faridani OR1, Björklund AK2, Winberg G2, Sagasser S2, Sandberg R2. 
 
 - 测序
 
+  比较不同细胞（不同测序文库）的结果需要格外注意。文库之间差异的主要来源是：
+
+  1. 扩增效率和扩增偏好性（部分文库可扩增多达100万倍）
+  2. 基因 **‘dropouts’**: 基因在一个细胞中呈现中等表达水平,但在另一个细胞中未检测到表达，这可能来源于scRNA-seq中RNA总量低导致的扩增建库丢失或RNA表达的随机性。
+
+  取自于单独一个细胞的低转录本总量是这两个文库差异的一个主要原因。提高转录本捕获效率和降低扩增偏好可以降低差异，是目前活跃的研究方向。从后续课程学习中也可以看到，**合适的标准化和校正方法也可以抵消一部分文库构建引入的噪音**。
+
 - 分析
+
+  本身高通量测序数据给传统的数据分析（主要是统计学）就带来了挑战，如高纬度、非正态、高噪声等。单细胞带着这些特点加上其较高的通量（一次可测10e6个细胞)、多个数据库的注释结果等特点，使得单细胞测序数据的分析对数学知识和计算机资源有着更高的要求。
 
 - 成像技术
 
+  当前，光学显微镜，尤其是荧光显微镜仍然被许多生物学家经常使用。然而作者们认为传统的光学显微镜有一个主要的局限：由于受到衍射现象的影响，无法解析距离小于半个光波的物体。无论使用多高的放大倍数，衍射均使得成像看起来模糊，相互重叠。
+
+  尽管在过去的几年里，超分辨率显微镜领域取得了大量的成果，空间分辨率不断提高，然而由于需要高时间分辨率活细胞成像仍是一个挑战。
+
 - 走向临床
 
+  除了技术，主要表现在操作规范以及法律法规上。
+
   
+
+## Term
+
+- **spike-in control**是常用的评估技术差异的方法, Lun et al.的研究发现spike-in control 在确定测序过程中的empty Wells和的dead cells有重要作用，因为高的ERCC含量与低质量数据相关，并且通常是排除的标准。
+  Spike-in：A molecule or a set of molecules introduced to the sample in order to calibrate measurements and account for technical variation; commonly used examples include external RNA control consortium (ERCC) controls (Ambion/Thermo Fisher Scientific) and Spike-in RNA variant control mixes。**一个分子或一组分子引入到样品中以校准测量并解释技术变化**；常用的例子包括外部RNA控制联合体（Ercc）和spike-in RNA变体控制混合物。
+- **nGene**代表的是在该细胞中共检测到的表达量大于0的基因个数，**nUMI**代表的是该细胞中所有基因的表达量之和，mito.percent代表的是线粒体基因表达量的百分比，一般通过小提琴图来展示对应的分布。
 
 ## Method related
 
