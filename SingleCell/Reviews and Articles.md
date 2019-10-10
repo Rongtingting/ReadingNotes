@@ -5,7 +5,7 @@ bulid date:2019-10-10
 
 update date:2019-10-10
 ## Reviews
-Stegle, Oliver, Sarah A. Teichmann, and John C. Marioni. 2015. “Computational and Analytical Challenges in Single-Cell Transcriptomics.” Nat Rev Genet 16 (3): 133–45. https://doi.org/10.1038/nrg3833.
+Stegle, Oliver, Sarah A. Teichmann, and John C. Marioni. 2015. [Computational and Analytical Challenges in Single-Cell Transcriptomics].(https://doi.org/10.1038/nrg3833) ***Nat Rev Genet** 16 (3): 133–45.*
 
 [Deciphering Brain Complexity Using Single-cell Sequencing](https://doi.org/10.1016/j.gpb.2018.07.007)
 
