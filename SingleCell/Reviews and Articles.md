@@ -10,7 +10,7 @@ update date:2019-10-10
 Quanhua Mu, Yiyun Chen, Jiguang Wang
 *Genomics, Proteomics & Bioinformatics 2019*
 
-Unravelling biology and shifting paradigms in cancer with single-cell sequencing.
+[Unravelling biology and shifting paradigms in cancer with single-cell sequencing](https://www.nature.com/articles/nrc.2017.58)
 
 *Nat Rev Cancer. 2017 Aug 24;17(9):557-569.*
 
