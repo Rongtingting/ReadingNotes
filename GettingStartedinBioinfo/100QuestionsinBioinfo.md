@@ -65,7 +65,7 @@ update date: 2019-10-10
 
 今天我们提出的问题是Illumina目前常用的双端测序建库办法中，会在打断的序列前后加上adapter，请问：
 
-1. adapter是什么意思？adapter与primer有什么区别？
+1.adapter是什么意思？adapter与primer有什么区别？
 
 2.比如最终的测序结果是 AATTCCGGATCGATCG...，那么adapter的序列可能出现在哪一端，还是两端都有可能出现？为什么？
 
