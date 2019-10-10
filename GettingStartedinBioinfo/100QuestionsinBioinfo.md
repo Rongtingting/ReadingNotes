@@ -6,6 +6,9 @@ build date: 2019-10-10
 update date: 2019-10-10
 
 ## 生物信息学100个基础问题-答案汇总
+
+[生物信息学100个基础问题：问题及答案目录-待更新](https://zhuanlan.zhihu.com/p/36279463)
+
 [生物信息学100个基础问题——第1~ 5题 答案公布](https://zhuanlan.zhihu.com/p/34957915)
 
 [生物信息学100个基础问题——第6~ 10题 答案公布](https://zhuanlan.zhihu.com/p/35262911)
