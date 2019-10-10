@@ -1,4 +1,4 @@
-# 高通量测序技术-知乎专栏
+# [高通量测序技术-知乎专栏](https://zhuanlan.zhihu.com/ngs-learning)
 Rongting Huang
 
 build date: 2019-10-10
@@ -7,7 +7,22 @@ update date: 2019-10-10
 
 ## 生物信息学100个基础问题-答案汇总
 [生物信息学100个基础问题——第1~ 5题 答案公布](https://zhuanlan.zhihu.com/p/34957915)
+
 [生物信息学100个基础问题——第6~ 10题 答案公布](https://zhuanlan.zhihu.com/p/35262911)
+
+[生物信息学100个基础问题——第11~15题 答案公布](https://zhuanlan.zhihu.com/p/35875081)
+
+[生物信息学100个基础问题——第16~20题 答案公布](https://zhuanlan.zhihu.com/p/36591134)
+
+[生物信息学100个基础问题——第21~25题 答案公布](https://zhuanlan.zhihu.com/p/44859871)
+
+[生物信息学100个基础问题 —— 番外1： 不学Linux做什么生信？](https://zhuanlan.zhihu.com/p/34935771)
+
+[生物信息学100个基础问题 —— 番外2: 用Anaconda快速搭建生物信息学分析平台](https://zhuanlan.zhihu.com/p/35711429)
+
+[生物信息学100个基础问题 —— 番外3: R与Bioconductor的入门教学](https://zhuanlan.zhihu.com/p/37651960)
+
+[生物信息学100个基础问题 —— 番外5：使用Snakemake快速搭建生信分析流程](https://zhuanlan.zhihu.com/p/58812856)
 
 
 ## 生物信息学100个基础问题
