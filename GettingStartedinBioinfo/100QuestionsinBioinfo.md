@@ -51,6 +51,26 @@ update date: 2019-10-10
 
 6. Illumina测序结果质量表示方法采用的是Phred33还是Phred64？
 
+### 第4题 Illumina测序技术细节探究 II
+我们接着第2个问题，第3个问题接着问。既然我们已经知道的Illumina测序的基本概念，基本过程；也知道了Illumina测序的主要特点。那么还是要有个细节的探索。
+
+1. Illumina目前主流的测序仪都有哪几种型号？各自大概的通量是多少？（也就是1个run能跑出多少数据）
+
+2. Illumina目前的测序技术，最核心的就是边合成边测序，即我们常说的 Sequencing by synthesis （SBS），那么为什么能够实现SBS？
+
+3. 我们在第1问中，问了大家一个问题“Illumina测序技术为什么不能像第1代测序技术一样测500bp以上？”，这里面主要涉及到两种错误，一种叫phasing，一种叫pre-phasing，分别是什么意思？
+
+### 第5题 测序建库的adapter
+围绕着测序后续的质控与建库细节来进行。
+
+今天我们提出的问题是Illumina目前常用的双端测序建库办法中，会在打断的序列前后加上adapter，请问：
+
+1. adapter是什么意思？adapter与primer有什么区别？
+
+2.比如最终的测序结果是 AATTCCGGATCGATCG...，那么adapter的序列可能出现在哪一端，还是两端都有可能出现？为什么？
+
+
+
 
 
 
