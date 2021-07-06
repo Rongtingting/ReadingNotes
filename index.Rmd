@@ -1,0 +1,42 @@
+--- 
+title: "ReadingNotes: Have you read today's papers?"
+author: "Rongting Huang rthuang@connect.hku.hk"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib, singelcell.bib,packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Preface {-}
+
+
+This book is for Rongting's daily reading notes.
+
+# About the author {-}
+
+
+
+
+```{r eval=FALSE, include=FALSE}
+install.packages("bookdown")
+# or the development version
+# devtools::install_github("rstudio/bookdown")
+```
+
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```
+
+**Note**: to build this book, use the following script in R and follow the [bookdown mannual](https://bookdown.org/yihui/bookdown/):
+```
+bookdown::render_book("index.Rmd", "bookdown::gitbook")
+```
+
+

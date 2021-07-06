@@ -1,0 +1,15 @@
+# SingleCell {#sgcell}
+
+## Data processing
+
+[Bayesian inference of gene expression states from single-cell RNA-seq data](https://www.nature.com/articles/s41587-021-00875-x)[@breda2021bayesian]
+
+![summary of sanity approach](./figs/singleCell/summary_Sanity.jpg)
+
+
+## clustering
+
+
+
+
+
