@@ -2,10 +2,17 @@ fig:nice-fig
 tab:nice-tab
 intro
 sgcell
+review-2021-06
+statistical-view-of-a-cell
+comparing-transcriptional-states
+the-quest-for-reduced-dimensions
+section
 data-processing
 clustering
 singlecell-analysis
 methods
+cnv-calling
+breaking-point-detection
 final-words
 applications
 example-one

@@ -24,7 +24,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2021-07-06" />
+<meta name="date" content="2021-07-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -141,16 +141,27 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
 <li class="chapter" data-level="2" data-path="sgcell.html"><a href="sgcell.html"><i class="fa fa-check"></i><b>2</b> SingleCell</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="sgcell.html"><a href="sgcell.html#data-processing"><i class="fa fa-check"></i><b>2.1</b> Data processing</a></li>
-<li class="chapter" data-level="2.2" data-path="sgcell.html"><a href="sgcell.html#clustering"><i class="fa fa-check"></i><b>2.2</b> clustering</a></li>
-<li class="chapter" data-level="2.3" data-path="sgcell.html"><a href="sgcell.html#singlecell-analysis"><i class="fa fa-check"></i><b>2.3</b> singlecell analysis</a></li>
+<li class="chapter" data-level="2.1" data-path="sgcell.html"><a href="sgcell.html#review-2021-06"><i class="fa fa-check"></i><b>2.1</b> Review-2021-06</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="sgcell.html"><a href="sgcell.html#statistical-view-of-a-cell"><i class="fa fa-check"></i><b>2.1.1</b> Statistical view of a cell</a></li>
+<li class="chapter" data-level="2.1.2" data-path="sgcell.html"><a href="sgcell.html#comparing-transcriptional-states"><i class="fa fa-check"></i><b>2.1.2</b> Comparing transcriptional states</a></li>
+<li class="chapter" data-level="2.1.3" data-path="sgcell.html"><a href="sgcell.html#the-quest-for-reduced-dimensions"><i class="fa fa-check"></i><b>2.1.3</b> The quest for reduced dimensions</a></li>
+<li class="chapter" data-level="2.1.4" data-path="sgcell.html"><a href="sgcell.html#section"><i class="fa fa-check"></i><b>2.1.4</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="sgcell.html"><a href="sgcell.html#data-processing"><i class="fa fa-check"></i><b>2.2</b> Data processing</a></li>
+<li class="chapter" data-level="2.3" data-path="sgcell.html"><a href="sgcell.html#clustering"><i class="fa fa-check"></i><b>2.3</b> clustering</a></li>
+<li class="chapter" data-level="2.4" data-path="sgcell.html"><a href="sgcell.html#singlecell-analysis"><i class="fa fa-check"></i><b>2.4</b> singlecell analysis</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a></li>
-<li class="chapter" data-level="4" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>4</b> Final Words</a></li>
-<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
+<li class="chapter" data-level="4" data-path="cnv-calling.html"><a href="cnv-calling.html"><i class="fa fa-check"></i><b>4</b> CNV calling</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
-<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="chapter" data-level="4.1" data-path="cnv-calling.html"><a href="cnv-calling.html#breaking-point-detection"><i class="fa fa-check"></i><b>4.1</b> breaking point detection</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>5</b> Final Words</a></li>
+<li class="chapter" data-level="6" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>6</b> Applications</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>6.1</b> Example one</a></li>
+<li class="chapter" data-level="6.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>6.2</b> Example two</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -178,7 +189,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <div id="refs" class="references hanging-indent">
 <div>
-<p>Breda, Jérémie, Mihaela Zavolan, and Erik van Nimwegen. 2021. “Bayesian Inference of Gene Expression States from Single-Cell Rna-Seq Data.” <em>Nature Biotechnology</em>, 1–9.</p>
+<p>Breda, Jérémie, Mihaela Zavolan, and Erik van Nimwegen. 2021. “Bayesian Inference of Gene Expression States from Single-Cell Rna-Seq Data.” <em>Nature Biotechnology</em>, 1–9. <a href="https://www.nature.com/articles/s41587-021-00875-x">https://www.nature.com/articles/s41587-021-00875-x</a>.</p>
+</div>
+<div>
+<p>Kharchenko, Peter V. 2021. “The Triumphs and Limitations of Computational Methods for scRNA-Seq.” <em>Nature Methods</em>, 1–10.</p>
 </div>
 <div>
 <p>Xie, Yihui. 2015. <em>Dynamic Documents with R and Knitr</em>. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. <a href="http://yihui.org/knitr/">http://yihui.org/knitr/</a>.</p>
