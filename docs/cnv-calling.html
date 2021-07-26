@@ -24,7 +24,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2021-07-17" />
+<meta name="date" content="2021-07-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -158,10 +158,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="cnv-calling.html"><a href="cnv-calling.html#breaking-point-detection"><i class="fa fa-check"></i><b>4.1</b> breaking point detection</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>5</b> Final Words</a></li>
-<li class="chapter" data-level="6" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>6</b> Applications</a>
+<li class="chapter" data-level="6" data-path="deconvolution.html"><a href="deconvolution.html"><i class="fa fa-check"></i><b>6</b> Deconvolution</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>6.1</b> Example one</a></li>
-<li class="chapter" data-level="6.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>6.2</b> Example two</a></li>
+<li class="chapter" data-level="6.1" data-path="deconvolution.html"><a href="deconvolution.html#deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data"><i class="fa fa-check"></i><b>6.1</b> Deconvolution of bulk tissue and spatial transcriptomic data</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>7</b> Applications</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>7.1</b> Example one</a></li>
+<li class="chapter" data-level="7.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>7.2</b> Example two</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -215,6 +219,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li>KS test for whether to two neighbour bins should be joined, by using the posterior samples of Gamma-Poisson posterior. Seemingly using noise model on each cell within a cluster</li>
 </ul>
+<p>FACLON
+<a href="https://academic.oup.com/nar/article/43/4/e23/2410993" class="uri">https://academic.oup.com/nar/article/43/4/e23/2410993</a></p>
 <div class="figure">
 <img src="figs/CNV/HATCHet.jpg" alt="" />
 <p class="caption">Overview of HATCHet algorithm</p>
@@ -242,8 +248,20 @@ For each bin in each cell, CHISEL computes the RDR (top) by normalizing the obse
 <strong>e</strong>, CHISEL clusters tumor cells into clones according to their haplotype-specific copy numbers. Here, a diploid clone (light gray) and two tumor clones (red and blue) are obtained.
 A phylogenetic tree describes the evolution of these clones. Somatic SNVs are derived from pseudo-bulk samples and placed on the branches of the tree.</p>
 <div class="figure">
+<img src="figs/CNV/TITAN.jpg" alt="" />
+<p class="caption">Overview of TITAN local clustering for segemetation</p>
+</div>
+<div class="figure">
+<img src="figs/CNV/inferCNV_i3HMM_model.png" alt="" />
+<p class="caption">Overview of inferCNV i3HMM</p>
+</div>
+<div class="figure">
 <img src="figs/CNV/infercnv_i6HMM_model.png" alt="" />
-<p class="caption">Overview of inferCNV HMM</p>
+<p class="caption">Overview of inferCNV i6HMM</p>
+</div>
+<div class="figure">
+<img src="figs/CNV/HoneyBADGER.png" alt="" />
+<p class="caption">Overview of HoneyBADGER method</p>
 </div>
 <div class="figure">
 <img src="figs/CNV/Alleloscope.jpg" alt="" />

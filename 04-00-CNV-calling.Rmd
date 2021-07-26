@@ -1,6 +1,8 @@
-# CNV calling
+# Research topic based
 
-## breaking point detection
+## CNV calling
+
+### breaking point detection
 - 4 CNV breakpoint detection methods (2021-07-17 Group meeting)
 
 1. CHISEL: https://www.nature.com/articles/s41587-020-0661-6#Sec8 (see global clustering subsection)
@@ -11,6 +13,11 @@
  - i6-HMM generates “in silico spike-in”; seemingly define CNV region (segment) on cluster instead of cell, but using noise model on each cell (not quite sure from the doc).
 4. CopyKat: https://www.nature.com/articles/s41587-020-00795-2#Sec9
  - KS test for whether to two neighbour bins should be joined, by using the posterior samples of Gamma-Poisson posterior. Seemingly using noise model on each cell within a cluster
+
+
+FACLON
+https://academic.oup.com/nar/article/43/4/e23/2410993
+
 
 
 ![Overview of HATCHet algorithm](./figs/CNV/HATCHet.jpg)
@@ -41,7 +48,16 @@ For each bin in each cell, CHISEL computes the RDR (top) by normalizing the obse
 **e**, CHISEL clusters tumor cells into clones according to their haplotype-specific copy numbers. Here, a diploid clone (light gray) and two tumor clones (red and blue) are obtained. 
 A phylogenetic tree describes the evolution of these clones. Somatic SNVs are derived from pseudo-bulk samples and placed on the branches of the tree.
 
-![Overview of inferCNV HMM](./figs/CNV/infercnv_i6HMM_model.png)
+![Overview of TITAN local clustering for segemetation](./figs/CNV/TITAN.jpg)
+
+
+![Overview of inferCNV i3HMM](./figs/CNV/infercnv_i3HMM_model.png)
+
+![Overview of inferCNV i6HMM](./figs/CNV/infercnv_i6HMM_model.png)
+
+
+
+![Overview of HoneyBADGER method](./figs/CNV/HoneyBADGER.png)
 
 
 

@@ -1,3 +1,11 @@
-# Methods
+# StatMethods
 
-We describe our methods in this chapter.
+## HMM based methods
+
+
+
+## EM based methods
+
+
+
+## VB based methods

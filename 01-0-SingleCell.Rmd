@@ -1,6 +1,18 @@
 # SingleCell {#sgcell}
 
-## Review-2021-06
+## Technology
+### single cell
+
+- scDNA
+- scRNA
+- scATAC
+
+### spatial single cell
+
+## Review
+
+### Review-2021-06
+
 [The triumphs and limitations of computational methods for scRNA-seq](https://www.nature.com/articles/s41592-021-01171-x)[@kharchenko2021triumphs]
 
 Though computational approaches vary, most formulate (1) a statistical model of the measurement, (2) a representation of the data in reduced dimensions, and (3) an approximation of the expression manifold (Box 2), with a set of discrete transcriptional subpopulations being the simplest and the most common approximation. The problems motivating these steps, and the specific solutions and their assumptions, are the subject of this review.
@@ -69,13 +81,13 @@ Tools for velocity estimation include:
 - scVelo (https://scvelo.readthedocs.io/): new implementation using curve-based phase portrait fit
 
 
-### Statistical view of a cell
+#### Statistical view of a cell
 
-### Comparing transcriptional states
+#### Comparing transcriptional states
 
-### The quest for reduced dimensions
+#### The quest for reduced dimensions
 
-### 
+####
 
 
 ![scRNA-seq basics](./figs/singleCell/scRNA-seq basics.jpg)
@@ -93,6 +105,9 @@ h, Residual variance is shown for the top 5,000 overdispersed genes, ordered by 
 i, Expression pattern of several example genes, with circles highlighting the subpopulations distinguished by the genes. 
 j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene across all CD14+ monocytes is shown on the linear scale (top) and after log transformation (bottom) with a pseudocount.
 
+### Review-2021-07
+[Computational principles and challenges in single-cell data integration](https://www.nature.com/articles/s41587-021-00895-7)[@argelaguet2021computational]
+
 
 ## Data processing
 
@@ -105,7 +120,7 @@ j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene acro
 ![sanity notes](./figs/singleCell/sanity_notes.png)
 
 
-## clustering
+## Clustering methods
 
 
 

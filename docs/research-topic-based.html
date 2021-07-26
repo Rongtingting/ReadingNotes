@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Applications | ReadingNotes: Have you read today’s papers?</title>
+  <title>Chapter 5 Research topic based | ReadingNotes: Have you read today’s papers?</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Applications | ReadingNotes: Have you read today’s papers?" />
+  <meta property="og:title" content="Chapter 5 Research topic based | ReadingNotes: Have you read today’s papers?" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Applications | ReadingNotes: Have you read today’s papers?" />
+  <meta name="twitter:title" content="Chapter 5 Research topic based | ReadingNotes: Have you read today’s papers?" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="research-topic-based.html"/>
-<link rel="next" href="references.html"/>
+<link rel="prev" href="statmethods.html"/>
+<link rel="next" href="applications.html"/>
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -206,14 +206,117 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="applications" class="section level1" number="6">
-<h1><span class="header-section-number">Chapter 6</span> Applications</h1>
-<p>Some <em>significant</em> applications are demonstrated in this chapter.</p>
-<div id="example-one" class="section level2" number="6.1">
-<h2><span class="header-section-number">6.1</span> Example one</h2>
+<div id="research-topic-based" class="section level1" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Research topic based</h1>
+<div id="cnv-calling" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> CNV calling</h2>
+<div id="breaking-point-detection" class="section level3" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> breaking point detection</h3>
+<ul>
+<li>4 CNV breakpoint detection methods (2021-07-17 Group meeting)</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>CHISEL: <a href="https://www.nature.com/articles/s41587-020-0661-6#Sec8" class="uri">https://www.nature.com/articles/s41587-020-0661-6#Sec8</a> (see global clustering subsection)</li>
+</ol>
+<ul>
+<li>seemingly no breakpoint detection, but rather a global clustering (ie. entry-wise for a bin-by-cell matrix), thus the resolution of CNV is the bin size (5MB)</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Alleloscope: <a href="https://www.nature.com/articles/s41587-021-00911-w#Sec10" class="uri">https://www.nature.com/articles/s41587-021-00911-w#Sec10</a> (see segmentation subsection)</li>
+</ol>
+<ul>
+<li>HMM on a pooled cells (pseudo-bulk?) with pre-defined Gaussian means and variance for each state</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li>InferCNV: <a href="https://github.com/broadinstitute/inferCNV/wiki/inferCNV-HMM-based-CNV-Prediction-Methods" class="uri">https://github.com/broadinstitute/inferCNV/wiki/inferCNV-HMM-based-CNV-Prediction-Methods</a></li>
+</ol>
+<ul>
+<li>i6-HMM generates “in silico spike-in”; seemingly define CNV region (segment) on cluster instead of cell, but using noise model on each cell (not quite sure from the doc).</li>
+</ul>
+<ol start="4" style="list-style-type: decimal">
+<li>CopyKat: <a href="https://www.nature.com/articles/s41587-020-00795-2#Sec9" class="uri">https://www.nature.com/articles/s41587-020-00795-2#Sec9</a></li>
+</ol>
+<ul>
+<li>KS test for whether to two neighbour bins should be joined, by using the posterior samples of Gamma-Poisson posterior. Seemingly using noise model on each cell within a cluster</li>
+</ul>
+<p>FACLON
+<a href="https://academic.oup.com/nar/article/43/4/e23/2410993" class="uri">https://academic.oup.com/nar/article/43/4/e23/2410993</a></p>
+<div class="figure">
+<img src="figs/CNV/HATCHet.jpg" alt="" />
+<p class="caption">Overview of HATCHet algorithm</p>
 </div>
-<div id="example-two" class="section level2" number="6.2">
-<h2><span class="header-section-number">6.2</span> Example two</h2>
+<p><a href="https://www.nature.com/articles/s41467-020-17967-y/figures/1" class="uri">https://www.nature.com/articles/s41467-020-17967-y/figures/1</a></p>
+<p><strong>a</strong> HATCHet takes in input DNA sequencing data from multiple bulk tumor samples of the same patient and has five steps.
+<strong>b</strong> First, HATCHet calculates the RDRs and BAFs in bins of the reference genome (black squares). Here, we show two tumor samples p and q.
+<strong>c</strong> Second, HATCHet clusters the bins based on RDRs and BAFs globally along the entire genome and jointly across samples p and q. Each cluster (color) includes bins with the same copy-number state within each clone present in p or q.
+<strong>d</strong> Third, HATCHet estimates two values for the fractional copy number of each cluster by scaling RDRs. If there is no WGD, the identification of the cluster (magenta) with copy-number state (1, 1) is sufficient and RDRs are scaled correspondingly.
+If a WGD occurs, HATCHet identifies an additional cluster with identical copy-number state in all tumor clones. Dashed black horizontal lines in the scaled BAF-RDR plot represent values of fractional copy numbers that correspond to clonal CNAs.
+<strong>e</strong> Fourth, HATCHet factors the allele-specific fractional copy numbers FA, FB into the allele-specific copy numbers A, B, respectively, and the clone proportions U. Here, there is a normal clone and 3 tumor clones.
+<strong>f</strong> Last, HATCHet’s model-selection criterion identifies the matrices A, B, and U in the factorization while evaluating the fit according to both the inferred number of clones and presence/absence of a WGD.
+<strong>g</strong> HATCHet outputs allele- and clone-specific copy numbers (with the color of the corresponding clone) and clone proportions (in the top right part of each plot) for each sample.
+Clusters are classified according to the inference of unique/different copy-number states in each sample (sample-clonal/subclonal) and across all tumor clones (tumor-clonal/subclonal).</p>
+<div class="figure">
+<img src="figs/CNV/chisel.jpg" alt="" />
+<p class="caption">Overview of chisel algorithm</p>
+</div>
+<p><a href="https://www.nature.com/articles/s41587-020-0661-6/figures/1" class="uri">https://www.nature.com/articles/s41587-020-0661-6/figures/1</a></p>
+<p><strong>a</strong>, CHISEL computes RDRs and BAFs in low-coverage (&lt;0.05× per cell) single-cell DNA sequencing data (top left). Read counts from 2,000 individual cells (rows) in 5-Mb genomic bins (columns) across three chromosomes (gray rectangles in first row) are shown.
+For each bin in each cell, CHISEL computes the RDR (top) by normalizing the observed read counts. CHISEL computes the BAF in each bin and cell (bottom) by first performing referenced-based phasing of germline SNPs in 50-kb haplotype blocks (magenta and green) and then phasing all these blocks jointly across all cells.
+<strong>b</strong>, CHISEL clusters RDRs and BAFs globally along the genome and jointly across all cells resulting here in five clusters of genomic bins (red, blue, purple, yellow and gray) with distinct copy-number states.
+<strong>c</strong>, CHISEL infers a pair {c^t,cˇt} of allele-specific copy numbers for each cluster by determining whether the allele-specific copy numbers of the largest balanced (BAF of ~0.5) cluster are equal to {1, 1} (diploid), {2, 2} (tetraploid) or are higher ploidy.
+<strong>d</strong>, CHISEL infers haplotype-specific copy numbers (at, bt) by phasing the allele-specific copy numbers {c^t,cˇt} consistently across all cells.
+<strong>e</strong>, CHISEL clusters tumor cells into clones according to their haplotype-specific copy numbers. Here, a diploid clone (light gray) and two tumor clones (red and blue) are obtained.
+A phylogenetic tree describes the evolution of these clones. Somatic SNVs are derived from pseudo-bulk samples and placed on the branches of the tree.</p>
+<div class="figure">
+<img src="figs/CNV/TITAN.jpg" alt="" />
+<p class="caption">Overview of TITAN local clustering for segemetation</p>
+</div>
+<div class="figure">
+<img src="figs/CNV/inferCNV_i3HMM_model.png" alt="" />
+<p class="caption">Overview of inferCNV i3HMM</p>
+</div>
+<div class="figure">
+<img src="figs/CNV/infercnv_i6HMM_model.png" alt="" />
+<p class="caption">Overview of inferCNV i6HMM</p>
+</div>
+<div class="figure">
+<img src="figs/CNV/HoneyBADGER.png" alt="" />
+<p class="caption">Overview of HoneyBADGER method</p>
+</div>
+<div class="figure">
+<img src="figs/CNV/Alleloscope.jpg" alt="" />
+<p class="caption">Overview of Alleloscope algorithm</p>
+</div>
+<div class="figure">
+<img src="figs/CNV/copykat.jpg" alt="" />
+<p class="caption">Overview of copykat algorithm</p>
+</div>
+
+</div>
+</div>
+<div id="clonal-tree" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Clonal Tree</h2>
+
+</div>
+<div id="deconvolution" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Deconvolution</h2>
+<div id="deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data" class="section level3" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Deconvolution of bulk tissue and spatial transcriptomic data</h3>
+<p>Related papers are as follows:</p>
+<ul>
+<li><a href="https://www.nature.com/articles/s41587-019-0114-2">CIBERSORTx</a></li>
+<li><a href="https://www.nature.com/articles/s41587-021-00830-w">RCTD</a></li>
+<li><a href="https://academic.oup.com/nar/article/49/9/e50/6129341">SPOTlight</a></li>
+<li><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7">SpatialDWLS</a></li>
+</ul>
+<p>From xiunan’s pre</p>
+<p><a href="https://www.biorxiv.org/content/10.1101/2021.06.15.448381v1">Reference-free cell-type deconvolution of pixel-resolution spatially resolved transcriptomics data</a></p>
+<p>Yuanhua add</p>
+
+</div>
+</div>
+<div id="omics-integration" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Omics integration</h2>
 
 </div>
 </div>
@@ -222,8 +325,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="research-topic-based.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="statmethods.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="applications.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

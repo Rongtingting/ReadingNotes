@@ -1,0 +1,19 @@
+## Deconvolution
+### Deconvolution of bulk tissue and spatial transcriptomic data
+
+Related papers are as follows:
+
+- [CIBERSORTx](https://www.nature.com/articles/s41587-019-0114-2)
+- [RCTD](https://www.nature.com/articles/s41587-021-00830-w)
+- [SPOTlight](https://academic.oup.com/nar/article/49/9/e50/6129341)
+- [SpatialDWLS](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02362-7)
+
+
+From xiunan's pre
+
+
+[Reference-free cell-type deconvolution of pixel-resolution spatially resolved transcriptomics data](https://www.biorxiv.org/content/10.1101/2021.06.15.448381v1)
+
+Yuanhua add
+
+

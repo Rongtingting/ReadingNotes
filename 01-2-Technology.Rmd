@@ -1,0 +1,9 @@
+
+# Technology
+
+## Hi-Seq
+
+[Enhanced detection of minimal residual disease by targeted sequencing of phased variants in circulating tumor DNA](https://www.nature.com/articles/s41587-021-00981-w)[@Kurtz2021]
+
+KEY WORDS: **phased variants**
+
