@@ -1,0 +1,19 @@
+## Protein structure
+
+### Protein Folding Prediction Background
+
+#### introduction
+- How to record a protein structue
+
+- What to predict
+
+#### methods
+
+- ReceptorX
+- ReceptorX-d
+- trRosetta
+- AlphaFold1
+- AlphaFold2
+
+
+#### deep learing in protein structure prediction
