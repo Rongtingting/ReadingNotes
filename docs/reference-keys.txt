@@ -17,7 +17,9 @@ clustering-methods
 languages-and-compilers
 singlecell-analysis-tools
 singlecell-analysis-sources
-technology-1
+technology-related
+scrna-seq
+nb-models-for-scrna-seq
 hi-seq
 statmethods
 hmm-based-methods

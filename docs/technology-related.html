@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>ReadingNotes: Have you read today’s papers?</title>
+  <title>Chapter 3 Technology Related | ReadingNotes: Have you read today’s papers?</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="ReadingNotes: Have you read today’s papers?" />
+  <meta property="og:title" content="Chapter 3 Technology Related | ReadingNotes: Have you read today’s papers?" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="ReadingNotes: Have you read today’s papers?" />
+  <meta name="twitter:title" content="Chapter 3 Technology Related | ReadingNotes: Have you read today’s papers?" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-
-<link rel="next" href="about-the-author.html"/>
+<link rel="prev" href="sgcell.html"/>
+<link rel="next" href="statmethods.html"/>
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -214,22 +214,56 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">ReadingNotes: Have you read today’s papers?</h1>
-<p class="author"><em>Rongting Huang <a href="mailto:rthuang@connect.hku.hk" class="email">rthuang@connect.hku.hk</a></em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-09-02</em></p>
+<div id="technology-related" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Technology Related</h1>
+<div id="scrna-seq" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> scRNA-seq</h2>
+<div id="nb-models-for-scrna-seq" class="section level3" number="3.1.1">
+<h3><span class="header-section-number">3.1.1</span> NB models for scRNA-seq:</h3>
+<p>DEseq2, scTransform, BASICS</p>
+<ul>
+<li><p>DEseq2
+<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8">Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2</a><span class="citation">(Love, Huber, and Anders <a href="#ref-love2014moderated" role="doc-biblioref">2014</a>)</span></p></li>
+<li><p>scTransform</p></li>
+</ul>
+<p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1874-1">Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression</a><span class="citation">(Hafemeister and Satija <a href="#ref-hafemeister2019normalization" role="doc-biblioref">2019</a>)</span></p>
+<p><a href="https://github.com/ChristophH/sctransform/" class="uri">https://github.com/ChristophH/sctransform/</a></p>
+<ul>
+<li>BASiCS</li>
+</ul>
+<p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004333">BASiCS: Bayesian Analysis of Single-Cell Sequencing Data</a><span class="citation">(Vallejos, Marioni, and Richardson <a href="#ref-vallejos2015basics" role="doc-biblioref">2015</a>)</span></p>
+<p>KEY WORDS: <strong>scRNA-seq counts</strong></p>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>This book is for Rongting’s daily reading notes.</p>
+</div>
+<div id="hi-seq" class="section level2" number="3.2">
+<h2><span class="header-section-number">3.2</span> Hi-Seq</h2>
+<p><a href="https://www.nature.com/articles/s41587-021-00981-w">Enhanced detection of minimal residual disease by targeted sequencing of phased variants in circulating tumor DNA</a><span class="citation">(Kurtz et al. <a href="#ref-Kurtz2021" role="doc-biblioref">2021</a>)</span></p>
+<p>KEY WORDS: <strong>phased variants</strong></p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references hanging-indent">
+<div id="ref-hafemeister2019normalization">
+<p>Hafemeister, Christoph, and Rahul Satija. 2019. “Normalization and Variance Stabilization of Single-Cell Rna-Seq Data Using Regularized Negative Binomial Regression.” <em>Genome Biology</em> 20 (1): 1–15.</p>
+</div>
+<div id="ref-Kurtz2021">
+<p>Kurtz, David M., Joanne Soo, Lyron Co Ting Keh, Stefan Alig, Jacob J. Chabon, Brian J. Sworder, Andre Schultz, et al. 2021. “Enhanced Detection of Minimal Residual Disease by Targeted Sequencing of Phased Variants in Circulating Tumor Dna.” <em>Nature Biotechnology</em>, July. <a href="https://doi.org/10.1038/s41587-021-00981-w">https://doi.org/10.1038/s41587-021-00981-w</a>.</p>
+</div>
+<div id="ref-love2014moderated">
+<p>Love, Michael I, Wolfgang Huber, and Simon Anders. 2014. “Moderated Estimation of Fold Change and Dispersion for Rna-Seq Data with Deseq2.” <em>Genome Biology</em> 15 (12): 1–21.</p>
+</div>
+<div id="ref-vallejos2015basics">
+<p>Vallejos, Catalina A, John C Marioni, and Sylvia Richardson. 2015. “BASiCS: Bayesian Analysis of Single-Cell Sequencing Data.” <em>PLoS Computational Biology</em> 11 (6): e1004333.</p>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-
-<a href="about-the-author.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="sgcell.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="statmethods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

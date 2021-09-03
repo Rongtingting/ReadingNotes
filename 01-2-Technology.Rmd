@@ -1,5 +1,32 @@
 
-# Technology
+# Technology Related
+
+
+## scRNA-seq
+
+### NB models for scRNA-seq
+
+DEseq2, scTransform, BASICS
+
+
+
+- DEseq2
+
+[Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8)[@love2014moderated]
+
+- scTransform
+
+[Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1874-1)[@hafemeister2019normalization]
+
+https://github.com/ChristophH/sctransform/
+
+- BASiCS
+
+[BASiCS: Bayesian Analysis of Single-Cell Sequencing Data](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004333)[@vallejos2015basics]
+
+
+
+KEY WORDS: **scRNA-seq counts**
 
 ## Hi-Seq
 
