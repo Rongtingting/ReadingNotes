@@ -24,7 +24,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2021-09-02" />
+<meta name="date" content="2021-09-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -161,7 +161,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.1" data-path="technology-related.html"><a href="technology-related.html#scrna-seq"><i class="fa fa-check"></i><b>3.1</b> scRNA-seq</a>
 <ul>
-<li class="chapter" data-level="3.1.1" data-path="technology-related.html"><a href="technology-related.html#nb-models-for-scrna-seq"><i class="fa fa-check"></i><b>3.1.1</b> NB models for scRNA-seq:</a></li>
+<li class="chapter" data-level="3.1.1" data-path="technology-related.html"><a href="technology-related.html#nb-models-for-scrna-seq"><i class="fa fa-check"></i><b>3.1.1</b> NB models for scRNA-seq</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="technology-related.html"><a href="technology-related.html#hi-seq"><i class="fa fa-check"></i><b>3.2</b> Hi-Seq</a></li>
 </ul></li>
@@ -188,9 +188,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="6.1" data-path="proteomics.html"><a href="proteomics.html#ptm-cross-talk"><i class="fa fa-check"></i><b>6.1</b> PTM cross-talk</a></li>
 <li class="chapter" data-level="6.2" data-path="proteomics.html"><a href="proteomics.html#ptm-cluster"><i class="fa fa-check"></i><b>6.2</b> PTM Cluster</a></li>
-<li class="chapter" data-level="6.3" data-path="proteomics.html"><a href="proteomics.html#protein-structure"><i class="fa fa-check"></i><b>6.3</b> Protein structure</a>
+<li class="chapter" data-level="6.3" data-path="proteomics.html"><a href="proteomics.html#section-1"><i class="fa fa-check"></i><b>6.3</b> </a></li>
+<li class="chapter" data-level="6.4" data-path="proteomics.html"><a href="proteomics.html#protein-structure"><i class="fa fa-check"></i><b>6.4</b> Protein structure</a>
 <ul>
-<li class="chapter" data-level="6.3.1" data-path="proteomics.html"><a href="proteomics.html#protein-folding-prediction-background"><i class="fa fa-check"></i><b>6.3.1</b> Protein Folding Prediction Background</a></li>
+<li class="chapter" data-level="6.4.1" data-path="proteomics.html"><a href="proteomics.html#protein-folding-prediction-background"><i class="fa fa-check"></i><b>6.4.1</b> Protein Folding Prediction Background</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -219,19 +220,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div id="scrna-seq" class="section level2" number="3.1">
 <h2><span class="header-section-number">3.1</span> scRNA-seq</h2>
 <div id="nb-models-for-scrna-seq" class="section level3" number="3.1.1">
-<h3><span class="header-section-number">3.1.1</span> NB models for scRNA-seq:</h3>
+<h3><span class="header-section-number">3.1.1</span> NB models for scRNA-seq</h3>
 <p>DEseq2, scTransform, BASICS</p>
 <ul>
-<li><p>DEseq2
-<a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8">Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2</a><span class="citation">(Love, Huber, and Anders <a href="#ref-love2014moderated" role="doc-biblioref">2014</a>)</span></p></li>
-<li><p>scTransform</p></li>
+<li>DEseq2</li>
+</ul>
+<p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8">Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2</a><span class="citation">(Love, Huber, and Anders <a href="#ref-love2014moderated" role="doc-biblioref">2014</a>)</span></p>
+<div class="figure">
+<img src="figs/RNAseqCounts/DEseq2.png" alt="" />
+<p class="caption">DEseq2</p>
+</div>
+<div class="figure">
+<img src="figs/RNAseqCounts/DEseq2_Fig1.png" alt="" />
+<p class="caption">DEseq2-fig1</p>
+</div>
+<p><strong>Shrinkage estimation of dispersion.</strong> Plot of dispersion estimates over the average expression strength (A) for the Bottomly et al. [16] dataset with six samples across two groups and (B) for five samples from the Pickrell et al. [17] dataset, fitting only an intercept term. First, gene-wise MLEs are obtained using only the respective gene’s data (black dots). Then, a curve (red) is fit to the MLEs to capture the overall trend of dispersion-mean dependence. This fit is used as a prior mean for a second estimation round, which results in the final MAP estimates of dispersion (arrow heads). This can be understood as a shrinkage (along the blue arrows) of the noisy gene-wise estimates toward the consensus represented by the red line. The black points circled in blue are detected as dispersion outliers and not shrunk toward the prior (shrinkage would follow the dotted line). For clarity, only a subset of genes is shown, which is enriched for dispersion outliers. Additional file 1: Figure S1 displays the same data but with dispersions of all genes shown. MAP, maximum a posteriori; MLE, maximum-likelihood estimate.</p>
+<ul>
+<li>scTransform</li>
 </ul>
 <p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1874-1">Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression</a><span class="citation">(Hafemeister and Satija <a href="#ref-hafemeister2019normalization" role="doc-biblioref">2019</a>)</span></p>
 <p><a href="https://github.com/ChristophH/sctransform/" class="uri">https://github.com/ChristophH/sctransform/</a></p>
+<div class="figure">
+<img src="figs/RNAseqCounts/sctransform.png" alt="" />
+<p class="caption">SCTransform</p>
+</div>
+<p>We propose that the Pearson residuals from “regularized negative binomial regression,” where cellular sequencing depth is utilized as a covariate in a generalized linear model, successfully remove the influence of technical characteristics from downstream analyses while preserving biological heterogeneity.</p>
+<ul>
+<li>UMI-based scRNA-seq dataset</li>
+</ul>
+<p><img src="figs/RNAseqCounts/sctransform-intro.png" alt="SCTransform-intro" />
+<img src="figs/RNAseqCounts/background.png" alt="review" />
+<img src="figs/RNAseqCounts/sctrans_intro.png" alt="SCTransform-intro" /></p>
 <ul>
 <li>BASiCS</li>
 </ul>
 <p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004333">BASiCS: Bayesian Analysis of Single-Cell Sequencing Data</a><span class="citation">(Vallejos, Marioni, and Richardson <a href="#ref-vallejos2015basics" role="doc-biblioref">2015</a>)</span></p>
+<p><img src="figs/RNAseqCounts/BASICS.png" alt="BASICS Abstract" />
+<img src="figs/RNAseqCounts/BASICS2.png" alt="BASICS Author summary" /></p>
+<p><img src="figs/RNAseqCounts/pcbi.1004333.g001.png" alt="Graphical representation of gene expression in two cells from a homogeneous population but with different total mRNA content." />
+<img src="figs/RNAseqCounts/pcbi.1004333.g002.png" alt="Graphical representation of the hierarchical model implemented in BASiCS." />
+<img src="figs/RNAseqCounts/BASiCS-FIG2.png" alt="Graphical representation of the hierarchical model implemented in BASiCS." /></p>
 <p>KEY WORDS: <strong>scRNA-seq counts</strong></p>
 </div>
 </div>
