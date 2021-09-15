@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 3 Technology Related | ReadingNotes: Have you read today’s papers?</title>
+  <title>Chapter 7 Pubmon | ReadingNotes: Have you read today’s papers?</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 3 Technology Related | ReadingNotes: Have you read today’s papers?" />
+  <meta property="og:title" content="Chapter 7 Pubmon | ReadingNotes: Have you read today’s papers?" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 3 Technology Related | ReadingNotes: Have you read today’s papers?" />
+  <meta name="twitter:title" content="Chapter 7 Pubmon | ReadingNotes: Have you read today’s papers?" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="sgcell.html"/>
-<link rel="next" href="statmethods.html"/>
+<link rel="prev" href="proteomics.html"/>
+<link rel="next" href="references.html"/>
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -220,100 +220,64 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="technology-related" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Technology Related</h1>
-<div id="scrna-seq" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> scRNA-seq</h2>
-<div id="nb-models-for-scrna-seq" class="section level3" number="3.1.1">
-<h3><span class="header-section-number">3.1.1</span> NB models for scRNA-seq</h3>
-<p>DEseq2, scTransform, BASICS</p>
-<div id="deseq2" class="section level4" number="3.1.1.1">
-<h4><span class="header-section-number">3.1.1.1</span> DEseq2</h4>
-<p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8">Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2</a><span class="citation">(Love, Huber, and Anders <a href="#ref-love2014moderated" role="doc-biblioref">2014</a>)</span></p>
-<div class="figure">
-<img src="figs/RNAseqCounts/DEseq2.png" alt="" />
-<p class="caption">DEseq2</p>
+<div id="pubmon" class="section level1" number="7">
+<h1><span class="header-section-number">Chapter 7</span> Pubmon</h1>
+<div id="phd-year-1" class="section level2" number="7.1">
+<h2><span class="header-section-number">7.1</span> 2020-2021 PhD year 1</h2>
+<p>-202009</p>
+<p>-202010</p>
+<p>-202011</p>
+<p>-202012</p>
+<p>-202101</p>
+<p>-202102</p>
+<p>-202103</p>
+<p>-202104</p>
+<p>-202105</p>
+<p>-202106</p>
+<p>-202107</p>
+<p>-202108</p>
 </div>
-<div class="figure">
-<img src="figs/RNAseqCounts/DEseq2_Fig1.png" alt="" />
-<p class="caption">DEseq2-fig1</p>
-</div>
-<p><strong>Shrinkage estimation of dispersion.</strong> Plot of dispersion estimates over the average expression strength (A) for the Bottomly et al. [16] dataset with six samples across two groups and (B) for five samples from the Pickrell et al. [17] dataset, fitting only an intercept term. First, gene-wise MLEs are obtained using only the respective genes data (black dots). Then, a curve (red) is fit to the MLEs to capture the overall trend of dispersion-mean dependence. This fit is used as a prior mean for a second estimation round, which results in the final MAP estimates of dispersion (arrow heads). This can be understood as a shrinkage (along the blue arrows) of the noisy gene-wise estimates toward the consensus represented by the red line. The black points circled in blue are detected as dispersion outliers and not shrunk toward the prior (shrinkage would follow the dotted line). For clarity, only a subset of genes is shown, which is enriched for dispersion outliers. Additional file 1: Figure S1 displays the same data but with dispersions of all genes shown. MAP, maximum a posteriori; MLE, maximum-likelihood estimate.</p>
-</div>
-<div id="sctransform" class="section level4" number="3.1.1.2">
-<h4><span class="header-section-number">3.1.1.2</span> scTransform</h4>
-<p><code>Our procedure is broadly applicable for any UMI-based scRNA-seq dataset and is freely available to users through the open-source R package sctransform (github.com/ChristophH/sctransform), with a direct interface to our single-cell toolkit Seurat.</code></p>
-<p><code>**Pearson residuals** from "regularized negative binomial regression," help remove the influence of technical characteristics from downstream analyses while preserving biological heterogeneity</code></p>
-<p><code>unconstrained negative binomial model may overfit scRNA-seq data, and overcome this by pooling information across genes with similar abundances to obtain stable parameter estimates.</code></p>
-<p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1874-1">Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression</a><span class="citation">(Hafemeister and Satija <a href="#ref-hafemeister2019normalization" role="doc-biblioref">2019</a>)</span></p>
-<p><a href="https://github.com/ChristophH/sctransform/" class="uri">https://github.com/ChristophH/sctransform/</a></p>
-<div class="figure">
-<img src="figs/RNAseqCounts/sctransform.png" alt="" />
-<p class="caption">SCTransform</p>
-</div>
-<p>We propose that the Pearson residuals from regularized negative binomial regression, where cellular sequencing depth is utilized as a covariate in a generalized linear model, successfully remove the influence of technical characteristics from downstream analyses while preserving biological heterogeneity.</p>
+<div id="phd-year-2" class="section level2" number="7.2">
+<h2><span class="header-section-number">7.2</span> 2021-2022 PhD year 2</h2>
 <ul>
-<li>UMI-based scRNA-seq dataset</li>
+<li>202109</li>
 </ul>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2">Evaluation of some aspects in supervised cell type identification for single-cell RNA-seq: classifier, feature selection, and reference construction</a><span class="citation">(Ma, Su, and Wu <a href="#ref-ma2021evaluation" role="doc-biblioref">2021</a>)</span></strong></p>
+<p><strong>Background</strong>
+Cell type identification is one of the most important questions in single-cell RNA sequencing (scRNA-seq) data analysis. With the accumulation of public scRNA-seq data, supervised cell type identification methods have gained increasing popularity due to better accuracy, robustness, and computational performance. Despite all the advantages, the performance of the supervised methods relies heavily on several key factors: feature selection, prediction method, and, most importantly, choice of the reference dataset.</p>
+<p><strong>Results</strong>
+In this work, we perform extensive real data analyses to systematically evaluate these strategies in supervised cell identification. We first benchmark nine classifiers along with six feature selection strategies and investigate the impact of reference data size and number of cell types in cell type prediction. Next, we focus on how discrepancies between reference and target datasets and how data preprocessing such as imputation and batch effect correction affect prediction performance. We also investigate the strategies of pooling and purifying reference data.</p>
+<p><strong>Conclusions</strong>
+Based on our analysis results, we provide guidelines for using supervised cell typing methods. We suggest combining all individuals from available datasets to construct the reference dataset and use multi-layer perceptron (MLP) as the classifier, along with F-test as the feature selection method. All the code used for our analysis is available on GitHub (<a href="https://github.com/marvinquiet/RefConstruction_supervisedCelltyping" class="uri">https://github.com/marvinquiet/RefConstruction_supervisedCelltyping</a>).</p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">SUPERGNOVA: local genetic correlation analysis reveals heterogeneous etiologic sharing of complex traits</a><span class="citation">(Zhang et al. <a href="#ref-zhang2021supergnova" role="doc-biblioref">2021</a>)</span></strong></p>
+<p>Local genetic correlation quantifies the genetic similarity of complex traits in specific genomic regions. However, accurate estimation of local genetic correlation remains challenging, due to linkage disequilibrium in local genomic regions and sample overlap across studies. We introduce SUPERGNOVA, a statistical framework to estimate local genetic correlations using summary statistics from genome-wide association studies. We demonstrate that SUPERGNOVA outperforms existing methods through simulations and analyses of 30 complex traits. In particular, we show that the positive yet paradoxical genetic correlation between autism spectrum disorder and cognitive performance could be explained by two etiologically distinct genetic signatures with bidirectional local genetic correlations.</p>
 <div class="figure">
-<img src="figs/RNAseqCounts/sctransform-intro.png" alt="" />
-<p class="caption">SCTransform-intro</p>
+<img src="figs/pubmon/2021-2022/SUPERGNOVA_workflow.png" alt="" />
+<p class="caption">SUPERGNOVA_workflow</p>
 </div>
-<p><code>observed **sequencing depth** (number of genes or molecules detected per cell) can vary significantly between cells, with variation in molecular counts potentially spanning an order of magnitude, even within the same cell type</code></p>
-<p><code>while the now widespread use of unique molecular identifiers (UMI) in scRNA-seq removes technical variation associated with PCR, differences in cell lysis, reverse transcription efficiency, and stochastic molecular sampling during sequencing also contribute significantly, necessitating technical correction</code></p>
-<p><img src="figs/RNAseqCounts/background.png" alt="review" />
-<img src="figs/RNAseqCounts/sctrans_intro.png" alt="SCTransform-intro" />
-<strong>Results</strong></p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x">Recovering genotypes and phenotypes using allele-specific genes</a><span class="citation">(Gürsoy et al. <a href="#ref-gursoy2021recovering" role="doc-biblioref">2021</a>)</span></strong></p>
+<p>With the recent increase in RNA sequencing efforts using large cohorts of individuals, surveying allele-specific gene expression is becoming increasingly frequent. Here, we report that, despite not containing explicit variant information, a list of genes known to be allele-specific in an individual is enough to recover key variants and link the individuals back to their genotypes and phenotypes. This creates a privacy conundrum.</p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2">NanoCaller for accurate detection of SNPs and indels in difficult-to-map regions from long-read sequencing by haplotype-aware deep neural networks</a><span class="citation">(Ahsan et al. <a href="#ref-ahsan2021nanocaller" role="doc-biblioref">2021</a>)</span></strong></p>
+<p>Long-read sequencing enables variant detection in genomic regions that are considered difficult-to-map by short-read sequencing. To fully exploit the benefits of longer reads, here we present a deep learning method NanoCaller, which detects SNPs using long-range haplotype information, then phases long reads with called SNPs and calls indels with local realignment. Evaluation on 8 human genomes demonstrates that NanoCaller generally achieves better performance than competing approaches. We experimentally validate 41 novel variants in a widely used benchmarking genome, which could not be reliably detected previously. In summary, NanoCaller facilitates the discovery of novel variants in complex genomic regions from long-read sequencing.</p>
 <ul>
-<li><p>A single scaling factor does not effectively normalize both lowly and highly expressed genes</p></li>
-<li><p>Modeling single-cell data with a negative binomial distribution leads to overfitting</p></li>
-<li><p>Applying regularized negative binomial regression for single-cell normalization</p></li>
-<li><p>Pearson residuals effectively normalize technical differences, while retaining biological variation</p></li>
-<li><p>Downstream analytical tasks are not biased by sequencing depth</p></li>
+<li>202110</li>
 </ul>
-<div class="figure">
-<img src="figs/RNAseqCounts/sctransform-sequencing%20depth.png" alt="" />
-<p class="caption">.</p>
-</div>
-<p><img src="figs/RNAseqCounts/sctransform-fig1.png" alt="." />
-<img src="figs/RNAseqCounts/sctransform-figS1.png" alt="." /></p>
-<p><strong>Methods</strong></p>
-<ul>
-<li>Regularized negative binomial regression</li>
-</ul>
-</div>
-<div id="basics" class="section level4" number="3.1.1.3">
-<h4><span class="header-section-number">3.1.1.3</span> BASiCS</h4>
-<p><a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004333">BASiCS: Bayesian Analysis of Single-Cell Sequencing Data</a><span class="citation">(Vallejos, Marioni, and Richardson <a href="#ref-vallejos2015basics" role="doc-biblioref">2015</a>)</span></p>
-<p><img src="figs/RNAseqCounts/BASICS.png" alt="BASICS Abstract" />
-<img src="figs/RNAseqCounts/BASICS2.png" alt="BASICS Author summary" /></p>
-<p><img src="figs/RNAseqCounts/pcbi.1004333.g001.png" alt="Graphical representation of gene expression in two cells from a homogeneous population but with different total mRNA content." />
-<img src="figs/RNAseqCounts/pcbi.1004333.g002.png" alt="Graphical representation of the hierarchical model implemented in BASiCS." />
-<img src="figs/RNAseqCounts/BASiCS-FIG2.png" alt="Graphical representation of the hierarchical model implemented in BASiCS." /></p>
-<p>KEY WORDS: <strong>scRNA-seq counts</strong></p>
-</div>
-</div>
-</div>
-<div id="hi-seq" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Hi-Seq</h2>
-<p><a href="https://www.nature.com/articles/s41587-021-00981-w">Enhanced detection of minimal residual disease by targeted sequencing of phased variants in circulating tumor DNA</a><span class="citation">(Kurtz et al. <a href="#ref-Kurtz2021" role="doc-biblioref">2021</a>)</span></p>
-<p>KEY WORDS: <strong>phased variants</strong></p>
 
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references hanging-indent">
-<div id="ref-hafemeister2019normalization">
-<p>Hafemeister, Christoph, and Rahul Satija. 2019. “Normalization and Variance Stabilization of Single-Cell Rna-Seq Data Using Regularized Negative Binomial Regression.” <em>Genome Biology</em> 20 (1): 1–15.</p>
+<div id="ref-ahsan2021nanocaller">
+<p>Ahsan, Mian Umair, Qian Liu, Li Fang, and Kai Wang. 2021. “NanoCaller for Accurate Detection of Snps and Indels in Difficult-to-Map Regions from Long-Read Sequencing by Haplotype-Aware Deep Neural Networks.” <em>Genome Biology</em> 22 (1): 1–33. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2</a>.</p>
 </div>
-<div id="ref-Kurtz2021">
-<p>Kurtz, David M., Joanne Soo, Lyron Co Ting Keh, Stefan Alig, Jacob J. Chabon, Brian J. Sworder, Andre Schultz, et al. 2021. “Enhanced Detection of Minimal Residual Disease by Targeted Sequencing of Phased Variants in Circulating Tumor Dna.” <em>Nature Biotechnology</em>, July. <a href="https://doi.org/10.1038/s41587-021-00981-w">https://doi.org/10.1038/s41587-021-00981-w</a>.</p>
+<div id="ref-gursoy2021recovering">
+<p>Gürsoy, Gamze, Nancy Lu, Sarah Wagner, and Mark Gerstein. 2021. “Recovering Genotypes and Phenotypes Using Allele-Specific Genes.” <em>Genome Biology</em> 22 (1): 1–9. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x</a>.</p>
 </div>
-<div id="ref-love2014moderated">
-<p>Love, Michael I, Wolfgang Huber, and Simon Anders. 2014. “Moderated Estimation of Fold Change and Dispersion for Rna-Seq Data with Deseq2.” <em>Genome Biology</em> 15 (12): 1–21.</p>
+<div id="ref-ma2021evaluation">
+<p>Ma, Wenjing, Kenong Su, and Hao Wu. 2021. “Evaluation of Some Aspects in Supervised Cell Type Identification for Single-Cell Rna-Seq: Classifier, Feature Selection, and Reference Construction.” <em>Genome Biology</em> 22 (1): 1–23. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2</a>.</p>
 </div>
-<div id="ref-vallejos2015basics">
-<p>Vallejos, Catalina A, John C Marioni, and Sylvia Richardson. 2015. “BASiCS: Bayesian Analysis of Single-Cell Sequencing Data.” <em>PLoS Computational Biology</em> 11 (6): e1004333.</p>
+<div id="ref-zhang2021supergnova">
+<p>Zhang, Yiliang, Qiongshi Lu, Yixuan Ye, Kunling Huang, Wei Liu, Yuchang Wu, Xiaoyuan Zhong, et al. 2021. “SUPERGNOVA: Local Genetic Correlation Analysis Reveals Heterogeneous Etiologic Sharing of Complex Traits.” <em>Genome Biology</em> 22 (1): 1–30. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w</a>.</p>
 </div>
 </div>
             </section>
@@ -321,8 +285,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="sgcell.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="statmethods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="proteomics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

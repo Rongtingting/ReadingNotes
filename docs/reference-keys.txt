@@ -20,6 +20,9 @@ singlecell-analysis-sources
 technology-related
 scrna-seq
 nb-models-for-scrna-seq
+deseq2
+sctransform
+basics
 hi-seq
 statmethods
 hmm-based-methods
@@ -41,3 +44,6 @@ protein-folding-prediction-background
 introduction
 methods
 deep-learing-in-protein-structure-prediction
+pubmon
+phd-year-1
+phd-year-2

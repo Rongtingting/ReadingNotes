@@ -1,0 +1,69 @@
+# Pubmon
+## 2020-2021 PhD year 1
+
+-202009
+
+-202010
+
+-202011
+
+-202012
+
+-202101
+
+-202102
+
+-202103
+
+-202104
+
+-202105
+
+-202106
+
+-202107
+
+-202108
+
+
+
+## 2021-2022 PhD year 2
+
+- 202109
+
+**[Evaluation of some aspects in supervised cell type identification for single-cell RNA-seq: classifier, feature selection, and reference construction](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2)[@ma2021evaluation]**
+
+**Background**
+Cell type identification is one of the most important questions in single-cell RNA sequencing (scRNA-seq) data analysis. With the accumulation of public scRNA-seq data, supervised cell type identification methods have gained increasing popularity due to better accuracy, robustness, and computational performance. Despite all the advantages, the performance of the supervised methods relies heavily on several key factors: feature selection, prediction method, and, most importantly, choice of the reference dataset.
+
+**Results**
+In this work, we perform extensive real data analyses to systematically evaluate these strategies in supervised cell identification. We first benchmark nine classifiers along with six feature selection strategies and investigate the impact of reference data size and number of cell types in cell type prediction. Next, we focus on how discrepancies between reference and target datasets and how data preprocessing such as imputation and batch effect correction affect prediction performance. We also investigate the strategies of pooling and purifying reference data.
+
+**Conclusions**
+Based on our analysis results, we provide guidelines for using supervised cell typing methods. We suggest combining all individuals from available datasets to construct the reference dataset and use multi-layer perceptron (MLP) as the classifier, along with F-test as the feature selection method. All the code used for our analysis is available on GitHub (https://github.com/marvinquiet/RefConstruction_supervisedCelltyping).
+
+**[SUPERGNOVA: local genetic correlation analysis reveals heterogeneous etiologic sharing of complex traits](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w)[@zhang2021supergnova]**
+
+Local genetic correlation quantifies the genetic similarity of complex traits in specific genomic regions. However, accurate estimation of local genetic correlation remains challenging, due to linkage disequilibrium in local genomic regions and sample overlap across studies. We introduce SUPERGNOVA, a statistical framework to estimate local genetic correlations using summary statistics from genome-wide association studies. We demonstrate that SUPERGNOVA outperforms existing methods through simulations and analyses of 30 complex traits. In particular, we show that the positive yet paradoxical genetic correlation between autism spectrum disorder and cognitive performance could be explained by two etiologically distinct genetic signatures with bidirectional local genetic correlations.
+
+![SUPERGNOVA_workflow](./figs/pubmon/2021-2022/SUPERGNOVA_workflow.png)
+
+
+
+
+**[Recovering genotypes and phenotypes using allele-specific genes](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x)[@gursoy2021recovering]**
+
+With the recent increase in RNA sequencing efforts using large cohorts of individuals, surveying allele-specific gene expression is becoming increasingly frequent. Here, we report that, despite not containing explicit variant information, a list of genes known to be allele-specific in an individual is enough to recover key variants and link the individuals back to their genotypes and phenotypes. This creates a privacy conundrum.
+
+**[NanoCaller for accurate detection of SNPs and indels in difficult-to-map regions from long-read sequencing by haplotype-aware deep neural networks](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2)[@ahsan2021nanocaller]**
+
+Long-read sequencing enables variant detection in genomic regions that are considered difficult-to-map by short-read sequencing. To fully exploit the benefits of longer reads, here we present a deep learning method NanoCaller, which detects SNPs using long-range haplotype information, then phases long reads with called SNPs and calls indels with local realignment. Evaluation on 8 human genomes demonstrates that NanoCaller generally achieves better performance than competing approaches. We experimentally validate 41 novel variants in a widely used benchmarking genome, which could not be reliably detected previously. In summary, NanoCaller facilitates the discovery of novel variants in complex genomic regions from long-read sequencing.
+
+
+
+- 202110
+
+
+
+
+
