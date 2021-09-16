@@ -10,7 +10,7 @@
 2. Alleloscope:  https://www.nature.com/articles/s41587-021-00911-w#Sec10 (see segmentation subsection)
  - HMM on a pooled cells (pseudo-bulk?) with pre-defined Gaussian means and variance for each state
 3. InferCNV: https://github.com/broadinstitute/inferCNV/wiki/inferCNV-HMM-based-CNV-Prediction-Methods
- - i6-HMM generates “in silico spike-in”; seemingly define CNV region (segment) on cluster instead of cell, but using noise model on each cell (not quite sure from the doc).
+ - i6-HMM generates in silico spike-in; seemingly define CNV region (segment) on cluster instead of cell, but using noise model on each cell (not quite sure from the doc).
 4. CopyKat: https://www.nature.com/articles/s41587-020-00795-2#Sec9
  - KS test for whether to two neighbour bins should be joined, by using the posterior samples of Gamma-Poisson posterior. Seemingly using noise model on each cell within a cluster
 

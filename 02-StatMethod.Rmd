@@ -9,3 +9,12 @@
 
 
 ## VB based methods
+
+
+## GLM
+
+[statsmodel GLM](https://www.statsmodels.org/stable/glm.html#links)
+
+[statsmodels.discrete.discrete_model.NegativeBinomial](https://www.statsmodels.org/stable/generated/statsmodels.discrete.discrete_model.NegativeBinomial.html)
+
+
