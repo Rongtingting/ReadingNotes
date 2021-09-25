@@ -24,7 +24,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2021-09-15" />
+<meta name="date" content="2021-09-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -162,6 +162,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1" data-path="technology-related.html"><a href="technology-related.html#scrna-seq"><i class="fa fa-check"></i><b>3.1</b> scRNA-seq</a>
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="technology-related.html"><a href="technology-related.html#nb-models-for-scrna-seq"><i class="fa fa-check"></i><b>3.1.1</b> NB models for scRNA-seq</a></li>
+<li class="chapter" data-level="3.1.2" data-path="technology-related.html"><a href="technology-related.html#batch-effect-correction-methods-for-scrna-seq"><i class="fa fa-check"></i><b>3.1.2</b> Batch-effect correction methods for scRNA-seq</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="technology-related.html"><a href="technology-related.html#hi-seq"><i class="fa fa-check"></i><b>3.2</b> Hi-Seq</a></li>
 </ul></li>
@@ -170,6 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="statmethods.html"><a href="statmethods.html#hmm-based-methods"><i class="fa fa-check"></i><b>4.1</b> HMM based methods</a></li>
 <li class="chapter" data-level="4.2" data-path="statmethods.html"><a href="statmethods.html#em-based-methods"><i class="fa fa-check"></i><b>4.2</b> EM based methods</a></li>
 <li class="chapter" data-level="4.3" data-path="statmethods.html"><a href="statmethods.html#vb-based-methods"><i class="fa fa-check"></i><b>4.3</b> VB based methods</a></li>
+<li class="chapter" data-level="4.4" data-path="statmethods.html"><a href="statmethods.html#glm"><i class="fa fa-check"></i><b>4.4</b> GLM</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="research-topic-based.html"><a href="research-topic-based.html"><i class="fa fa-check"></i><b>5</b> Research topic based</a>
 <ul>
@@ -183,6 +185,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.3.1" data-path="research-topic-based.html"><a href="research-topic-based.html#deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data"><i class="fa fa-check"></i><b>5.3.1</b> Deconvolution of bulk tissue and spatial transcriptomic data</a></li>
 </ul></li>
 <li class="chapter" data-level="5.4" data-path="research-topic-based.html"><a href="research-topic-based.html#omics-integration"><i class="fa fa-check"></i><b>5.4</b> Omics integration</a></li>
+<li class="chapter" data-level="5.5" data-path="research-topic-based.html"><a href="research-topic-based.html#spatial-transcriptomics"><i class="fa fa-check"></i><b>5.5</b> Spatial transcriptomics</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="proteomics.html"><a href="proteomics.html"><i class="fa fa-check"></i><b>6</b> Proteomics</a>
 <ul>
@@ -245,7 +248,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>InferCNV: <a href="https://github.com/broadinstitute/inferCNV/wiki/inferCNV-HMM-based-CNV-Prediction-Methods" class="uri">https://github.com/broadinstitute/inferCNV/wiki/inferCNV-HMM-based-CNV-Prediction-Methods</a></li>
 </ol>
 <ul>
-<li>i6-HMM generates “in silico spike-in”; seemingly define CNV region (segment) on cluster instead of cell, but using noise model on each cell (not quite sure from the doc).</li>
+<li>i6-HMM generates in silico spike-in; seemingly define CNV region (segment) on cluster instead of cell, but using noise model on each cell (not quite sure from the doc).</li>
 </ul>
 <ol start="4" style="list-style-type: decimal">
 <li>CopyKat: <a href="https://www.nature.com/articles/s41587-020-00795-2#Sec9" class="uri">https://www.nature.com/articles/s41587-020-00795-2#Sec9</a></li>
@@ -332,6 +335,26 @@ A phylogenetic tree describes the evolution of these clones. Somatic SNVs are de
 <div id="omics-integration" class="section level2" number="5.4">
 <h2><span class="header-section-number">5.4</span> Omics integration</h2>
 
+</div>
+<div id="spatial-transcriptomics" class="section level2" number="5.5">
+<h2><span class="header-section-number">5.5</span> Spatial transcriptomics</h2>
+<ul>
+<li>202109 Read in depth (lead by xianjie)</li>
+</ul>
+<p><strong><a href="https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full">The spatial landscape of clonal somatic mutations in benign and malignant tissue</a><span class="citation">(Erickson et al. <a href="#ref-erickson2021spatial" role="doc-biblioref">2021</a>)</span></strong></p>
+<p>Keywords: CNV</p>
+<p><strong><a href="https://www.sciencedirect.com/science/article/pii/S0092867420306723">Multimodal analysis of composition and spatial architecture in human squamous cell carcinoma</a><span class="citation">(Zhang et al. <a href="#ref-zhang2021supergnova" role="doc-biblioref">2021</a>)</span></strong></p>
+<p>Keywords: alignment of scRNA AND ST</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references hanging-indent">
+<div id="ref-erickson2021spatial">
+<p>Erickson, Andrew, Emelie Berglund, Mengxiao He, Maja Marklund, Reza Mirzazadeh, Niklas Schultz, Ludvig Bergenstråhle, et al. 2021. “The Spatial Landscape of Clonal Somatic Mutations in Benign and Malignant Tissue.” <em>bioRxiv</em>. <a href="https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full">https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full</a>.</p>
+</div>
+<div id="ref-zhang2021supergnova">
+<p>Zhang, Yiliang, Qiongshi Lu, Yixuan Ye, Kunling Huang, Wei Liu, Yuchang Wu, Xiaoyuan Zhong, et al. 2021. “SUPERGNOVA: Local Genetic Correlation Analysis Reveals Heterogeneous Etiologic Sharing of Complex Traits.” <em>Genome Biology</em> 22 (1): 1–30. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w</a>.</p>
 </div>
 </div>
             </section>

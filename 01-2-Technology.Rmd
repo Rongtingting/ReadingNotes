@@ -6,13 +6,15 @@
 
 ### NB models for scRNA-seq
 
+KEY WORDS: **scRNA-seq counts**
+
 DEseq2, scTransform, BASICS
 
 
 
 #### DEseq2
 
-[Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8)[@love2014moderated]
+**[Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-014-0550-8)[@love2014moderated]**
 
 ![DEseq2](./figs/RNAseqCounts/DEseq2.png)
 
@@ -30,7 +32,7 @@ DEseq2, scTransform, BASICS
 
 `unconstrained negative binomial model may overfit scRNA-seq data, and overcome this by pooling information across genes with similar abundances to obtain stable parameter estimates. `
 
-[Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1874-1)[@hafemeister2019normalization]
+**[Normalization and variance stabilization of single-cell RNA-seq data using regularized negative binomial regression](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1874-1)[@hafemeister2019normalization]**
 
 https://github.com/ChristophH/sctransform/
 
@@ -76,21 +78,72 @@ We propose that the Pearson residuals from regularized negative binomial regress
 
 #### BASiCS
 
-[BASiCS: Bayesian Analysis of Single-Cell Sequencing Data](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004333)[@vallejos2015basics]
+**[BASiCS: Bayesian Analysis of Single-Cell Sequencing Data](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004333)[@vallejos2015basics]**
 
 
 ![BASICS Abstract](./figs/RNAseqCounts/BASICS.png)
 ![BASICS Author summary](./figs/RNAseqCounts/BASICS2.png)
+**INTRODUCTION**
+
+- Cell_SPECIFIC NORMALIZATION
+
+For instance, in Fig 1(a), each gene has the same expression rate in both cells, yet the expression counts in the first cell will be roughly twice as much as those from the second cell. In the same spirit, if different sequencing depths (the number of times a single nucleotide is read during the sequencing) are applied to these cells, the scale of expression counts will also be affected. Thus, normalisation is a crucial issue in this context. 
+
+- gene specific variation
+
+Another fundamental problem for interpreting single-cell sequencing is the presence of high levels of unexplained technical noise (unrelated to sequencing depth and other amplification biases) [5]. This creates new challenges for identifying genes that show genuine biological cell-to-cell heterogeneity-beyond that induced by technical variation-and motivates the systematic inclusion of spike-in genes in single-cell experiments
+
+- UMI
+
+Recently, the introduction of Unique Molecular Identifiers (UMI) attached to each cDNA molecule during reverse transcription has substantially reduced the levels of unexplained technical noise and eliminated the effect of sequencing depth changes and other amplification biases in single-cell experiments.
+
 
 ![Graphical representation of gene expression in two cells from a homogeneous population but with different total mRNA content.](./figs/RNAseqCounts/pcbi.1004333.g001.png)
 ![Graphical representation of the hierarchical model implemented in BASiCS.](./figs/RNAseqCounts/pcbi.1004333.g002.png)
 ![Graphical representation of the hierarchical model implemented in BASiCS.](./figs/RNAseqCounts/BASiCS-FIG2.png)
+#### edgeR
 
-KEY WORDS: **scRNA-seq counts**
+**[edgeR: a Bioconductor package for differential expression analysis of digital gene expression data](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2796818/)[@robinson2010edger]**
+
+
+**[Differential expression analysis of multifactor RNA-Seq experiments with respect to biological variation](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3378882/)[@mccarthy2012differential]**
+
+
+#### Sanity
+
+**[Bayesian inference of gene expression states from single-cell RNA-seq data](https://www.nature.com/articles/s41587-021-00875-x)[@breda2021bayesian]**
+
+
+
+
+
+### Batch-effect correction methods for scRNA-seq
+
+**[A benchmark of batch-effect correction methods for single-cell RNA sequencing data](https://link.springer.com/article/10.1186/s13059-019-1850-9)[@tran2020benchmark]**
+
+- Abstract
+**Background**: Large-scale single-cell transcriptomic datasets generated using different technologies contain batchspecific
+systematic variations that present a challenge to batch-effect removal and data integration. With continued
+growth expected in scRNA-seq data, achieving effective batch integration with available computational resources is
+crucial. Here, we perform an in-depth benchmark study on available batch correction methods to determine the
+most suitable method for batch-effect removal.
+
+**Results**: We compare 14 methods in terms of computational runtime, the ability to handle large datasets, and
+batch-effect correction efficacy while preserving cell type purity. Five scenarios are designed for the study: identical
+cell types with different technologies, non-identical cell types, multiple batches, big data, and simulated data.
+Performance is evaluated using four benchmarking metrics including kBET, LISI, ASW, and ARI. We also investigate
+the use of batch-corrected data to study differential gene expression.
+
+**Conclusion**: Based on our results, Harmony, LIGER, and Seurat 3 are the recommended methods for batch
+integration. Due to its significantly shorter runtime, Harmony is recommended as the first method to try, with the
+other methods as viable alternatives.
+
+**Keywords**: Single-cell RNA-seq, Batch correction, Batch effect, Integration, Differential gene expression
+
 
 ## Hi-Seq
 
-[Enhanced detection of minimal residual disease by targeted sequencing of phased variants in circulating tumor DNA](https://www.nature.com/articles/s41587-021-00981-w)[@Kurtz2021]
+**[Enhanced detection of minimal residual disease by targeted sequencing of phased variants in circulating tumor DNA](https://www.nature.com/articles/s41587-021-00981-w)[@Kurtz2021]**
 
 KEY WORDS: **phased variants**
 

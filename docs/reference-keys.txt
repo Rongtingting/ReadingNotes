@@ -23,11 +23,14 @@ nb-models-for-scrna-seq
 deseq2
 sctransform
 basics
+sanity
+batch-effect-correction-methods-for-scrna-seq
 hi-seq
 statmethods
 hmm-based-methods
 em-based-methods
 vb-based-methods
+glm
 research-topic-based
 cnv-calling
 breaking-point-detection
@@ -35,6 +38,7 @@ clonal-tree
 deconvolution
 deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data
 omics-integration
+spatial-transcriptomics
 proteomics
 ptm-cross-talk
 ptm-cluster

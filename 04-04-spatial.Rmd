@@ -1,0 +1,12 @@
+## Spatial transcriptomics
+
+- 202109 Read in depth (lead by xianjie)
+
+**[The spatial landscape of clonal somatic mutations in benign and malignant tissue](https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full)[@erickson2021spatial]**
+
+Keywords: CNV
+
+
+**[Multimodal analysis of composition and spatial architecture in human squamous cell carcinoma](https://www.sciencedirect.com/science/article/pii/S0092867420306723)[@zhang2021supergnova]**
+
+Keywords: alignment of scRNA AND ST

@@ -24,7 +24,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2021-09-15" />
+<meta name="date" content="2021-09-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -162,6 +162,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1" data-path="technology-related.html"><a href="technology-related.html#scrna-seq"><i class="fa fa-check"></i><b>3.1</b> scRNA-seq</a>
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="technology-related.html"><a href="technology-related.html#nb-models-for-scrna-seq"><i class="fa fa-check"></i><b>3.1.1</b> NB models for scRNA-seq</a></li>
+<li class="chapter" data-level="3.1.2" data-path="technology-related.html"><a href="technology-related.html#batch-effect-correction-methods-for-scrna-seq"><i class="fa fa-check"></i><b>3.1.2</b> Batch-effect correction methods for scRNA-seq</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="technology-related.html"><a href="technology-related.html#hi-seq"><i class="fa fa-check"></i><b>3.2</b> Hi-Seq</a></li>
 </ul></li>
@@ -170,6 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="4.1" data-path="statmethods.html"><a href="statmethods.html#hmm-based-methods"><i class="fa fa-check"></i><b>4.1</b> HMM based methods</a></li>
 <li class="chapter" data-level="4.2" data-path="statmethods.html"><a href="statmethods.html#em-based-methods"><i class="fa fa-check"></i><b>4.2</b> EM based methods</a></li>
 <li class="chapter" data-level="4.3" data-path="statmethods.html"><a href="statmethods.html#vb-based-methods"><i class="fa fa-check"></i><b>4.3</b> VB based methods</a></li>
+<li class="chapter" data-level="4.4" data-path="statmethods.html"><a href="statmethods.html#glm"><i class="fa fa-check"></i><b>4.4</b> GLM</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="research-topic-based.html"><a href="research-topic-based.html"><i class="fa fa-check"></i><b>5</b> Research topic based</a>
 <ul>
@@ -183,6 +185,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="5.3.1" data-path="research-topic-based.html"><a href="research-topic-based.html#deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data"><i class="fa fa-check"></i><b>5.3.1</b> Deconvolution of bulk tissue and spatial transcriptomic data</a></li>
 </ul></li>
 <li class="chapter" data-level="5.4" data-path="research-topic-based.html"><a href="research-topic-based.html#omics-integration"><i class="fa fa-check"></i><b>5.4</b> Omics integration</a></li>
+<li class="chapter" data-level="5.5" data-path="research-topic-based.html"><a href="research-topic-based.html#spatial-transcriptomics"><i class="fa fa-check"></i><b>5.5</b> Spatial transcriptomics</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="proteomics.html"><a href="proteomics.html"><i class="fa fa-check"></i><b>6</b> Proteomics</a>
 <ul>
@@ -234,6 +237,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Breda, Jérémie, Mihaela Zavolan, and Erik van Nimwegen. 2021. “Bayesian Inference of Gene Expression States from Single-Cell Rna-Seq Data.” <em>Nature Biotechnology</em>, 1–9. <a href="https://www.nature.com/articles/s41587-021-00875-x">https://www.nature.com/articles/s41587-021-00875-x</a>.</p>
 </div>
 <div>
+<p>Erickson, Andrew, Emelie Berglund, Mengxiao He, Maja Marklund, Reza Mirzazadeh, Niklas Schultz, Ludvig Bergenstråhle, et al. 2021. “The Spatial Landscape of Clonal Somatic Mutations in Benign and Malignant Tissue.” <em>bioRxiv</em>. <a href="https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full">https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full</a>.</p>
+</div>
+<div>
 <p>Gürsoy, Gamze, Nancy Lu, Sarah Wagner, and Mark Gerstein. 2021. “Recovering Genotypes and Phenotypes Using Allele-Specific Genes.” <em>Genome Biology</em> 22 (1): 1–9. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x</a>.</p>
 </div>
 <div>
@@ -252,7 +258,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>Ma, Wenjing, Kenong Su, and Hao Wu. 2021. “Evaluation of Some Aspects in Supervised Cell Type Identification for Single-Cell Rna-Seq: Classifier, Feature Selection, and Reference Construction.” <em>Genome Biology</em> 22 (1): 1–23. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2</a>.</p>
 </div>
 <div>
+<p>McCarthy, Davis J, Yunshun Chen, and Gordon K Smyth. 2012. “Differential Expression Analysis of Multifactor Rna-Seq Experiments with Respect to Biological Variation.” <em>Nucleic Acids Research</em> 40 (10): 4288–97.</p>
+</div>
+<div>
+<p>Robinson, Mark D, Davis J McCarthy, and Gordon K Smyth. 2010. “EdgeR: A Bioconductor Package for Differential Expression Analysis of Digital Gene Expression Data.” <em>Bioinformatics</em> 26 (1): 139–40.</p>
+</div>
+<div>
 <p>Shajii, Ariya, Ibrahim Numanagić, Alexander T Leighton, Haley Greenyer, Saman Amarasinghe, and Bonnie Berger. 2021. “A Python-Based Programming Language for High-Performance Computational Genomics.” <em>Nature Biotechnology</em>, 1–2. <a href="https://www.nature.com/articles/s41587-021-00985-6">https://www.nature.com/articles/s41587-021-00985-6</a>.</p>
+</div>
+<div>
+<p>Tran, Hoa Thi Nhu, Kok Siong Ang, Marion Chevrier, Xiaomeng Zhang, Nicole Yee Shin Lee, Michelle Goh, and Jinmiao Chen. 2020. “A Benchmark of Batch-Effect Correction Methods for Single-Cell Rna Sequencing Data.” <em>Genome Biology</em> 21 (1): 1–32. <a href="https://link.springer.com/article/10.1186/s13059-019-1850-9">https://link.springer.com/article/10.1186/s13059-019-1850-9</a>.</p>
 </div>
 <div>
 <p>Vallejos, Catalina A, John C Marioni, and Sylvia Richardson. 2015. “BASiCS: Bayesian Analysis of Single-Cell Sequencing Data.” <em>PLoS Computational Biology</em> 11 (6): e1004333.</p>
