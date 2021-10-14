@@ -18,7 +18,7 @@ languages-and-compilers
 singlecell-analysis-tools
 singlecell-analysis-sources
 technology-related
-scrna-seq
+scrna-seq-modelling
 nb-models-for-scrna-seq
 deseq2
 sctransform
@@ -51,3 +51,4 @@ deep-learing-in-protein-structure-prediction
 pubmon
 phd-year-1
 phd-year-2
+resources

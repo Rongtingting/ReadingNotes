@@ -24,7 +24,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2021-09-25" />
+<meta name="date" content="2021-10-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -159,7 +159,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="3" data-path="technology-related.html"><a href="technology-related.html"><i class="fa fa-check"></i><b>3</b> Technology Related</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="technology-related.html"><a href="technology-related.html#scrna-seq"><i class="fa fa-check"></i><b>3.1</b> scRNA-seq</a>
+<li class="chapter" data-level="3.1" data-path="technology-related.html"><a href="technology-related.html#scrna-seq-modelling"><i class="fa fa-check"></i><b>3.1</b> scRNA-seq modelling</a>
 <ul>
 <li class="chapter" data-level="3.1.1" data-path="technology-related.html"><a href="technology-related.html#nb-models-for-scrna-seq"><i class="fa fa-check"></i><b>3.1.1</b> NB models for scRNA-seq</a></li>
 <li class="chapter" data-level="3.1.2" data-path="technology-related.html"><a href="technology-related.html#batch-effect-correction-methods-for-scrna-seq"><i class="fa fa-check"></i><b>3.1.2</b> Batch-effect correction methods for scRNA-seq</a></li>
@@ -200,7 +200,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7" data-path="pubmon.html"><a href="pubmon.html"><i class="fa fa-check"></i><b>7</b> Pubmon</a>
 <ul>
 <li class="chapter" data-level="7.1" data-path="pubmon.html"><a href="pubmon.html#phd-year-1"><i class="fa fa-check"></i><b>7.1</b> 2020-2021 PhD year 1</a></li>
-<li class="chapter" data-level="7.2" data-path="pubmon.html"><a href="pubmon.html#phd-year-2"><i class="fa fa-check"></i><b>7.2</b> 2021-2022 PhD year 2</a></li>
+<li class="chapter" data-level="7.2" data-path="pubmon.html"><a href="pubmon.html#phd-year-2"><i class="fa fa-check"></i><b>7.2</b> 2021-2022 PhD year 2</a>
+<ul>
+<li class="chapter" data-level="7.2.1" data-path="pubmon.html"><a href="pubmon.html#resources"><i class="fa fa-check"></i><b>7.2.1</b> Resources</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -225,8 +228,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="technology-related" class="section level1" number="3">
 <h1><span class="header-section-number">Chapter 3</span> Technology Related</h1>
-<div id="scrna-seq" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> scRNA-seq</h2>
+<div id="scrna-seq-modelling" class="section level2" number="3.1">
+<h2><span class="header-section-number">3.1</span> scRNA-seq modelling</h2>
 <div id="nb-models-for-scrna-seq" class="section level3" number="3.1.1">
 <h3><span class="header-section-number">3.1.1</span> NB models for scRNA-seq</h3>
 <p>KEY WORDS: <strong>scRNA-seq counts</strong></p>
@@ -304,6 +307,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>UMI</li>
 </ul>
 <p>Recently, the introduction of Unique Molecular Identifiers (UMI) attached to each cDNA molecule during reverse transcription has substantially reduced the levels of unexplained technical noise and eliminated the effect of sequencing depth changes and other amplification biases in single-cell experiments.</p>
+<p>Nevertheless, our analysis of a mouse Embryonic Stem Cells (ESC) suggests that unexplained technical variability can not be completely removed by using UMIs (see Results section) and that an accurate quantification of technical variability still remains important.</p>
+<p><strong>HIGHLIGHT</strong></p>
+<p>In BASiCS (Bayesian Analysis of Single-Cell Sequencing data), a joint model of biological and spike-in genes is formulated to simultaneously quantify unexplained technical noise and cell-to-cell biological heterogeneity using the complete set of data, borrowing information between both sets of genes (spike-in and biological) through common parameters in a hierarchical structure. Additionally, BASiCS incorporates an automated normalisation method, where normalising constants are treated as model parameters.</p>
 <p><img src="figs/RNAseqCounts/pcbi.1004333.g001.png" alt="Graphical representation of gene expression in two cells from a homogeneous population but with different total mRNA content." />
 <img src="figs/RNAseqCounts/pcbi.1004333.g002.png" alt="Graphical representation of the hierarchical model implemented in BASiCS." />
 <img src="figs/RNAseqCounts/BASiCS-FIG2.png" alt="Graphical representation of the hierarchical model implemented in BASiCS." />

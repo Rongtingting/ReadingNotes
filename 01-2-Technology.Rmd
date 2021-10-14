@@ -2,7 +2,7 @@
 # Technology Related
 
 
-## scRNA-seq
+## scRNA-seq modelling
 
 ### NB models for scRNA-seq
 
@@ -96,6 +96,13 @@ Another fundamental problem for interpreting single-cell sequencing is the prese
 - UMI
 
 Recently, the introduction of Unique Molecular Identifiers (UMI) attached to each cDNA molecule during reverse transcription has substantially reduced the levels of unexplained technical noise and eliminated the effect of sequencing depth changes and other amplification biases in single-cell experiments.
+
+Nevertheless, our analysis of a mouse Embryonic Stem Cells (ESC) suggests that unexplained technical variability can not be completely removed by using UMIs (see Results section) and that an accurate quantification of technical variability still remains important.
+
+
+**HIGHLIGHT**
+
+In BASiCS (Bayesian Analysis of Single-Cell Sequencing data), a joint model of biological and spike-in genes is formulated to simultaneously quantify unexplained technical noise and cell-to-cell biological heterogeneity using the complete set of data, borrowing information between both sets of genes (spike-in and biological) through common parameters in a hierarchical structure. Additionally, BASiCS incorporates an automated normalisation method, where normalising constants are treated as model parameters.
 
 
 ![Graphical representation of gene expression in two cells from a homogeneous population but with different total mRNA content.](./figs/RNAseqCounts/pcbi.1004333.g001.png)
