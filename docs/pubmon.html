@@ -24,7 +24,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2021-10-14" />
+<meta name="date" content="2021-11-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -150,6 +150,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.2.1" data-path="sgcell.html"><a href="sgcell.html#review-2021-06"><i class="fa fa-check"></i><b>2.2.1</b> Review-2021-06</a></li>
 <li class="chapter" data-level="2.2.2" data-path="sgcell.html"><a href="sgcell.html#review-2021-07"><i class="fa fa-check"></i><b>2.2.2</b> Review-2021-07</a></li>
+<li class="chapter" data-level="2.2.3" data-path="sgcell.html"><a href="sgcell.html#review-2021-10"><i class="fa fa-check"></i><b>2.2.3</b> Review-2021-10</a></li>
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="sgcell.html"><a href="sgcell.html#data-processing"><i class="fa fa-check"></i><b>2.3</b> Data processing</a></li>
 <li class="chapter" data-level="2.4" data-path="sgcell.html"><a href="sgcell.html#clustering-methods"><i class="fa fa-check"></i><b>2.4</b> Clustering methods</a></li>
@@ -203,6 +204,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.2" data-path="pubmon.html"><a href="pubmon.html#phd-year-2"><i class="fa fa-check"></i><b>7.2</b> 2021-2022 PhD year 2</a>
 <ul>
 <li class="chapter" data-level="7.2.1" data-path="pubmon.html"><a href="pubmon.html#resources"><i class="fa fa-check"></i><b>7.2.1</b> Resources</a></li>
+<li class="chapter" data-level="7.2.2" data-path="pubmon.html"><a href="pubmon.html#ppi-topic"><i class="fa fa-check"></i><b>7.2.2</b> PPI topic</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -245,6 +247,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="phd-year-2" class="section level2" number="7.2">
 <h2><span class="header-section-number">7.2</span> 2021-2022 PhD year 2</h2>
+<p>The cell-level resolution data provide much richer information for answering a number of important questions that cannot otherwise be answered by bulk data, for example, the composition of cell types in complex tissues, the cell-to-cell heterogeneity in transcription, and the transcriptional dynamics in many biological processes such as development, differentiation, and disease progression.</p>
+<p>There are several scientific goals in scRNA-seq studies. The first one is to decipher the cellular composition of complex tissues: one wants to know the identities of the cell types and subtypes, as well as their proportions in the tissue sample. The cellular composition itself can be of great interest in biological and clinical practices, for example, it was reported that tumor-infiltrating immune cell compositions play a vital role in understanding antitumor immune responses [4]. Once the cell types are identified, cell type–specific gene expressions are also of great interest since they enhance the understandings of cell signatures [5]. There are other goals, for example, new and rare cell type discovery [6] and pseudo-time construction to represent the temporal dynamics of transcription during a biological process [7].</p>
 <ul>
 <li>202109</li>
 </ul>
@@ -259,6 +263,7 @@ Based on our analysis results, we provide guidelines for using supervised cell t
 <img src="figs/pubmon/2021-2022/CELLTYPE_ANNO_BENCHMARK.png" alt="" />
 <p class="caption">Study design</p>
 </div>
+<p>There are several other supervised cell typing methods available for scRNA-seq. For example, scSorter [27] borrows information from lowly expressed marker genes to assign cells; scPred [12] adopts a principal component analysis (PCA)-based feature selection; SingleCellNet [28] uses top-pair transformation on gene space and selects informative paired genes as features; CellAssign [29] builds a probabilistic model with some prior knowledge of cell markers, etc. But according to a recent comparison [20], SVM with rejection, scmap, and CHEAH are among the best performers, so we decide not to include more such methods. GEDFN is a method designed for predicting phenotype from bulk expression but can be directly applied to scRNA-seq cell typing. We include it because we want to understand whether incorporating gene network information can improve the results. ItClust is a semi-supervised method which only uses the reference data to obtain initial values for unsupervised clustering in target data. MARS uses a meta-learning concept to construct cell type landmarks by jointly embedding both annotated and unannotated data without removing the batch effects and then assigns cell types based on the learned embedding space. We want to evaluate the performances of these semi-supervised methods under different scenarios.</p>
 <p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">SUPERGNOVA: local genetic correlation analysis reveals heterogeneous etiologic sharing of complex traits</a><span class="citation">(Zhang et al. <a href="#ref-zhang2021supergnova" role="doc-biblioref">2021</a>)</span></strong></p>
 <p>Local genetic correlation quantifies the genetic similarity of complex traits in specific genomic regions. However, accurate estimation of local genetic correlation remains challenging, due to linkage disequilibrium in local genomic regions and sample overlap across studies. We introduce SUPERGNOVA, a statistical framework to estimate local genetic correlations using summary statistics from genome-wide association studies. We demonstrate that SUPERGNOVA outperforms existing methods through simulations and analyses of 30 complex traits. In particular, we show that the positive yet paradoxical genetic correlation between autism spectrum disorder and cognitive performance could be explained by two etiologically distinct genetic signatures with bidirectional local genetic correlations.</p>
 <div class="figure">
@@ -281,6 +286,10 @@ Based on our analysis results, we provide guidelines for using supervised cell t
 <div id="resources" class="section level3" number="7.2.1">
 <h3><span class="header-section-number">7.2.1</span> Resources</h3>
 <p><strong><a href="https://biccn.org/">NIH’s Brain Research through Advancing Innovative Neurotechnologies (BRAIN) Initiative - Cell Census Network (BICCN)</a></strong></p>
+</div>
+<div id="ppi-topic" class="section level3" number="7.2.2">
+<h3><span class="header-section-number">7.2.2</span> PPI topic</h3>
+<p><a href="https://mp.weixin.qq.com/s/EWLSD7wB-GUIXS94LtPtWQ">identifying cancer drivers</a></p>
 
 </div>
 </div>

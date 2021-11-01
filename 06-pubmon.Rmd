@@ -29,6 +29,12 @@
 
 ## 2021-2022 PhD year 2
 
+The cell-level resolution data provide much richer information for answering a number of important questions that cannot otherwise be answered by bulk data, for example, the composition of cell types in complex tissues, the cell-to-cell heterogeneity in transcription, and the transcriptional dynamics in many biological processes such as development, differentiation, and disease progression.
+
+There are several scientific goals in scRNA-seq studies. The first one is to decipher the cellular composition of complex tissues: one wants to know the identities of the cell types and subtypes, as well as their proportions in the tissue sample. The cellular composition itself can be of great interest in biological and clinical practices, for example, it was reported that tumor-infiltrating immune cell compositions play a vital role in understanding antitumor immune responses [4]. Once the cell types are identified, cell type–specific gene expressions are also of great interest since they enhance the understandings of cell signatures [5]. There are other goals, for example, new and rare cell type discovery [6] and pseudo-time construction to represent the temporal dynamics of transcription during a biological process [7].
+
+
+
 - 202109
 
 **[Evaluation of some aspects in supervised cell type identification for single-cell RNA-seq: classifier, feature selection, and reference construction](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2)[@ma2021evaluation]**
@@ -43,6 +49,10 @@ In this work, we perform extensive real data analyses to systematically evaluate
 Based on our analysis results, we provide guidelines for using supervised cell typing methods. We suggest combining all individuals from available datasets to construct the reference dataset and use multi-layer perceptron (MLP) as the classifier, along with F-test as the feature selection method. All the code used for our analysis is available on GitHub (https://github.com/marvinquiet/RefConstruction_supervisedCelltyping).
 
 ![Study design](./figs/pubmon/2021-2022/CELLTYPE_ANNO_BENCHMARK.png)
+
+There are several other supervised cell typing methods available for scRNA-seq. For example, scSorter [27] borrows information from lowly expressed marker genes to assign cells; scPred [12] adopts a principal component analysis (PCA)-based feature selection; SingleCellNet [28] uses top-pair transformation on gene space and selects informative paired genes as features; CellAssign [29] builds a probabilistic model with some prior knowledge of cell markers, etc. But according to a recent comparison [20], SVM with rejection, scmap, and CHEAH are among the best performers, so we decide not to include more such methods. GEDFN is a method designed for predicting phenotype from bulk expression but can be directly applied to scRNA-seq cell typing. We include it because we want to understand whether incorporating gene network information can improve the results. ItClust is a semi-supervised method which only uses the reference data to obtain initial values for unsupervised clustering in target data. MARS uses a meta-learning concept to construct cell type landmarks by jointly embedding both annotated and unannotated data without removing the batch effects and then assigns cell types based on the learned embedding space. We want to evaluate the performances of these semi-supervised methods under different scenarios.
+
+
 
 **[SUPERGNOVA: local genetic correlation analysis reveals heterogeneous etiologic sharing of complex traits](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w)[@zhang2021supergnova]**
 
@@ -78,6 +88,12 @@ Long-read sequencing enables variant detection in genomic regions that are consi
 ### Resources
 
 **[NIH's Brain Research through Advancing Innovative Neurotechnologies (BRAIN) Initiative - Cell Census Network (BICCN)](https://biccn.org/)**
+
+
+### PPI topic
+
+[identifying cancer drivers](https://mp.weixin.qq.com/s/EWLSD7wB-GUIXS94LtPtWQ)
+
 
 
 

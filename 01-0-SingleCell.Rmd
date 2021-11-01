@@ -109,6 +109,18 @@ j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene acro
 [Computational principles and challenges in single-cell data integration](https://www.nature.com/articles/s41587-021-00895-7)[@argelaguet2021computational]
 
 
+### Review-2021-10
+
+[Over 1000 tools reveal trends in the single-cell RNA-seq analysis landscape](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02519-4)[@zappia2021over]
+
+Single-cell gene expression measurements are cell type-specific (unlike DNA), more easily interpretable (compared to epigenetic modalities), and scalable to thousands of features (unlike antibody-based protein measurements) and thousands of cells. These features mean that scRNA-seq can be used as an anchor, often measured in parallel and used to link other modalities.
+
+
+[The Awesome Single Cell repository](https://github.com/Rongtingting/awesome-single-cell) is a community-curated list of software packages, resources, researchers, and publications for various single-cell technologies and [Albert Villela's SingleCell Omics spreadsheet](https://docs.google.com/spreadsheets/d/1IPe2ozb1Mny8sLvJaSE57RJr3oruiBoSudAVhSH-O8M/edit?pli=1#gid=237186399)  tracks a range of information including technologies, companies, and software tools. 
+
+The scRNA-tools database focuses specifically on the cataloging and manual curation of software tools for analyzing scRNA-seq data [23]. When tools become available (usually through a bioRxiv preprint), we classify them according to the analysis tasks they can be used for and record information such as associated preprints and publications, software licenses, code location, software repositories, and a short description. Most tools are added to the database within 30 days of the first preprint or publication (Additional file 1: Figure S1). All the recorded information is publicly available in an interactive format at https://www.scrna-tools.org/ [24]. As the number of tools in the database has moved past 1000, we have taken this opportunity to provide an update on the current state of the database and explore trends in scRNA-seq analysis across the past 5 years. We find that the focus of tool developers has moved on from continuous ordering of cells to methods for integrating samples and classifying cells. The database also shows us that more new tools are built using Python while the relative usage of R is declining. We also examine the role of open science in the development of the field and find that open source practices lead to increased citations. While the scRNA-tools database does not record every scRNA-seq analysis tool, the large proportion it does include over the history of what is still a young field make these analyses possible and a reasonable estimate of trends across all tools.
+
+
 ## Data processing
 
 [Bayesian inference of gene expression states from single-cell RNA-seq data](https://www.nature.com/articles/s41587-021-00875-x)[@breda2021bayesian]

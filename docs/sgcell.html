@@ -24,7 +24,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2021-10-14" />
+<meta name="date" content="2021-11-01" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -150,6 +150,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="2.2.1" data-path="sgcell.html"><a href="sgcell.html#review-2021-06"><i class="fa fa-check"></i><b>2.2.1</b> Review-2021-06</a></li>
 <li class="chapter" data-level="2.2.2" data-path="sgcell.html"><a href="sgcell.html#review-2021-07"><i class="fa fa-check"></i><b>2.2.2</b> Review-2021-07</a></li>
+<li class="chapter" data-level="2.2.3" data-path="sgcell.html"><a href="sgcell.html#review-2021-10"><i class="fa fa-check"></i><b>2.2.3</b> Review-2021-10</a></li>
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="sgcell.html"><a href="sgcell.html#data-processing"><i class="fa fa-check"></i><b>2.3</b> Data processing</a></li>
 <li class="chapter" data-level="2.4" data-path="sgcell.html"><a href="sgcell.html#clustering-methods"><i class="fa fa-check"></i><b>2.4</b> Clustering methods</a></li>
@@ -203,6 +204,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="7.2" data-path="pubmon.html"><a href="pubmon.html#phd-year-2"><i class="fa fa-check"></i><b>7.2</b> 2021-2022 PhD year 2</a>
 <ul>
 <li class="chapter" data-level="7.2.1" data-path="pubmon.html"><a href="pubmon.html#resources"><i class="fa fa-check"></i><b>7.2.1</b> Resources</a></li>
+<li class="chapter" data-level="7.2.2" data-path="pubmon.html"><a href="pubmon.html#ppi-topic"><i class="fa fa-check"></i><b>7.2.2</b> PPI topic</a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -324,6 +326,13 @@ j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene acro
 <h3><span class="header-section-number">2.2.2</span> Review-2021-07</h3>
 <p><a href="https://www.nature.com/articles/s41587-021-00895-7">Computational principles and challenges in single-cell data integration</a><span class="citation">(Argelaguet et al. <a href="#ref-argelaguet2021computational" role="doc-biblioref">2021</a>)</span></p>
 </div>
+<div id="review-2021-10" class="section level3" number="2.2.3">
+<h3><span class="header-section-number">2.2.3</span> Review-2021-10</h3>
+<p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02519-4">Over 1000 tools reveal trends in the single-cell RNA-seq analysis landscape</a><span class="citation">(Zappia and Theis <a href="#ref-zappia2021over" role="doc-biblioref">2021</a>)</span></p>
+<p>Single-cell gene expression measurements are cell type-specific (unlike DNA), more easily interpretable (compared to epigenetic modalities), and scalable to thousands of features (unlike antibody-based protein measurements) and thousands of cells. These features mean that scRNA-seq can be used as an anchor, often measured in parallel and used to link other modalities.</p>
+<p><a href="https://github.com/Rongtingting/awesome-single-cell">The Awesome Single Cell repository</a> is a community-curated list of software packages, resources, researchers, and publications for various single-cell technologies and <a href="https://docs.google.com/spreadsheets/d/1IPe2ozb1Mny8sLvJaSE57RJr3oruiBoSudAVhSH-O8M/edit?pli=1#gid=237186399">Albert Villela’s SingleCell Omics spreadsheet</a> tracks a range of information including technologies, companies, and software tools.</p>
+<p>The scRNA-tools database focuses specifically on the cataloging and manual curation of software tools for analyzing scRNA-seq data [23]. When tools become available (usually through a bioRxiv preprint), we classify them according to the analysis tasks they can be used for and record information such as associated preprints and publications, software licenses, code location, software repositories, and a short description. Most tools are added to the database within 30 days of the first preprint or publication (Additional file 1: Figure S1). All the recorded information is publicly available in an interactive format at <a href="https://www.scrna-tools.org/" class="uri">https://www.scrna-tools.org/</a> [24]. As the number of tools in the database has moved past 1000, we have taken this opportunity to provide an update on the current state of the database and explore trends in scRNA-seq analysis across the past 5 years. We find that the focus of tool developers has moved on from continuous ordering of cells to methods for integrating samples and classifying cells. The database also shows us that more new tools are built using Python while the relative usage of R is declining. We also examine the role of open science in the development of the field and find that open source practices lead to increased citations. While the scRNA-tools database does not record every scRNA-seq analysis tool, the large proportion it does include over the history of what is still a young field make these analyses possible and a reasonable estimate of trends across all tools.</p>
+</div>
 </div>
 <div id="data-processing" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Data processing</h2>
@@ -382,6 +391,9 @@ j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene acro
 </div>
 <div id="ref-shajii2021python">
 <p>Shajii, Ariya, Ibrahim Numanagić, Alexander T Leighton, Haley Greenyer, Saman Amarasinghe, and Bonnie Berger. 2021. “A Python-Based Programming Language for High-Performance Computational Genomics.” <em>Nature Biotechnology</em>, 1–2. <a href="https://www.nature.com/articles/s41587-021-00985-6">https://www.nature.com/articles/s41587-021-00985-6</a>.</p>
+</div>
+<div id="ref-zappia2021over">
+<p>Zappia, Luke, and Fabian J Theis. 2021. “Over 1000 Tools Reveal Trends in the Single-Cell Rna-Seq Analysis Landscape.” <em>bioRxiv</em>.</p>
 </div>
 </div>
             </section>
