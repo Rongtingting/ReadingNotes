@@ -35,6 +35,8 @@ glm
 research-topic-based
 cnv-calling
 breaking-point-detection
+related-research
+pubmon
 clonal-tree
 deconvolution
 deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data
@@ -49,7 +51,7 @@ protein-folding-prediction-background
 introduction
 methods
 deep-learing-in-protein-structure-prediction
-pubmon
+pubmon-1
 phd-year-1
 phd-year-2
 resources

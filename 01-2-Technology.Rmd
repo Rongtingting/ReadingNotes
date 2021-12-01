@@ -8,6 +8,8 @@
 
 KEY WORDS: **scRNA-seq counts**
 
+[TUTORIAL-High-Throughput Count Data](http://web.stanford.edu/class/bios221/book/Chap-CountData.html)
+
 DEseq2, scTransform, BASICS
 
 

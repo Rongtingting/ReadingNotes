@@ -2,6 +2,7 @@
 
 ## CNV calling
 
+
 ### breaking point detection
 - 4 CNV breakpoint detection methods (2021-07-17 Group meeting)
 
@@ -67,3 +68,38 @@ A phylogenetic tree describes the evolution of these clones. Somatic SNVs are de
 
 
 ![Overview of copykat algorithm](./figs/CNV/copykat.jpg)
+
+
+
+### Related research
+
+**clonealign**: statistical integration of independent single-cell RNA and DNA sequencing data from human cancers
+
+However, independently sampled single-cell measurements introduce a new analytical challenge of how to associate cells across each modality. Assuming a population structure with a fixed number of clones, this can be expressed as a mapping problem, whereby cells measured with transcriptome assays must be aligned to those measured with a genome assay.
+
+
+![clonealign overview](./figs/CNV/clonealign.jpg)
+ In order to relate the independent measurements, we assume that an increase in the copy number of a gene will result in a corresponding increase in that gene's expression and vice versa (Fig. 1b)
+ a relationship previously observed in joint RNA-DNA assays in bulk tissues [12] and at the single-cell level [9, 10, 13].
+
+
+
+**CHISEL**
+
+**inferCNV**
+
+**copyKAT**
+
+**CaSpER**
+
+**HoneyBADGER**
+
+
+
+
+### PUBMON
+[Precise identification of cancer cells from allelic imbalances in single cell transcriptomes](https://www.biorxiv.org/content/10.1101/2021.11.25.469995v1)
+
+this paper used BAF information to identify cancer cells, seems quite relevant.
+
+
