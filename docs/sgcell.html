@@ -24,7 +24,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2021-12-01" />
+<meta name="date" content="2021-12-31" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -154,9 +154,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="2.3" data-path="sgcell.html"><a href="sgcell.html#data-processing"><i class="fa fa-check"></i><b>2.3</b> Data processing</a></li>
 <li class="chapter" data-level="2.4" data-path="sgcell.html"><a href="sgcell.html#clustering-methods"><i class="fa fa-check"></i><b>2.4</b> Clustering methods</a></li>
-<li class="chapter" data-level="2.5" data-path="sgcell.html"><a href="sgcell.html#languages-and-compilers"><i class="fa fa-check"></i><b>2.5</b> languages and compilers</a></li>
-<li class="chapter" data-level="2.6" data-path="sgcell.html"><a href="sgcell.html#singlecell-analysis-tools"><i class="fa fa-check"></i><b>2.6</b> singlecell analysis tools</a></li>
-<li class="chapter" data-level="2.7" data-path="sgcell.html"><a href="sgcell.html#singlecell-analysis-sources"><i class="fa fa-check"></i><b>2.7</b> singlecell analysis sources</a></li>
+<li class="chapter" data-level="2.5" data-path="sgcell.html"><a href="sgcell.html#benchmarking"><i class="fa fa-check"></i><b>2.5</b> Benchmarking</a></li>
+<li class="chapter" data-level="2.6" data-path="sgcell.html"><a href="sgcell.html#languages-and-compilers"><i class="fa fa-check"></i><b>2.6</b> languages and compilers</a></li>
+<li class="chapter" data-level="2.7" data-path="sgcell.html"><a href="sgcell.html#singlecell-analysis-tools"><i class="fa fa-check"></i><b>2.7</b> singlecell analysis tools</a></li>
+<li class="chapter" data-level="2.8" data-path="sgcell.html"><a href="sgcell.html#singlecell-analysis-sources"><i class="fa fa-check"></i><b>2.8</b> singlecell analysis sources</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="technology-related.html"><a href="technology-related.html"><i class="fa fa-check"></i><b>3</b> Technology Related</a>
 <ul>
@@ -351,10 +352,22 @@ j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene acro
 </div>
 <div id="clustering-methods" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Clustering methods</h2>
+</div>
+<div id="benchmarking" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Benchmarking</h2>
+<p><a href="https://www.nature.com/articles/s41592-021-01336-8">Benchmarking atlas-level data integration in single-cell genomics</a><span class="citation">(Luecken et al. <a href="#ref-luecken2021benchmarking" role="doc-biblioref">2021</a>)</span></p>
+<div class="figure">
+<img src="figs/singleCell/benchmarking1.jpg" alt="" />
+<p class="caption">Design of single-cell integration benchmarking (scIB).</p>
+</div>
+<div class="figure">
+<img src="figs/singleCell/benchmarking2.jpg" alt="" />
+<p class="caption">Benchmarking results for the human immune cell task.</p>
+</div>
 
 </div>
-<div id="languages-and-compilers" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> languages and compilers</h2>
+<div id="languages-and-compilers" class="section level2" number="2.6">
+<h2><span class="header-section-number">2.6</span> languages and compilers</h2>
 <ul>
 <li>Seq</li>
 </ul>
@@ -367,16 +380,16 @@ j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene acro
 <p>To demonstrate Seq’s versatility, we reimplemented eight popular genomics tools in Seq, spanning key tasks in the genomics analysis pipeline (Fig. 1c and Supplementary Note 2), such as the finding of super-maximal exact matches, or SMEMs (BWA-MEM13), genome homology table construction (CORA14), Hamming distance-based all-mapping (mrsFAST15), long-read alignment (minimap216), <strong>single-cell data preprocessing (UMI-tools17)</strong>, SAM/BAM post-processing (GATK18), global sequence alignment (AVID19) and <strong>haplotype phasing (Haptree-X20,21)</strong>.</p>
 <p><a href="https://github.com/seq-lang/seq-benchmarks/tree/master/seq-nbt#haptree-x-haplotype-phasing">Hap Tree-X</a></p>
 </div>
-<div id="singlecell-analysis-tools" class="section level2" number="2.6">
-<h2><span class="header-section-number">2.6</span> singlecell analysis tools</h2>
+<div id="singlecell-analysis-tools" class="section level2" number="2.7">
+<h2><span class="header-section-number">2.7</span> singlecell analysis tools</h2>
 <ul>
 <li><p>scanpy
 <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1382-0">SCANPY: large-scale single-cell gene expression data analysis</a></p></li>
 <li><p>seurat</p></li>
 </ul>
 </div>
-<div id="singlecell-analysis-sources" class="section level2" number="2.7">
-<h2><span class="header-section-number">2.7</span> singlecell analysis sources</h2>
+<div id="singlecell-analysis-sources" class="section level2" number="2.8">
+<h2><span class="header-section-number">2.8</span> singlecell analysis sources</h2>
 
 </div>
 </div>
@@ -390,6 +403,9 @@ j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene acro
 </div>
 <div id="ref-kharchenko2021triumphs">
 <p>Kharchenko, Peter V. 2021. “The Triumphs and Limitations of Computational Methods for scRNA-Seq.” <em>Nature Methods</em>, 1–10.</p>
+</div>
+<div id="ref-luecken2021benchmarking">
+<p>Luecken, Malte D, Maren Büttner, Kridsadakorn Chaichoompu, Anna Danese, Marta Interlandi, Michaela Fee Mueller, Daniel C Strobl, et al. 2021. “Benchmarking Atlas-Level Data Integration in Single-Cell Genomics.” <em>Nature Methods</em>, 1–10.</p>
 </div>
 <div id="ref-shajii2021python">
 <p>Shajii, Ariya, Ibrahim Numanagić, Alexander T Leighton, Haley Greenyer, Saman Amarasinghe, and Bonnie Berger. 2021. “A Python-Based Programming Language for High-Performance Computational Genomics.” <em>Nature Biotechnology</em>, 1–2. <a href="https://www.nature.com/articles/s41587-021-00985-6">https://www.nature.com/articles/s41587-021-00985-6</a>.</p>

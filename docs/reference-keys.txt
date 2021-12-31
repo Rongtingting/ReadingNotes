@@ -15,6 +15,7 @@ review-2021-07
 review-2021-10
 data-processing
 clustering-methods
+benchmarking
 languages-and-compilers
 singlecell-analysis-tools
 singlecell-analysis-sources

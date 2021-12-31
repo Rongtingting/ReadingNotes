@@ -136,5 +136,13 @@ The scRNA-tools database focuses specifically on the cataloging and manual curat
 
 
 
+## Benchmarking
+[Benchmarking atlas-level data integration in single-cell genomics](https://www.nature.com/articles/s41592-021-01336-8)[@luecken2021benchmarking]
+
+
+![Design of single-cell integration benchmarking (scIB).](./figs/singleCell/benchmarking1.jpg)
+
+![Benchmarking results for the human immune cell task.](./figs/singleCell/benchmarking2.jpg)
+
 
 
