@@ -95,6 +95,9 @@ However, independently sampled single-cell measurements introduce a new analytic
 **HoneyBADGER**
 
 
+### Smoothing strategies in RDR
+-TODO
+
 
 
 ### PUBMON
