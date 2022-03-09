@@ -17,7 +17,9 @@ This book is for Rongting's daily reading notes.
 
 # About the author {-}
 
+
 ![1](./figs/Rongting/IMG-5393.jpg)
+
 ![2](./figs/Rongting/IMG-6316.PNG)
 
 
@@ -27,7 +29,9 @@ This book is for Rongting's daily reading notes.
 ![Keep moving](./figs/Rongting/IMG-8010.JPG)
 
 
+# Research topics {-}
 
+# About the book {-}
 
 ```{r eval=FALSE, include=FALSE}
 install.packages("bookdown")
