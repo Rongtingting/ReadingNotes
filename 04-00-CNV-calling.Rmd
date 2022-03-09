@@ -106,3 +106,23 @@ However, independently sampled single-cell measurements introduce a new analytic
 this paper used BAF information to identify cancer cells, seems quite relevant.
 
 
+**2022-03-09**
+
+[Evolutionary tracking of cancer haplotypes at single-cell resolution](https://www.biorxiv.org/content/10.1101/2021.06.04.447031v1.full)
+
+
+
+
+[Haplotype-enhanced inference of somatic copy number profiles from single-cell transcriptomes](https://www.biorxiv.org/content/10.1101/2022.02.07.479314v1.full)
+
+- **Numbat**
+
+- introduction
+
+Existing approaches for CNV detection from scRNA-seq do not utilize the prior knowledge of haplotypes, or the individual-specific configuration of variant alleles on the two homologous chromosomes, which can enable more sensitive detection of allelic imbalance.
+
+The utility of phasing in detecting CNV signals from scRNA-based assays, however, has not been explored.
+ 
+ 
+
+
