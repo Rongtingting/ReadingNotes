@@ -24,7 +24,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2022-03-09" />
+<meta name="date" content="2022-04-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -357,6 +357,26 @@ a relationship previously observed in joint RNA-DNA assays in bulk tissues [12] 
 </ul>
 <p>Existing approaches for CNV detection from scRNA-seq do not utilize the prior knowledge of haplotypes, or the individual-specific configuration of variant alleles on the two homologous chromosomes, which can enable more sensitive detection of allelic imbalance.</p>
 <p>The utility of phasing in detecting CNV signals from scRNA-based assays, however, has not been explored.</p>
+<p>We therefore developed a computational method, Numbat, which integrates expression, allele, and haplotype information derived from population-based phasing to comprehensively characterize the CNV landscape in single-cell transcriptomes.</p>
+<p>Numbat does not require sample-matched DNA data or a priori genotyping, and is widely applicable to a wide range of experimental settings and cancer types.</p>
+<ul>
+<li>Results</li>
+</ul>
+<p><strong>Enhanced detection of subclonal allelic imbalances using population-based haplotype phasing</strong></p>
+<p>Prior phasing information can effectively amplify weak allelic imbalance signals of individual SNPs induced by the CNV, by exposing joint behavior of entire haplotype sequences and thereby increasing the statistical power.</p>
+<p>The ability to infer phasing between genes is particularly useful for CNV inference, as it provides means to overcome stochastic allele-specific expression effects which give rise to bursts of gene-specific allelic imbalances in individual cells.</p>
+<p>The differential phasing accuracy from within and between genes reflects the fact that the strength of genetic linkage decays with increasing distance (Supplementary Figure 1a).</p>
+<p>To reflect the decay in phasing strength over longer genetic distances, we introduced site-specific transition probabilities between haplotype states in the Numbat allele HMM (see Methods).</p>
+<p><strong>Accurate copy number inference from single-cell transcriptomes</strong></p>
+<p>To increase robustness, Numbat models gene expression as integer read counts using a discrete Poisson Lognormal mixture distribution, and accounts for excess variance in the allele frequency (e.g. due to allele-specific detection or transcriptional bursts) using a Beta-Binomial distribution.</p>
+<p><strong>Iterative strategy to decompose tumor clonal architecture</strong></p>
+<p><strong>Reliable identification of cancer cells in the tumor microenvironment</strong></p>
+<p><strong>Allele-specific CNV analysis reveals additional subclonal complexity</strong></p>
+<p><strong>Unraveling the interplay between genetic and transcriptional heterogeneity in tumor evolution</strong></p>
+<ul>
+<li><p>Discussion</p></li>
+<li><p>Methods</p></li>
+</ul>
 
 </div>
 </div>
@@ -394,13 +414,26 @@ a relationship previously observed in joint RNA-DNA assays in bulk tissues [12] 
 <p>Keywords: CNV</p>
 <p><strong><a href="https://www.sciencedirect.com/science/article/pii/S0092867420306723">Multimodal analysis of composition and spatial architecture in human squamous cell carcinoma</a><span class="citation">(Zhang et al. <a href="#ref-zhang2021supergnova" role="doc-biblioref">2021</a>)</span></strong></p>
 <p>Keywords: alignment of scRNA AND ST</p>
+<ul>
+<li>2022 spatial and CNV</li>
+</ul>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02653-7">Statistical and machine learning methods for spatially resolved transcriptomics data analysis</a><span class="citation">(Zeng et al. <a href="#ref-zeng2022statistical" role="doc-biblioref">2022</a>)</span></strong></p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/33022659/">STARCH: copy number and clone inference from spatial transcriptomics data</a><span class="citation">(Elyanow et al. <a href="#ref-elyanow2021starch" role="doc-biblioref">2021</a>)</span></strong></p>
+<p><strong><a href="https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.abstract">The spatial landscape of clonal somatic mutations in benign and malignant tissue</a><span class="citation">(Erickson et al. <a href="#ref-erickson2021spatial" role="doc-biblioref">2021</a>)</span></strong></p>
+<p>Keywords: spatial; CNV</p>
 
 </div>
 </div>
 <h3>References</h3>
 <div id="refs" class="references hanging-indent">
+<div id="ref-elyanow2021starch">
+<p>Elyanow, Rebecca, Ron Zeira, Max Land, and Benjamin J Raphael. 2021. “STARCH: Copy Number and Clone Inference from Spatial Transcriptomics Data.” <em>Physical Biology</em> 18 (3): 035001.</p>
+</div>
 <div id="ref-erickson2021spatial">
 <p>Erickson, Andrew, Emelie Berglund, Mengxiao He, Maja Marklund, Reza Mirzazadeh, Niklas Schultz, Ludvig Bergenstråhle, et al. 2021. “The Spatial Landscape of Clonal Somatic Mutations in Benign and Malignant Tissue.” <em>bioRxiv</em>. <a href="https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full">https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full</a>.</p>
+</div>
+<div id="ref-zeng2022statistical">
+<p>Zeng, Zexian, Yawei Li, Yiming Li, and Yuan Luo. 2022. “Statistical and Machine Learning Methods for Spatially Resolved Transcriptomics Data Analysis.” <em>Genome Biology</em> 23 (1): 1–23.</p>
 </div>
 <div id="ref-zhang2021supergnova">
 <p>Zhang, Yiliang, Qiongshi Lu, Yixuan Ye, Kunling Huang, Wei Liu, Yuchang Wu, Xiaoyuan Zhong, et al. 2021. “SUPERGNOVA: Local Genetic Correlation Analysis Reveals Heterogeneous Etiologic Sharing of Complex Traits.” <em>Genome Biology</em> 22 (1): 1–30. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w</a>.</p>

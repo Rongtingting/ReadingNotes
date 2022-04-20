@@ -122,6 +122,47 @@ this paper used BAF information to identify cancer cells, seems quite relevant.
 Existing approaches for CNV detection from scRNA-seq do not utilize the prior knowledge of haplotypes, or the individual-specific configuration of variant alleles on the two homologous chromosomes, which can enable more sensitive detection of allelic imbalance.
 
 The utility of phasing in detecting CNV signals from scRNA-based assays, however, has not been explored.
+
+We therefore developed a computational method, Numbat, which integrates expression, allele, and haplotype information derived from population-based phasing to comprehensively characterize the CNV landscape in single-cell transcriptomes.
+
+
+Numbat does not require sample-matched DNA data or a priori genotyping, and is widely applicable to a wide range of experimental settings and cancer types.
+
+
+- Results
+
+**Enhanced detection of subclonal allelic imbalances using population-based haplotype phasing**
+
+Prior phasing information can effectively amplify weak allelic imbalance signals of individual SNPs induced by the CNV, by exposing joint behavior of entire haplotype sequences and thereby increasing the statistical power.
+
+The ability to infer phasing between genes is particularly useful for CNV inference, as it provides means to overcome stochastic allele-specific expression effects which give rise to bursts of gene-specific allelic imbalances in individual cells.
+
+The differential phasing accuracy from within and between genes reflects the fact that the strength of genetic linkage decays with increasing distance (Supplementary Figure 1a).
+
+
+To reflect the decay in phasing strength over longer genetic distances, we introduced site-specific transition probabilities between haplotype states in the Numbat allele HMM (see Methods).
+
+**Accurate copy number inference from single-cell transcriptomes**
+
+To increase robustness, Numbat models gene expression as integer read counts using a discrete Poisson Lognormal mixture distribution, and accounts for excess variance in the allele frequency (e.g. due to allele-specific detection or transcriptional bursts) using a Beta-Binomial distribution. 
+
+
+**Iterative strategy to decompose tumor clonal architecture**
+
+
+**Reliable identification of cancer cells in the tumor microenvironment**
+
+
+**Allele-specific CNV analysis reveals additional subclonal complexity**
+
+
+**Unraveling the interplay between genetic and transcriptional heterogeneity in tumor evolution**
+
+
+
+- Discussion
+
+- Methods
  
  
 

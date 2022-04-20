@@ -10,3 +10,15 @@ Keywords: CNV
 **[Multimodal analysis of composition and spatial architecture in human squamous cell carcinoma](https://www.sciencedirect.com/science/article/pii/S0092867420306723)[@zhang2021supergnova]**
 
 Keywords: alignment of scRNA AND ST
+
+
+- 2022 spatial and CNV
+
+**[Statistical and machine learning methods for spatially resolved transcriptomics data analysis](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02653-7)[@zeng2022statistical]**
+
+
+**[STARCH: copy number and clone inference from spatial transcriptomics data](https://pubmed.ncbi.nlm.nih.gov/33022659/)[@elyanow2021starch]**
+
+**[The spatial landscape of clonal somatic mutations in benign and malignant tissue](https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.abstract)[@erickson2021spatial]**
+
+Keywords: spatial; CNV
