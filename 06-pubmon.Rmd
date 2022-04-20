@@ -83,6 +83,19 @@ Long-read sequencing enables variant detection in genomic regions that are consi
 
 **[NIH's Brain Research through Advancing Innovative Neurotechnologies (BRAIN) Initiative - Cell Census Network (BICCN)](https://biccn.org/)**
 
+#### TODO List
+- 202204 todolist
+
+**[Experimental evolution in TP53 deficient gastric organoids recapitulates tumorigenesis](https://www.biorxiv.org/content/10.1101/2022.04.09.487529v1)[@karlsson2022experimental]**
+
+**[Spatial charting of single-cell transcriptomes in tissues](https://www.nature.com/articles/s41587-022-01233-1)[@wei2022spatial]**
+
+two CNV papers
+
+**[Haplotype-enhanced inference of somatic copy number profiles from single-cell transcriptomes](https://www.biorxiv.org/content/10.1101/2022.02.07.479314v1)[@gao2022haplotype]**
+
+**[Evolutionary tracking of cancer haplotypes at single-cell resolution](https://www.biorxiv.org/content/10.1101/2021.06.04.447031v1)[@williams2021evolutionary]**
+
 
 
 ### Resources

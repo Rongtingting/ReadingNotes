@@ -47,7 +47,7 @@ spatial-transcriptomics
 proteomics
 ptm-cross-talk
 ptm-cluster
-section-1
+ptm-and-cancer
 protein-structure
 protein-folding-prediction-background
 introduction
@@ -56,6 +56,7 @@ deep-learing-in-protein-structure-prediction
 pubmon-1
 phd-year-1
 phd-year-2
+todo-list
 resources
 ppi-topic
 method-of-the-year
