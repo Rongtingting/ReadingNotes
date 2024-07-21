@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Research topic based | ReadingNotes: Have you read today’s papers?</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Research topic based | ReadingNotes: Have you read today’s papers?" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2022-04-20" />
+<meta name="date" content="2024-07-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="statmethods.html"/>
 <link rel="next" href="proteomics.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,14 +49,16 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -119,6 +119,32 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -193,6 +219,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="5.4" data-path="research-topic-based.html"><a href="research-topic-based.html#omics-integration"><i class="fa fa-check"></i><b>5.4</b> Omics integration</a></li>
 <li class="chapter" data-level="5.5" data-path="research-topic-based.html"><a href="research-topic-based.html#spatial-transcriptomics"><i class="fa fa-check"></i><b>5.5</b> Spatial transcriptomics</a></li>
+<li class="chapter" data-level="5.6" data-path="research-topic-based.html"><a href="research-topic-based.html#spatial-transcriptomics-technology"><i class="fa fa-check"></i><b>5.6</b> Spatial transcriptomics Technology</a></li>
+<li class="chapter" data-level="5.7" data-path="research-topic-based.html"><a href="research-topic-based.html#spatial-transcriptomics-methods"><i class="fa fa-check"></i><b>5.7</b> Spatial transcriptomics Methods</a></li>
+<li class="chapter" data-level="5.8" data-path="research-topic-based.html"><a href="research-topic-based.html#d-biology"><i class="fa fa-check"></i><b>5.8</b> 3D biology</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="proteomics.html"><a href="proteomics.html"><i class="fa fa-check"></i><b>6</b> Proteomics</a>
 <ul>
@@ -241,12 +270,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="research-topic-based" class="section level1" number="5">
-<h1><span class="header-section-number">Chapter 5</span> Research topic based</h1>
-<div id="cnv-calling" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> CNV calling</h2>
-<div id="breaking-point-detection" class="section level3" number="5.1.1">
-<h3><span class="header-section-number">5.1.1</span> breaking point detection</h3>
+<div id="research-topic-based" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Research topic based<a href="research-topic-based.html#research-topic-based" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="cnv-calling" class="section level2 hasAnchor" number="5.1">
+<h2><span class="header-section-number">5.1</span> CNV calling<a href="research-topic-based.html#cnv-calling" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="breaking-point-detection" class="section level3 hasAnchor" number="5.1.1">
+<h3><span class="header-section-number">5.1.1</span> breaking point detection<a href="research-topic-based.html#breaking-point-detection" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <ul>
 <li>4 CNV breakpoint detection methods (2021-07-17 Group meeting)</li>
 </ul>
@@ -327,8 +356,8 @@ A phylogenetic tree describes the evolution of these clones. Somatic SNVs are de
 <p class="caption">Overview of copykat algorithm</p>
 </div>
 </div>
-<div id="related-research" class="section level3" number="5.1.2">
-<h3><span class="header-section-number">5.1.2</span> Related research</h3>
+<div id="related-research" class="section level3 hasAnchor" number="5.1.2">
+<h3><span class="header-section-number">5.1.2</span> Related research<a href="research-topic-based.html#related-research" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong>clonealign</strong>: statistical integration of independent single-cell RNA and DNA sequencing data from human cancers</p>
 <p>However, independently sampled single-cell measurements introduce a new analytical challenge of how to associate cells across each modality. Assuming a population structure with a fixed number of clones, this can be expressed as a mapping problem, whereby cells measured with transcriptome assays must be aligned to those measured with a genome assay.</p>
 <p><img src="figs/CNV/clonealign.jpg" alt="clonealign overview" />
@@ -340,12 +369,12 @@ a relationship previously observed in joint RNA-DNA assays in bulk tissues [12] 
 <p><strong>CaSpER</strong></p>
 <p><strong>HoneyBADGER</strong></p>
 </div>
-<div id="smoothing-strategies-in-rdr" class="section level3" number="5.1.3">
-<h3><span class="header-section-number">5.1.3</span> Smoothing strategies in RDR</h3>
+<div id="smoothing-strategies-in-rdr" class="section level3 hasAnchor" number="5.1.3">
+<h3><span class="header-section-number">5.1.3</span> Smoothing strategies in RDR<a href="research-topic-based.html#smoothing-strategies-in-rdr" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>-TODO</p>
 </div>
-<div id="pubmon" class="section level3" number="5.1.4">
-<h3><span class="header-section-number">5.1.4</span> PUBMON</h3>
+<div id="pubmon" class="section level3 hasAnchor" number="5.1.4">
+<h3><span class="header-section-number">5.1.4</span> PUBMON<a href="research-topic-based.html#pubmon" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://www.biorxiv.org/content/10.1101/2021.11.25.469995v1">Precise identification of cancer cells from allelic imbalances in single cell transcriptomes</a></p>
 <p>this paper used BAF information to identify cancer cells, seems quite relevant.</p>
 <p><strong>2022-03-09</strong></p>
@@ -380,14 +409,14 @@ a relationship previously observed in joint RNA-DNA assays in bulk tissues [12] 
 
 </div>
 </div>
-<div id="clonal-tree" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Clonal Tree</h2>
+<div id="clonal-tree" class="section level2 hasAnchor" number="5.2">
+<h2><span class="header-section-number">5.2</span> Clonal Tree<a href="research-topic-based.html#clonal-tree" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
 </div>
-<div id="deconvolution" class="section level2" number="5.3">
-<h2><span class="header-section-number">5.3</span> Deconvolution</h2>
-<div id="deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data" class="section level3" number="5.3.1">
-<h3><span class="header-section-number">5.3.1</span> Deconvolution of bulk tissue and spatial transcriptomic data</h3>
+<div id="deconvolution" class="section level2 hasAnchor" number="5.3">
+<h2><span class="header-section-number">5.3</span> Deconvolution<a href="research-topic-based.html#deconvolution" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data" class="section level3 hasAnchor" number="5.3.1">
+<h3><span class="header-section-number">5.3.1</span> Deconvolution of bulk tissue and spatial transcriptomic data<a href="research-topic-based.html#deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Related papers are as follows:</p>
 <ul>
 <li><a href="https://www.nature.com/articles/s41587-019-0114-2">CIBERSORTx</a></li>
@@ -401,42 +430,53 @@ a relationship previously observed in joint RNA-DNA assays in bulk tissues [12] 
 
 </div>
 </div>
-<div id="omics-integration" class="section level2" number="5.4">
-<h2><span class="header-section-number">5.4</span> Omics integration</h2>
+<div id="omics-integration" class="section level2 hasAnchor" number="5.4">
+<h2><span class="header-section-number">5.4</span> Omics integration<a href="research-topic-based.html#omics-integration" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
 </div>
-<div id="spatial-transcriptomics" class="section level2" number="5.5">
-<h2><span class="header-section-number">5.5</span> Spatial transcriptomics</h2>
+<div id="spatial-transcriptomics" class="section level2 hasAnchor" number="5.5">
+<h2><span class="header-section-number">5.5</span> Spatial transcriptomics<a href="research-topic-based.html#spatial-transcriptomics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li>202109 Read in depth (lead by xianjie)</li>
 </ul>
-<p><strong><a href="https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full">The spatial landscape of clonal somatic mutations in benign and malignant tissue</a><span class="citation">(Erickson et al. <a href="#ref-erickson2021spatial" role="doc-biblioref">2021</a>)</span></strong></p>
+<p><strong><a href="https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full">The spatial landscape of clonal somatic mutations in benign and malignant tissue</a><span class="citation">(<a href="#ref-erickson2021spatial" role="doc-biblioref">Erickson et al. 2021</a>)</span></strong></p>
 <p>Keywords: CNV</p>
-<p><strong><a href="https://www.sciencedirect.com/science/article/pii/S0092867420306723">Multimodal analysis of composition and spatial architecture in human squamous cell carcinoma</a><span class="citation">(Zhang et al. <a href="#ref-zhang2021supergnova" role="doc-biblioref">2021</a>)</span></strong></p>
+<p><strong><a href="https://www.sciencedirect.com/science/article/pii/S0092867420306723">Multimodal analysis of composition and spatial architecture in human squamous cell carcinoma</a><span class="citation">(<a href="#ref-zhang2021supergnova" role="doc-biblioref">Zhang et al. 2021</a>)</span></strong></p>
 <p>Keywords: alignment of scRNA AND ST</p>
 <ul>
 <li>2022 spatial and CNV</li>
 </ul>
-<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02653-7">Statistical and machine learning methods for spatially resolved transcriptomics data analysis</a><span class="citation">(Zeng et al. <a href="#ref-zeng2022statistical" role="doc-biblioref">2022</a>)</span></strong></p>
-<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/33022659/">STARCH: copy number and clone inference from spatial transcriptomics data</a><span class="citation">(Elyanow et al. <a href="#ref-elyanow2021starch" role="doc-biblioref">2021</a>)</span></strong></p>
-<p><strong><a href="https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.abstract">The spatial landscape of clonal somatic mutations in benign and malignant tissue</a><span class="citation">(Erickson et al. <a href="#ref-erickson2021spatial" role="doc-biblioref">2021</a>)</span></strong></p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02653-7">Statistical and machine learning methods for spatially resolved transcriptomics data analysis</a><span class="citation">(<a href="#ref-zeng2022statistical" role="doc-biblioref">Zeng et al. 2022</a>)</span></strong></p>
+<p><strong><a href="https://pubmed.ncbi.nlm.nih.gov/33022659/">STARCH: copy number and clone inference from spatial transcriptomics data</a><span class="citation">(<a href="#ref-elyanow2021starch" role="doc-biblioref">Elyanow et al. 2021</a>)</span></strong></p>
+<p><strong><a href="https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.abstract">The spatial landscape of clonal somatic mutations in benign and malignant tissue</a><span class="citation">(<a href="#ref-erickson2021spatial" role="doc-biblioref">Erickson et al. 2021</a>)</span></strong></p>
 <p>Keywords: spatial; CNV</p>
 
 </div>
+<div id="spatial-transcriptomics-technology" class="section level2 hasAnchor" number="5.6">
+<h2><span class="header-section-number">5.6</span> Spatial transcriptomics Technology<a href="research-topic-based.html#spatial-transcriptomics-technology" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<h3>References</h3>
-<div id="refs" class="references hanging-indent">
-<div id="ref-elyanow2021starch">
-<p>Elyanow, Rebecca, Ron Zeira, Max Land, and Benjamin J Raphael. 2021. “STARCH: Copy Number and Clone Inference from Spatial Transcriptomics Data.” <em>Physical Biology</em> 18 (3): 035001.</p>
+<div id="spatial-transcriptomics-methods" class="section level2 hasAnchor" number="5.7">
+<h2><span class="header-section-number">5.7</span> Spatial transcriptomics Methods<a href="research-topic-based.html#spatial-transcriptomics-methods" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
 </div>
-<div id="ref-erickson2021spatial">
-<p>Erickson, Andrew, Emelie Berglund, Mengxiao He, Maja Marklund, Reza Mirzazadeh, Niklas Schultz, Ludvig Bergenstråhle, et al. 2021. “The Spatial Landscape of Clonal Somatic Mutations in Benign and Malignant Tissue.” <em>bioRxiv</em>. <a href="https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full">https://www.biorxiv.org/content/10.1101/2021.07.12.452018v1.full</a>.</p>
+<div id="d-biology" class="section level2 hasAnchor" number="5.8">
+<h2><span class="header-section-number">5.8</span> 3D biology<a href="research-topic-based.html#d-biology" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+
 </div>
-<div id="ref-zeng2022statistical">
-<p>Zeng, Zexian, Yawei Li, Yiming Li, and Yuan Luo. 2022. “Statistical and Machine Learning Methods for Spatially Resolved Transcriptomics Data Analysis.” <em>Genome Biology</em> 23 (1): 1–23.</p>
 </div>
-<div id="ref-zhang2021supergnova">
-<p>Zhang, Yiliang, Qiongshi Lu, Yixuan Ye, Kunling Huang, Wei Liu, Yuchang Wu, Xiaoyuan Zhong, et al. 2021. “SUPERGNOVA: Local Genetic Correlation Analysis Reveals Heterogeneous Etiologic Sharing of Complex Traits.” <em>Genome Biology</em> 22 (1): 1–30. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w</a>.</p>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-elyanow2021starch" class="csl-entry">
+Elyanow, Rebecca, Ron Zeira, Max Land, and Benjamin J Raphael. 2021. <span>“STARCH: Copy Number and Clone Inference from Spatial Transcriptomics Data.”</span> <em>Physical Biology</em> 18 (3): 035001.
+</div>
+<div id="ref-erickson2021spatial" class="csl-entry">
+Erickson, Andrew, Emelie Berglund, Mengxiao He, Maja Marklund, Reza Mirzazadeh, Niklas Schultz, Ludvig Bergenstråhle, et al. 2021. <span>“The Spatial Landscape of Clonal Somatic Mutations in Benign and Malignant Tissue.”</span> <em>bioRxiv</em>.
+</div>
+<div id="ref-zeng2022statistical" class="csl-entry">
+Zeng, Zexian, Yawei Li, Yiming Li, and Yuan Luo. 2022. <span>“Statistical and Machine Learning Methods for Spatially Resolved Transcriptomics Data Analysis.”</span> <em>Genome Biology</em> 23 (1): 1–23.
+</div>
+<div id="ref-zhang2021supergnova" class="csl-entry">
+Zhang, Yiliang, Qiongshi Lu, Yixuan Ye, Kunling Huang, Wei Liu, Yuchang Wu, Xiaoyuan Zhong, et al. 2021. <span>“SUPERGNOVA: Local Genetic Correlation Analysis Reveals Heterogeneous Etiologic Sharing of Complex Traits.”</span> <em>Genome Biology</em> 22 (1): 1–30. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w</a>.
 </div>
 </div>
             </section>

@@ -4,19 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 8 Method of the Year | ReadingNotes: Have you read today’s papers?</title>
+  <title>Chapter 10 Method of the Year | ReadingNotes: Have you read today’s papers?</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 8 Method of the Year | ReadingNotes: Have you read today’s papers?" />
+  <meta property="og:title" content="Chapter 10 Method of the Year | ReadingNotes: Have you read today’s papers?" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 8 Method of the Year | ReadingNotes: Have you read today’s papers?" />
+  <meta name="twitter:title" content="Chapter 10 Method of the Year | ReadingNotes: Have you read today’s papers?" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -24,7 +23,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2022-04-20" />
+<meta name="date" content="2024-07-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +32,6 @@
   
 <link rel="prev" href="pubmon-1.html"/>
 <link rel="next" href="references.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,14 +49,16 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -119,6 +119,32 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -157,9 +183,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.3" data-path="sgcell.html"><a href="sgcell.html#data-processing"><i class="fa fa-check"></i><b>2.3</b> Data processing</a></li>
 <li class="chapter" data-level="2.4" data-path="sgcell.html"><a href="sgcell.html#clustering-methods"><i class="fa fa-check"></i><b>2.4</b> Clustering methods</a></li>
 <li class="chapter" data-level="2.5" data-path="sgcell.html"><a href="sgcell.html#benchmarking"><i class="fa fa-check"></i><b>2.5</b> Benchmarking</a></li>
-<li class="chapter" data-level="2.6" data-path="sgcell.html"><a href="sgcell.html#languages-and-compilers"><i class="fa fa-check"></i><b>2.6</b> languages and compilers</a></li>
-<li class="chapter" data-level="2.7" data-path="sgcell.html"><a href="sgcell.html#singlecell-analysis-tools"><i class="fa fa-check"></i><b>2.7</b> singlecell analysis tools</a></li>
-<li class="chapter" data-level="2.8" data-path="sgcell.html"><a href="sgcell.html#singlecell-analysis-sources"><i class="fa fa-check"></i><b>2.8</b> singlecell analysis sources</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="technology-related.html"><a href="technology-related.html"><i class="fa fa-check"></i><b>3</b> Technology Related</a>
 <ul>
@@ -169,56 +192,70 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1.2" data-path="technology-related.html"><a href="technology-related.html#batch-effect-correction-methods-for-scrna-seq"><i class="fa fa-check"></i><b>3.1.2</b> Batch-effect correction methods for scRNA-seq</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="technology-related.html"><a href="technology-related.html#hi-seq"><i class="fa fa-check"></i><b>3.2</b> Hi-Seq</a></li>
+<li class="chapter" data-level="3.3" data-path="technology-related.html"><a href="technology-related.html#languages-and-compilers"><i class="fa fa-check"></i><b>3.3</b> languages and compilers</a></li>
+<li class="chapter" data-level="3.4" data-path="technology-related.html"><a href="technology-related.html#singlecell-analysis-tools"><i class="fa fa-check"></i><b>3.4</b> singlecell analysis tools</a></li>
+<li class="chapter" data-level="3.5" data-path="technology-related.html"><a href="technology-related.html#singlecell-analysis-sources"><i class="fa fa-check"></i><b>3.5</b> singlecell analysis sources</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="statmethods.html"><a href="statmethods.html"><i class="fa fa-check"></i><b>4</b> StatMethods</a>
+<li class="chapter" data-level="4" data-path="spatial-technology.html"><a href="spatial-technology.html"><i class="fa fa-check"></i><b>4</b> Spatial Technology</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="statmethods.html"><a href="statmethods.html#hmm-based-methods"><i class="fa fa-check"></i><b>4.1</b> HMM based methods</a></li>
-<li class="chapter" data-level="4.2" data-path="statmethods.html"><a href="statmethods.html#em-based-methods"><i class="fa fa-check"></i><b>4.2</b> EM based methods</a></li>
-<li class="chapter" data-level="4.3" data-path="statmethods.html"><a href="statmethods.html#vb-based-methods"><i class="fa fa-check"></i><b>4.3</b> VB based methods</a></li>
-<li class="chapter" data-level="4.4" data-path="statmethods.html"><a href="statmethods.html#glm"><i class="fa fa-check"></i><b>4.4</b> GLM</a></li>
+<li class="chapter" data-level="4.1" data-path="spatial-technology.html"><a href="spatial-technology.html#sequencing-based-st"><i class="fa fa-check"></i><b>4.1</b> Sequencing based ST</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="research-topic-based.html"><a href="research-topic-based.html"><i class="fa fa-check"></i><b>5</b> Research topic based</a>
+<li class="chapter" data-level="5" data-path="statmethods.html"><a href="statmethods.html"><i class="fa fa-check"></i><b>5</b> StatMethods</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="research-topic-based.html"><a href="research-topic-based.html#cnv-calling"><i class="fa fa-check"></i><b>5.1</b> CNV calling</a>
-<ul>
-<li class="chapter" data-level="5.1.1" data-path="research-topic-based.html"><a href="research-topic-based.html#breaking-point-detection"><i class="fa fa-check"></i><b>5.1.1</b> breaking point detection</a></li>
-<li class="chapter" data-level="5.1.2" data-path="research-topic-based.html"><a href="research-topic-based.html#related-research"><i class="fa fa-check"></i><b>5.1.2</b> Related research</a></li>
-<li class="chapter" data-level="5.1.3" data-path="research-topic-based.html"><a href="research-topic-based.html#smoothing-strategies-in-rdr"><i class="fa fa-check"></i><b>5.1.3</b> Smoothing strategies in RDR</a></li>
-<li class="chapter" data-level="5.1.4" data-path="research-topic-based.html"><a href="research-topic-based.html#pubmon"><i class="fa fa-check"></i><b>5.1.4</b> PUBMON</a></li>
+<li class="chapter" data-level="5.1" data-path="statmethods.html"><a href="statmethods.html#hmm-based-methods"><i class="fa fa-check"></i><b>5.1</b> HMM based methods</a></li>
+<li class="chapter" data-level="5.2" data-path="statmethods.html"><a href="statmethods.html#em-based-methods"><i class="fa fa-check"></i><b>5.2</b> EM based methods</a></li>
+<li class="chapter" data-level="5.3" data-path="statmethods.html"><a href="statmethods.html#vb-based-methods"><i class="fa fa-check"></i><b>5.3</b> VB based methods</a></li>
+<li class="chapter" data-level="5.4" data-path="statmethods.html"><a href="statmethods.html#glm"><i class="fa fa-check"></i><b>5.4</b> GLM</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="research-topic-based.html"><a href="research-topic-based.html#clonal-tree"><i class="fa fa-check"></i><b>5.2</b> Clonal Tree</a></li>
-<li class="chapter" data-level="5.3" data-path="research-topic-based.html"><a href="research-topic-based.html#deconvolution"><i class="fa fa-check"></i><b>5.3</b> Deconvolution</a>
+<li class="chapter" data-level="6" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html"><i class="fa fa-check"></i><b>6</b> PhD Research topic based</a>
 <ul>
-<li class="chapter" data-level="5.3.1" data-path="research-topic-based.html"><a href="research-topic-based.html#deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data"><i class="fa fa-check"></i><b>5.3.1</b> Deconvolution of bulk tissue and spatial transcriptomic data</a></li>
-</ul></li>
-<li class="chapter" data-level="5.4" data-path="research-topic-based.html"><a href="research-topic-based.html#omics-integration"><i class="fa fa-check"></i><b>5.4</b> Omics integration</a></li>
-<li class="chapter" data-level="5.5" data-path="research-topic-based.html"><a href="research-topic-based.html#spatial-transcriptomics"><i class="fa fa-check"></i><b>5.5</b> Spatial transcriptomics</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="proteomics.html"><a href="proteomics.html"><i class="fa fa-check"></i><b>6</b> Proteomics</a>
+<li class="chapter" data-level="6.1" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#cnv-calling"><i class="fa fa-check"></i><b>6.1</b> CNV calling</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="proteomics.html"><a href="proteomics.html#ptm-cross-talk"><i class="fa fa-check"></i><b>6.1</b> PTM cross-talk</a></li>
-<li class="chapter" data-level="6.2" data-path="proteomics.html"><a href="proteomics.html#ptm-cluster"><i class="fa fa-check"></i><b>6.2</b> PTM Cluster</a></li>
-<li class="chapter" data-level="6.3" data-path="proteomics.html"><a href="proteomics.html#ptm-and-cancer"><i class="fa fa-check"></i><b>6.3</b> PTM and cancer</a></li>
-<li class="chapter" data-level="6.4" data-path="proteomics.html"><a href="proteomics.html#protein-structure"><i class="fa fa-check"></i><b>6.4</b> Protein structure</a>
+<li class="chapter" data-level="6.1.1" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#breaking-point-detection"><i class="fa fa-check"></i><b>6.1.1</b> breaking point detection</a></li>
+<li class="chapter" data-level="6.1.2" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#related-research"><i class="fa fa-check"></i><b>6.1.2</b> Related research</a></li>
+<li class="chapter" data-level="6.1.3" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#smoothing-strategies-in-rdr"><i class="fa fa-check"></i><b>6.1.3</b> Smoothing strategies in RDR</a></li>
+<li class="chapter" data-level="6.1.4" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#pubmon"><i class="fa fa-check"></i><b>6.1.4</b> PUBMON</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#clonal-tree"><i class="fa fa-check"></i><b>6.2</b> Clonal Tree</a></li>
+<li class="chapter" data-level="6.3" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#deconvolution"><i class="fa fa-check"></i><b>6.3</b> Deconvolution</a>
 <ul>
-<li class="chapter" data-level="6.4.1" data-path="proteomics.html"><a href="proteomics.html#protein-folding-prediction-background"><i class="fa fa-check"></i><b>6.4.1</b> Protein Folding Prediction Background</a></li>
+<li class="chapter" data-level="6.3.1" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data"><i class="fa fa-check"></i><b>6.3.1</b> Deconvolution of bulk tissue and spatial transcriptomic data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#omics-integration"><i class="fa fa-check"></i><b>6.4</b> Omics integration</a></li>
+<li class="chapter" data-level="6.5" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#spatial-transcriptomics"><i class="fa fa-check"></i><b>6.5</b> Spatial transcriptomics</a></li>
+<li class="chapter" data-level="6.6" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#spatial-transcriptomics-methods"><i class="fa fa-check"></i><b>6.6</b> Spatial transcriptomics Methods</a></li>
+<li class="chapter" data-level="6.7" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#spatial-datasets-collection"><i class="fa fa-check"></i><b>6.7</b> Spatial Datasets Collection</a></li>
+<li class="chapter" data-level="6.8" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#d-biology"><i class="fa fa-check"></i><b>6.8</b> 3D biology</a></li>
+<li class="chapter" data-level="6.9" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#sequencing-data-relative-knowledge"><i class="fa fa-check"></i><b>6.9</b> Sequencing data relative Knowledge</a></li>
+<li class="chapter" data-level="6.10" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#image-data-relative-knowledge"><i class="fa fa-check"></i><b>6.10</b> Image data relative Knowledge</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="proteomics.html"><a href="proteomics.html"><i class="fa fa-check"></i><b>7</b> Proteomics</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="proteomics.html"><a href="proteomics.html#ptm-cross-talk"><i class="fa fa-check"></i><b>7.1</b> PTM cross-talk</a></li>
+<li class="chapter" data-level="7.2" data-path="proteomics.html"><a href="proteomics.html#ptm-cluster"><i class="fa fa-check"></i><b>7.2</b> PTM Cluster</a></li>
+<li class="chapter" data-level="7.3" data-path="proteomics.html"><a href="proteomics.html#ptm-and-cancer"><i class="fa fa-check"></i><b>7.3</b> PTM and cancer</a></li>
+<li class="chapter" data-level="7.4" data-path="proteomics.html"><a href="proteomics.html#protein-structure"><i class="fa fa-check"></i><b>7.4</b> Protein structure</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="proteomics.html"><a href="proteomics.html#protein-folding-prediction-background"><i class="fa fa-check"></i><b>7.4.1</b> Protein Folding Prediction Background</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="pubmon-1.html"><a href="pubmon-1.html"><i class="fa fa-check"></i><b>7</b> Pubmon</a>
+<li class="chapter" data-level="8" data-path="epigenomics.html"><a href="epigenomics.html"><i class="fa fa-check"></i><b>8</b> Epigenomics</a></li>
+<li class="chapter" data-level="9" data-path="pubmon-1.html"><a href="pubmon-1.html"><i class="fa fa-check"></i><b>9</b> Pubmon</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-1"><i class="fa fa-check"></i><b>7.1</b> 2020-2021 PhD year 1</a></li>
-<li class="chapter" data-level="7.2" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-2"><i class="fa fa-check"></i><b>7.2</b> 2021-2022 PhD year 2</a>
+<li class="chapter" data-level="9.1" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-1"><i class="fa fa-check"></i><b>9.1</b> 2020-2021 PhD year 1</a></li>
+<li class="chapter" data-level="9.2" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-2"><i class="fa fa-check"></i><b>9.2</b> 2021-2022 PhD year 2</a>
 <ul>
-<li class="chapter" data-level="7.2.1" data-path="pubmon-1.html"><a href="pubmon-1.html#resources"><i class="fa fa-check"></i><b>7.2.1</b> Resources</a></li>
-<li class="chapter" data-level="7.2.2" data-path="pubmon-1.html"><a href="pubmon-1.html#ppi-topic"><i class="fa fa-check"></i><b>7.2.2</b> PPI topic</a></li>
+<li class="chapter" data-level="9.2.1" data-path="pubmon-1.html"><a href="pubmon-1.html#resources"><i class="fa fa-check"></i><b>9.2.1</b> Resources</a></li>
+<li class="chapter" data-level="9.2.2" data-path="pubmon-1.html"><a href="pubmon-1.html#ppi-topic"><i class="fa fa-check"></i><b>9.2.2</b> PPI topic</a></li>
 </ul></li>
+<li class="chapter" data-level="9.3" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-4"><i class="fa fa-check"></i><b>9.3</b> 2023-2024 PhD year 4</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="method-of-the-year.html"><a href="method-of-the-year.html"><i class="fa fa-check"></i><b>8</b> Method of the Year</a>
+<li class="chapter" data-level="10" data-path="method-of-the-year.html"><a href="method-of-the-year.html"><i class="fa fa-check"></i><b>10</b> Method of the Year</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2022"><i class="fa fa-check"></i><b>8.1</b> Method of the Year 2022:</a></li>
-<li class="chapter" data-level="8.2" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2021-protein-structure-prediction"><i class="fa fa-check"></i><b>8.2</b> Method of the Year 2021: Protein structure prediction</a></li>
-<li class="chapter" data-level="8.3" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2020-spatially-resolved-transcriptomics"><i class="fa fa-check"></i><b>8.3</b> Method of the Year 2020: spatially resolved transcriptomics</a></li>
-<li class="chapter" data-level="8.4" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2019-single-cell-multimodal-omics"><i class="fa fa-check"></i><b>8.4</b> Method of the Year 2019: Single-cell multimodal omics</a></li>
+<li class="chapter" data-level="10.1" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2022"><i class="fa fa-check"></i><b>10.1</b> Method of the Year 2022:</a></li>
+<li class="chapter" data-level="10.2" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2021-protein-structure-prediction"><i class="fa fa-check"></i><b>10.2</b> Method of the Year 2021: Protein structure prediction</a></li>
+<li class="chapter" data-level="10.3" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2020-spatially-resolved-transcriptomics"><i class="fa fa-check"></i><b>10.3</b> Method of the Year 2020: spatially resolved transcriptomics</a></li>
+<li class="chapter" data-level="10.4" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2019-single-cell-multimodal-omics"><i class="fa fa-check"></i><b>10.4</b> Method of the Year 2019: Single-cell multimodal omics</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -241,19 +278,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="method-of-the-year" class="section level1" number="8">
-<h1><span class="header-section-number">Chapter 8</span> Method of the Year</h1>
-<div id="method-of-the-year-2022" class="section level2" number="8.1">
-<h2><span class="header-section-number">8.1</span> Method of the Year 2022:</h2>
+<div id="method-of-the-year" class="section level1 hasAnchor" number="10">
+<h1><span class="header-section-number">Chapter 10</span> Method of the Year<a href="method-of-the-year.html#method-of-the-year" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="method-of-the-year-2022" class="section level2 hasAnchor" number="10.1">
+<h2><span class="header-section-number">10.1</span> Method of the Year 2022:<a href="method-of-the-year.html#method-of-the-year-2022" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="method-of-the-year-2021-protein-structure-prediction" class="section level2" number="8.2">
-<h2><span class="header-section-number">8.2</span> Method of the Year 2021: Protein structure prediction</h2>
+<div id="method-of-the-year-2021-protein-structure-prediction" class="section level2 hasAnchor" number="10.2">
+<h2><span class="header-section-number">10.2</span> Method of the Year 2021: Protein structure prediction<a href="method-of-the-year.html#method-of-the-year-2021-protein-structure-prediction" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="method-of-the-year-2020-spatially-resolved-transcriptomics" class="section level2" number="8.3">
-<h2><span class="header-section-number">8.3</span> Method of the Year 2020: spatially resolved transcriptomics</h2>
+<div id="method-of-the-year-2020-spatially-resolved-transcriptomics" class="section level2 hasAnchor" number="10.3">
+<h2><span class="header-section-number">10.3</span> Method of the Year 2020: spatially resolved transcriptomics<a href="method-of-the-year.html#method-of-the-year-2020-spatially-resolved-transcriptomics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 </div>
-<div id="method-of-the-year-2019-single-cell-multimodal-omics" class="section level2" number="8.4">
-<h2><span class="header-section-number">8.4</span> Method of the Year 2019: Single-cell multimodal omics</h2>
+<div id="method-of-the-year-2019-single-cell-multimodal-omics" class="section level2 hasAnchor" number="10.4">
+<h2><span class="header-section-number">10.4</span> Method of the Year 2019: Single-cell multimodal omics<a href="method-of-the-year.html#method-of-the-year-2019-single-cell-multimodal-omics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
 </div>
 </div>

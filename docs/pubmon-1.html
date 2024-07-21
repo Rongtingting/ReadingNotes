@@ -4,19 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 7 Pubmon | ReadingNotes: Have you read today’s papers?</title>
+  <title>Chapter 9 Pubmon | ReadingNotes: Have you read today’s papers?</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 7 Pubmon | ReadingNotes: Have you read today’s papers?" />
+  <meta property="og:title" content="Chapter 9 Pubmon | ReadingNotes: Have you read today’s papers?" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 7 Pubmon | ReadingNotes: Have you read today’s papers?" />
+  <meta name="twitter:title" content="Chapter 9 Pubmon | ReadingNotes: Have you read today’s papers?" />
   
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
@@ -24,16 +23,15 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2022-04-20" />
+<meta name="date" content="2024-07-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="proteomics.html"/>
+<link rel="prev" href="epigenomics.html"/>
 <link rel="next" href="method-of-the-year.html"/>
-<script src="libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -51,14 +49,16 @@
 
 
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
 pre.sourceCode { margin: 0; }
 @media screen {
@@ -119,6 +119,32 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -157,9 +183,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.3" data-path="sgcell.html"><a href="sgcell.html#data-processing"><i class="fa fa-check"></i><b>2.3</b> Data processing</a></li>
 <li class="chapter" data-level="2.4" data-path="sgcell.html"><a href="sgcell.html#clustering-methods"><i class="fa fa-check"></i><b>2.4</b> Clustering methods</a></li>
 <li class="chapter" data-level="2.5" data-path="sgcell.html"><a href="sgcell.html#benchmarking"><i class="fa fa-check"></i><b>2.5</b> Benchmarking</a></li>
-<li class="chapter" data-level="2.6" data-path="sgcell.html"><a href="sgcell.html#languages-and-compilers"><i class="fa fa-check"></i><b>2.6</b> languages and compilers</a></li>
-<li class="chapter" data-level="2.7" data-path="sgcell.html"><a href="sgcell.html#singlecell-analysis-tools"><i class="fa fa-check"></i><b>2.7</b> singlecell analysis tools</a></li>
-<li class="chapter" data-level="2.8" data-path="sgcell.html"><a href="sgcell.html#singlecell-analysis-sources"><i class="fa fa-check"></i><b>2.8</b> singlecell analysis sources</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="technology-related.html"><a href="technology-related.html"><i class="fa fa-check"></i><b>3</b> Technology Related</a>
 <ul>
@@ -169,56 +192,70 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1.2" data-path="technology-related.html"><a href="technology-related.html#batch-effect-correction-methods-for-scrna-seq"><i class="fa fa-check"></i><b>3.1.2</b> Batch-effect correction methods for scRNA-seq</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="technology-related.html"><a href="technology-related.html#hi-seq"><i class="fa fa-check"></i><b>3.2</b> Hi-Seq</a></li>
+<li class="chapter" data-level="3.3" data-path="technology-related.html"><a href="technology-related.html#languages-and-compilers"><i class="fa fa-check"></i><b>3.3</b> languages and compilers</a></li>
+<li class="chapter" data-level="3.4" data-path="technology-related.html"><a href="technology-related.html#singlecell-analysis-tools"><i class="fa fa-check"></i><b>3.4</b> singlecell analysis tools</a></li>
+<li class="chapter" data-level="3.5" data-path="technology-related.html"><a href="technology-related.html#singlecell-analysis-sources"><i class="fa fa-check"></i><b>3.5</b> singlecell analysis sources</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="statmethods.html"><a href="statmethods.html"><i class="fa fa-check"></i><b>4</b> StatMethods</a>
+<li class="chapter" data-level="4" data-path="spatial-technology.html"><a href="spatial-technology.html"><i class="fa fa-check"></i><b>4</b> Spatial Technology</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="statmethods.html"><a href="statmethods.html#hmm-based-methods"><i class="fa fa-check"></i><b>4.1</b> HMM based methods</a></li>
-<li class="chapter" data-level="4.2" data-path="statmethods.html"><a href="statmethods.html#em-based-methods"><i class="fa fa-check"></i><b>4.2</b> EM based methods</a></li>
-<li class="chapter" data-level="4.3" data-path="statmethods.html"><a href="statmethods.html#vb-based-methods"><i class="fa fa-check"></i><b>4.3</b> VB based methods</a></li>
-<li class="chapter" data-level="4.4" data-path="statmethods.html"><a href="statmethods.html#glm"><i class="fa fa-check"></i><b>4.4</b> GLM</a></li>
+<li class="chapter" data-level="4.1" data-path="spatial-technology.html"><a href="spatial-technology.html#sequencing-based-st"><i class="fa fa-check"></i><b>4.1</b> Sequencing based ST</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="research-topic-based.html"><a href="research-topic-based.html"><i class="fa fa-check"></i><b>5</b> Research topic based</a>
+<li class="chapter" data-level="5" data-path="statmethods.html"><a href="statmethods.html"><i class="fa fa-check"></i><b>5</b> StatMethods</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="research-topic-based.html"><a href="research-topic-based.html#cnv-calling"><i class="fa fa-check"></i><b>5.1</b> CNV calling</a>
-<ul>
-<li class="chapter" data-level="5.1.1" data-path="research-topic-based.html"><a href="research-topic-based.html#breaking-point-detection"><i class="fa fa-check"></i><b>5.1.1</b> breaking point detection</a></li>
-<li class="chapter" data-level="5.1.2" data-path="research-topic-based.html"><a href="research-topic-based.html#related-research"><i class="fa fa-check"></i><b>5.1.2</b> Related research</a></li>
-<li class="chapter" data-level="5.1.3" data-path="research-topic-based.html"><a href="research-topic-based.html#smoothing-strategies-in-rdr"><i class="fa fa-check"></i><b>5.1.3</b> Smoothing strategies in RDR</a></li>
-<li class="chapter" data-level="5.1.4" data-path="research-topic-based.html"><a href="research-topic-based.html#pubmon"><i class="fa fa-check"></i><b>5.1.4</b> PUBMON</a></li>
+<li class="chapter" data-level="5.1" data-path="statmethods.html"><a href="statmethods.html#hmm-based-methods"><i class="fa fa-check"></i><b>5.1</b> HMM based methods</a></li>
+<li class="chapter" data-level="5.2" data-path="statmethods.html"><a href="statmethods.html#em-based-methods"><i class="fa fa-check"></i><b>5.2</b> EM based methods</a></li>
+<li class="chapter" data-level="5.3" data-path="statmethods.html"><a href="statmethods.html#vb-based-methods"><i class="fa fa-check"></i><b>5.3</b> VB based methods</a></li>
+<li class="chapter" data-level="5.4" data-path="statmethods.html"><a href="statmethods.html#glm"><i class="fa fa-check"></i><b>5.4</b> GLM</a></li>
 </ul></li>
-<li class="chapter" data-level="5.2" data-path="research-topic-based.html"><a href="research-topic-based.html#clonal-tree"><i class="fa fa-check"></i><b>5.2</b> Clonal Tree</a></li>
-<li class="chapter" data-level="5.3" data-path="research-topic-based.html"><a href="research-topic-based.html#deconvolution"><i class="fa fa-check"></i><b>5.3</b> Deconvolution</a>
+<li class="chapter" data-level="6" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html"><i class="fa fa-check"></i><b>6</b> PhD Research topic based</a>
 <ul>
-<li class="chapter" data-level="5.3.1" data-path="research-topic-based.html"><a href="research-topic-based.html#deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data"><i class="fa fa-check"></i><b>5.3.1</b> Deconvolution of bulk tissue and spatial transcriptomic data</a></li>
-</ul></li>
-<li class="chapter" data-level="5.4" data-path="research-topic-based.html"><a href="research-topic-based.html#omics-integration"><i class="fa fa-check"></i><b>5.4</b> Omics integration</a></li>
-<li class="chapter" data-level="5.5" data-path="research-topic-based.html"><a href="research-topic-based.html#spatial-transcriptomics"><i class="fa fa-check"></i><b>5.5</b> Spatial transcriptomics</a></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="proteomics.html"><a href="proteomics.html"><i class="fa fa-check"></i><b>6</b> Proteomics</a>
+<li class="chapter" data-level="6.1" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#cnv-calling"><i class="fa fa-check"></i><b>6.1</b> CNV calling</a>
 <ul>
-<li class="chapter" data-level="6.1" data-path="proteomics.html"><a href="proteomics.html#ptm-cross-talk"><i class="fa fa-check"></i><b>6.1</b> PTM cross-talk</a></li>
-<li class="chapter" data-level="6.2" data-path="proteomics.html"><a href="proteomics.html#ptm-cluster"><i class="fa fa-check"></i><b>6.2</b> PTM Cluster</a></li>
-<li class="chapter" data-level="6.3" data-path="proteomics.html"><a href="proteomics.html#ptm-and-cancer"><i class="fa fa-check"></i><b>6.3</b> PTM and cancer</a></li>
-<li class="chapter" data-level="6.4" data-path="proteomics.html"><a href="proteomics.html#protein-structure"><i class="fa fa-check"></i><b>6.4</b> Protein structure</a>
+<li class="chapter" data-level="6.1.1" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#breaking-point-detection"><i class="fa fa-check"></i><b>6.1.1</b> breaking point detection</a></li>
+<li class="chapter" data-level="6.1.2" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#related-research"><i class="fa fa-check"></i><b>6.1.2</b> Related research</a></li>
+<li class="chapter" data-level="6.1.3" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#smoothing-strategies-in-rdr"><i class="fa fa-check"></i><b>6.1.3</b> Smoothing strategies in RDR</a></li>
+<li class="chapter" data-level="6.1.4" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#pubmon"><i class="fa fa-check"></i><b>6.1.4</b> PUBMON</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#clonal-tree"><i class="fa fa-check"></i><b>6.2</b> Clonal Tree</a></li>
+<li class="chapter" data-level="6.3" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#deconvolution"><i class="fa fa-check"></i><b>6.3</b> Deconvolution</a>
 <ul>
-<li class="chapter" data-level="6.4.1" data-path="proteomics.html"><a href="proteomics.html#protein-folding-prediction-background"><i class="fa fa-check"></i><b>6.4.1</b> Protein Folding Prediction Background</a></li>
+<li class="chapter" data-level="6.3.1" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data"><i class="fa fa-check"></i><b>6.3.1</b> Deconvolution of bulk tissue and spatial transcriptomic data</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#omics-integration"><i class="fa fa-check"></i><b>6.4</b> Omics integration</a></li>
+<li class="chapter" data-level="6.5" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#spatial-transcriptomics"><i class="fa fa-check"></i><b>6.5</b> Spatial transcriptomics</a></li>
+<li class="chapter" data-level="6.6" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#spatial-transcriptomics-methods"><i class="fa fa-check"></i><b>6.6</b> Spatial transcriptomics Methods</a></li>
+<li class="chapter" data-level="6.7" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#spatial-datasets-collection"><i class="fa fa-check"></i><b>6.7</b> Spatial Datasets Collection</a></li>
+<li class="chapter" data-level="6.8" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#d-biology"><i class="fa fa-check"></i><b>6.8</b> 3D biology</a></li>
+<li class="chapter" data-level="6.9" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#sequencing-data-relative-knowledge"><i class="fa fa-check"></i><b>6.9</b> Sequencing data relative Knowledge</a></li>
+<li class="chapter" data-level="6.10" data-path="phd-research-topic-based.html"><a href="phd-research-topic-based.html#image-data-relative-knowledge"><i class="fa fa-check"></i><b>6.10</b> Image data relative Knowledge</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="proteomics.html"><a href="proteomics.html"><i class="fa fa-check"></i><b>7</b> Proteomics</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="proteomics.html"><a href="proteomics.html#ptm-cross-talk"><i class="fa fa-check"></i><b>7.1</b> PTM cross-talk</a></li>
+<li class="chapter" data-level="7.2" data-path="proteomics.html"><a href="proteomics.html#ptm-cluster"><i class="fa fa-check"></i><b>7.2</b> PTM Cluster</a></li>
+<li class="chapter" data-level="7.3" data-path="proteomics.html"><a href="proteomics.html#ptm-and-cancer"><i class="fa fa-check"></i><b>7.3</b> PTM and cancer</a></li>
+<li class="chapter" data-level="7.4" data-path="proteomics.html"><a href="proteomics.html#protein-structure"><i class="fa fa-check"></i><b>7.4</b> Protein structure</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="proteomics.html"><a href="proteomics.html#protein-folding-prediction-background"><i class="fa fa-check"></i><b>7.4.1</b> Protein Folding Prediction Background</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="pubmon-1.html"><a href="pubmon-1.html"><i class="fa fa-check"></i><b>7</b> Pubmon</a>
+<li class="chapter" data-level="8" data-path="epigenomics.html"><a href="epigenomics.html"><i class="fa fa-check"></i><b>8</b> Epigenomics</a></li>
+<li class="chapter" data-level="9" data-path="pubmon-1.html"><a href="pubmon-1.html"><i class="fa fa-check"></i><b>9</b> Pubmon</a>
 <ul>
-<li class="chapter" data-level="7.1" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-1"><i class="fa fa-check"></i><b>7.1</b> 2020-2021 PhD year 1</a></li>
-<li class="chapter" data-level="7.2" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-2"><i class="fa fa-check"></i><b>7.2</b> 2021-2022 PhD year 2</a>
+<li class="chapter" data-level="9.1" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-1"><i class="fa fa-check"></i><b>9.1</b> 2020-2021 PhD year 1</a></li>
+<li class="chapter" data-level="9.2" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-2"><i class="fa fa-check"></i><b>9.2</b> 2021-2022 PhD year 2</a>
 <ul>
-<li class="chapter" data-level="7.2.1" data-path="pubmon-1.html"><a href="pubmon-1.html#resources"><i class="fa fa-check"></i><b>7.2.1</b> Resources</a></li>
-<li class="chapter" data-level="7.2.2" data-path="pubmon-1.html"><a href="pubmon-1.html#ppi-topic"><i class="fa fa-check"></i><b>7.2.2</b> PPI topic</a></li>
+<li class="chapter" data-level="9.2.1" data-path="pubmon-1.html"><a href="pubmon-1.html#resources"><i class="fa fa-check"></i><b>9.2.1</b> Resources</a></li>
+<li class="chapter" data-level="9.2.2" data-path="pubmon-1.html"><a href="pubmon-1.html#ppi-topic"><i class="fa fa-check"></i><b>9.2.2</b> PPI topic</a></li>
 </ul></li>
+<li class="chapter" data-level="9.3" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-4"><i class="fa fa-check"></i><b>9.3</b> 2023-2024 PhD year 4</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="method-of-the-year.html"><a href="method-of-the-year.html"><i class="fa fa-check"></i><b>8</b> Method of the Year</a>
+<li class="chapter" data-level="10" data-path="method-of-the-year.html"><a href="method-of-the-year.html"><i class="fa fa-check"></i><b>10</b> Method of the Year</a>
 <ul>
-<li class="chapter" data-level="8.1" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2022"><i class="fa fa-check"></i><b>8.1</b> Method of the Year 2022:</a></li>
-<li class="chapter" data-level="8.2" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2021-protein-structure-prediction"><i class="fa fa-check"></i><b>8.2</b> Method of the Year 2021: Protein structure prediction</a></li>
-<li class="chapter" data-level="8.3" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2020-spatially-resolved-transcriptomics"><i class="fa fa-check"></i><b>8.3</b> Method of the Year 2020: spatially resolved transcriptomics</a></li>
-<li class="chapter" data-level="8.4" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2019-single-cell-multimodal-omics"><i class="fa fa-check"></i><b>8.4</b> Method of the Year 2019: Single-cell multimodal omics</a></li>
+<li class="chapter" data-level="10.1" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2022"><i class="fa fa-check"></i><b>10.1</b> Method of the Year 2022:</a></li>
+<li class="chapter" data-level="10.2" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2021-protein-structure-prediction"><i class="fa fa-check"></i><b>10.2</b> Method of the Year 2021: Protein structure prediction</a></li>
+<li class="chapter" data-level="10.3" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2020-spatially-resolved-transcriptomics"><i class="fa fa-check"></i><b>10.3</b> Method of the Year 2020: spatially resolved transcriptomics</a></li>
+<li class="chapter" data-level="10.4" data-path="method-of-the-year.html"><a href="method-of-the-year.html#method-of-the-year-2019-single-cell-multimodal-omics"><i class="fa fa-check"></i><b>10.4</b> Method of the Year 2019: Single-cell multimodal omics</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
@@ -241,10 +278,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="pubmon-1" class="section level1" number="7">
-<h1><span class="header-section-number">Chapter 7</span> Pubmon</h1>
-<div id="phd-year-1" class="section level2" number="7.1">
-<h2><span class="header-section-number">7.1</span> 2020-2021 PhD year 1</h2>
+<div id="pubmon-1" class="section level1 hasAnchor" number="9">
+<h1><span class="header-section-number">Chapter 9</span> Pubmon<a href="pubmon-1.html#pubmon-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="phd-year-1" class="section level2 hasAnchor" number="9.1">
+<h2><span class="header-section-number">9.1</span> 2020-2021 PhD year 1<a href="pubmon-1.html#phd-year-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>-202009</p>
 <p>-202010</p>
 <p>-202011</p>
@@ -258,14 +295,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>-202107</p>
 <p>-202108</p>
 </div>
-<div id="phd-year-2" class="section level2" number="7.2">
-<h2><span class="header-section-number">7.2</span> 2021-2022 PhD year 2</h2>
+<div id="phd-year-2" class="section level2 hasAnchor" number="9.2">
+<h2><span class="header-section-number">9.2</span> 2021-2022 PhD year 2<a href="pubmon-1.html#phd-year-2" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The cell-level resolution data provide much richer information for answering a number of important questions that cannot otherwise be answered by bulk data, for example, the composition of cell types in complex tissues, the cell-to-cell heterogeneity in transcription, and the transcriptional dynamics in many biological processes such as development, differentiation, and disease progression.</p>
 <p>There are several scientific goals in scRNA-seq studies. The first one is to decipher the cellular composition of complex tissues: one wants to know the identities of the cell types and subtypes, as well as their proportions in the tissue sample. The cellular composition itself can be of great interest in biological and clinical practices, for example, it was reported that tumor-infiltrating immune cell compositions play a vital role in understanding antitumor immune responses [4]. Once the cell types are identified, cell type–specific gene expressions are also of great interest since they enhance the understandings of cell signatures [5]. There are other goals, for example, new and rare cell type discovery [6] and pseudo-time construction to represent the temporal dynamics of transcription during a biological process [7].</p>
 <ul>
 <li>202109</li>
 </ul>
-<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2">Evaluation of some aspects in supervised cell type identification for single-cell RNA-seq: classifier, feature selection, and reference construction</a><span class="citation">(Ma, Su, and Wu <a href="#ref-ma2021evaluation" role="doc-biblioref">2021</a>)</span></strong></p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2">Evaluation of some aspects in supervised cell type identification for single-cell RNA-seq: classifier, feature selection, and reference construction</a><span class="citation">(<a href="#ref-ma2021evaluation" role="doc-biblioref">Ma, Su, and Wu 2021</a>)</span></strong></p>
 <p><strong>Background</strong>
 Cell type identification is one of the most important questions in single-cell RNA sequencing (scRNA-seq) data analysis. With the accumulation of public scRNA-seq data, supervised cell type identification methods have gained increasing popularity due to better accuracy, robustness, and computational performance. Despite all the advantages, the performance of the supervised methods relies heavily on several key factors: feature selection, prediction method, and, most importantly, choice of the reference dataset.</p>
 <p><strong>Results</strong>
@@ -277,15 +314,15 @@ Based on our analysis results, we provide guidelines for using supervised cell t
 <p class="caption">Study design</p>
 </div>
 <p>There are several other supervised cell typing methods available for scRNA-seq. For example, scSorter [27] borrows information from lowly expressed marker genes to assign cells; scPred [12] adopts a principal component analysis (PCA)-based feature selection; SingleCellNet [28] uses top-pair transformation on gene space and selects informative paired genes as features; CellAssign [29] builds a probabilistic model with some prior knowledge of cell markers, etc. But according to a recent comparison [20], SVM with rejection, scmap, and CHEAH are among the best performers, so we decide not to include more such methods. GEDFN is a method designed for predicting phenotype from bulk expression but can be directly applied to scRNA-seq cell typing. We include it because we want to understand whether incorporating gene network information can improve the results. ItClust is a semi-supervised method which only uses the reference data to obtain initial values for unsupervised clustering in target data. MARS uses a meta-learning concept to construct cell type landmarks by jointly embedding both annotated and unannotated data without removing the batch effects and then assigns cell types based on the learned embedding space. We want to evaluate the performances of these semi-supervised methods under different scenarios.</p>
-<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">SUPERGNOVA: local genetic correlation analysis reveals heterogeneous etiologic sharing of complex traits</a><span class="citation">(Zhang et al. <a href="#ref-zhang2021supergnova" role="doc-biblioref">2021</a>)</span></strong></p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">SUPERGNOVA: local genetic correlation analysis reveals heterogeneous etiologic sharing of complex traits</a><span class="citation">(<a href="#ref-zhang2021supergnova" role="doc-biblioref">Zhang et al. 2021</a>)</span></strong></p>
 <p>Local genetic correlation quantifies the genetic similarity of complex traits in specific genomic regions. However, accurate estimation of local genetic correlation remains challenging, due to linkage disequilibrium in local genomic regions and sample overlap across studies. We introduce SUPERGNOVA, a statistical framework to estimate local genetic correlations using summary statistics from genome-wide association studies. We demonstrate that SUPERGNOVA outperforms existing methods through simulations and analyses of 30 complex traits. In particular, we show that the positive yet paradoxical genetic correlation between autism spectrum disorder and cognitive performance could be explained by two etiologically distinct genetic signatures with bidirectional local genetic correlations.</p>
 <div class="figure">
 <img src="figs/pubmon/2021-2022/SUPERGNOVA_workflow.png" alt="" />
 <p class="caption">SUPERGNOVA_workflow</p>
 </div>
-<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x">Recovering genotypes and phenotypes using allele-specific genes</a><span class="citation">(Gürsoy et al. <a href="#ref-gursoy2021recovering" role="doc-biblioref">2021</a>)</span></strong></p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x">Recovering genotypes and phenotypes using allele-specific genes</a><span class="citation">(<a href="#ref-gursoy2021recovering" role="doc-biblioref">Gürsoy et al. 2021</a>)</span></strong></p>
 <p>With the recent increase in RNA sequencing efforts using large cohorts of individuals, surveying allele-specific gene expression is becoming increasingly frequent. Here, we report that, despite not containing explicit variant information, a list of genes known to be allele-specific in an individual is enough to recover key variants and link the individuals back to their genotypes and phenotypes. This creates a privacy conundrum.</p>
-<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2">NanoCaller for accurate detection of SNPs and indels in difficult-to-map regions from long-read sequencing by haplotype-aware deep neural networks</a><span class="citation">(Ahsan et al. <a href="#ref-ahsan2021nanocaller" role="doc-biblioref">2021</a>)</span></strong></p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2">NanoCaller for accurate detection of SNPs and indels in difficult-to-map regions from long-read sequencing by haplotype-aware deep neural networks</a><span class="citation">(<a href="#ref-ahsan2021nanocaller" role="doc-biblioref">Ahsan et al. 2021</a>)</span></strong></p>
 <p>Long-read sequencing enables variant detection in genomic regions that are considered difficult-to-map by short-read sequencing. To fully exploit the benefits of longer reads, here we present a deep learning method NanoCaller, which detects SNPs using long-range haplotype information, then phases long reads with called SNPs and calls indels with local realignment. Evaluation on 8 human genomes demonstrates that NanoCaller generally achieves better performance than competing approaches. We experimentally validate 41 novel variants in a widely used benchmarking genome, which could not be reliably detected previously. In summary, NanoCaller facilitates the discovery of novel variants in complex genomic regions from long-read sequencing.</p>
 <ul>
 <li>202110</li>
@@ -296,53 +333,56 @@ Based on our analysis results, we provide guidelines for using supervised cell t
 <li>important</li>
 </ul>
 <p><strong><a href="https://biccn.org/">NIH’s Brain Research through Advancing Innovative Neurotechnologies (BRAIN) Initiative - Cell Census Network (BICCN)</a></strong></p>
-<div id="todo-list" class="section level4" number="7.2.0.1">
-<h4><span class="header-section-number">7.2.0.1</span> TODO List</h4>
+<div id="todo-list" class="section level4 hasAnchor" number="9.2.0.1">
+<h4><span class="header-section-number">9.2.0.1</span> TODO List<a href="pubmon-1.html#todo-list" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <ul>
 <li>202204 todolist</li>
 </ul>
-<p><strong><a href="https://www.biorxiv.org/content/10.1101/2022.04.09.487529v1">Experimental evolution in TP53 deficient gastric organoids recapitulates tumorigenesis</a><span class="citation">(Karlsson et al. <a href="#ref-karlsson2022experimental" role="doc-biblioref">2022</a>)</span></strong></p>
-<p><strong><a href="https://www.nature.com/articles/s41587-022-01233-1">Spatial charting of single-cell transcriptomes in tissues</a><span class="citation">(Wei et al. <a href="#ref-wei2022spatial" role="doc-biblioref">2022</a>)</span></strong></p>
+<p><strong><a href="https://www.biorxiv.org/content/10.1101/2022.04.09.487529v1">Experimental evolution in TP53 deficient gastric organoids recapitulates tumorigenesis</a><span class="citation">(<a href="#ref-karlsson2022experimental" role="doc-biblioref">Karlsson et al. 2022</a>)</span></strong></p>
+<p><strong><a href="https://www.nature.com/articles/s41587-022-01233-1">Spatial charting of single-cell transcriptomes in tissues</a><span class="citation">(<a href="#ref-wei2022spatial" role="doc-biblioref">Wei et al. 2022</a>)</span></strong></p>
 <p>two CNV papers</p>
-<p><strong><a href="https://www.biorxiv.org/content/10.1101/2022.02.07.479314v1">Haplotype-enhanced inference of somatic copy number profiles from single-cell transcriptomes</a><span class="citation">(Gao et al. <a href="#ref-gao2022haplotype" role="doc-biblioref">2022</a>)</span></strong></p>
-<p><strong><a href="https://www.biorxiv.org/content/10.1101/2021.06.04.447031v1">Evolutionary tracking of cancer haplotypes at single-cell resolution</a><span class="citation">(Williams et al. <a href="#ref-williams2021evolutionary" role="doc-biblioref">2021</a>)</span></strong></p>
+<p><strong><a href="https://www.biorxiv.org/content/10.1101/2022.02.07.479314v1">Haplotype-enhanced inference of somatic copy number profiles from single-cell transcriptomes</a><span class="citation">(<a href="#ref-gao2022haplotype" role="doc-biblioref">Gao et al. 2022</a>)</span></strong></p>
+<p><strong><a href="https://www.biorxiv.org/content/10.1101/2021.06.04.447031v1">Evolutionary tracking of cancer haplotypes at single-cell resolution</a><span class="citation">(<a href="#ref-williams2021evolutionary" role="doc-biblioref">Williams et al. 2021</a>)</span></strong></p>
 </div>
-<div id="resources" class="section level3" number="7.2.1">
-<h3><span class="header-section-number">7.2.1</span> Resources</h3>
+<div id="resources" class="section level3 hasAnchor" number="9.2.1">
+<h3><span class="header-section-number">9.2.1</span> Resources<a href="pubmon-1.html#resources" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><strong><a href="https://biccn.org/">NIH’s Brain Research through Advancing Innovative Neurotechnologies (BRAIN) Initiative - Cell Census Network (BICCN)</a></strong></p>
 </div>
-<div id="ppi-topic" class="section level3" number="7.2.2">
-<h3><span class="header-section-number">7.2.2</span> PPI topic</h3>
+<div id="ppi-topic" class="section level3 hasAnchor" number="9.2.2">
+<h3><span class="header-section-number">9.2.2</span> PPI topic<a href="pubmon-1.html#ppi-topic" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><a href="https://mp.weixin.qq.com/s/EWLSD7wB-GUIXS94LtPtWQ">identifying cancer drivers</a></p>
+</div>
+</div>
+<div id="phd-year-4" class="section level2 hasAnchor" number="9.3">
+<h2><span class="header-section-number">9.3</span> 2023-2024 PhD year 4<a href="pubmon-1.html#phd-year-4" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 
 </div>
 </div>
+<h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-ahsan2021nanocaller" class="csl-entry">
+Ahsan, Mian Umair, Qian Liu, Li Fang, and Kai Wang. 2021. <span>“NanoCaller for Accurate Detection of SNPs and Indels in Difficult-to-Map Regions from Long-Read Sequencing by Haplotype-Aware Deep Neural Networks.”</span> <em>Genome Biology</em> 22 (1): 1–33. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2</a>.
 </div>
-<h3>References</h3>
-<div id="refs" class="references hanging-indent">
-<div id="ref-ahsan2021nanocaller">
-<p>Ahsan, Mian Umair, Qian Liu, Li Fang, and Kai Wang. 2021. “NanoCaller for Accurate Detection of Snps and Indels in Difficult-to-Map Regions from Long-Read Sequencing by Haplotype-Aware Deep Neural Networks.” <em>Genome Biology</em> 22 (1): 1–33. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2</a>.</p>
+<div id="ref-gao2022haplotype" class="csl-entry">
+Gao, Teng, Ruslan Soldatov, Hirak Sarkar, Adam Kurkiewicz, Evan Biederstedt, Po-Ru Loh, and Peter Kharchenko. 2022. <span>“Haplotype-Enhanced Inference of Somatic Copy Number Profiles from Single-Cell Transcriptomes.”</span> <em>bioRxiv</em>.
 </div>
-<div id="ref-gao2022haplotype">
-<p>Gao, Teng, Ruslan Soldatov, Hirak Sarkar, Adam Kurkiewicz, Evan Biederstedt, Po-Ru Loh, and Peter Kharchenko. 2022. “Haplotype-Enhanced Inference of Somatic Copy Number Profiles from Single-Cell Transcriptomes.” <em>bioRxiv</em>.</p>
+<div id="ref-gursoy2021recovering" class="csl-entry">
+Gürsoy, Gamze, Nancy Lu, Sarah Wagner, and Mark Gerstein. 2021. <span>“Recovering Genotypes and Phenotypes Using Allele-Specific Genes.”</span> <em>Genome Biology</em> 22 (1): 1–9. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x</a>.
 </div>
-<div id="ref-gursoy2021recovering">
-<p>Gürsoy, Gamze, Nancy Lu, Sarah Wagner, and Mark Gerstein. 2021. “Recovering Genotypes and Phenotypes Using Allele-Specific Genes.” <em>Genome Biology</em> 22 (1): 1–9. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x</a>.</p>
+<div id="ref-karlsson2022experimental" class="csl-entry">
+Karlsson, Kasper, Moritz Przybilla, Hang Xu, Eran Kotler, Kremena Karagyozova, Alexandra Sockell, Katherine Liu, et al. 2022. <span>“Experimental Evolution in Tp53 Deficient Gastric Organoids Recapitulates Tumorigenesis.”</span> <em>bioRxiv</em>.
 </div>
-<div id="ref-karlsson2022experimental">
-<p>Karlsson, Kasper, Moritz Przybilla, Hang Xu, Eran Kotler, Kremena Karagyozova, Alexandra Sockell, Katherine Liu, et al. 2022. “Experimental Evolution in Tp53 Deficient Gastric Organoids Recapitulates Tumorigenesis.” <em>bioRxiv</em>.</p>
+<div id="ref-ma2021evaluation" class="csl-entry">
+Ma, Wenjing, Kenong Su, and Hao Wu. 2021. <span>“Evaluation of Some Aspects in Supervised Cell Type Identification for Single-Cell RNA-Seq: Classifier, Feature Selection, and Reference Construction.”</span> <em>Genome Biology</em> 22 (1): 1–23. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2</a>.
 </div>
-<div id="ref-ma2021evaluation">
-<p>Ma, Wenjing, Kenong Su, and Hao Wu. 2021. “Evaluation of Some Aspects in Supervised Cell Type Identification for Single-Cell Rna-Seq: Classifier, Feature Selection, and Reference Construction.” <em>Genome Biology</em> 22 (1): 1–23. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2</a>.</p>
+<div id="ref-wei2022spatial" class="csl-entry">
+Wei, Runmin, Siyuan He, Shanshan Bai, Emi Sei, Min Hu, Alastair Thompson, Ken Chen, Savitri Krishnamurthy, and Nicholas E Navin. 2022. <span>“Spatial Charting of Single-Cell Transcriptomes in Tissues.”</span> <em>Nature Biotechnology</em>, 1–10.
 </div>
-<div id="ref-wei2022spatial">
-<p>Wei, Runmin, Siyuan He, Shanshan Bai, Emi Sei, Min Hu, Alastair Thompson, Ken Chen, Savitri Krishnamurthy, and Nicholas E Navin. 2022. “Spatial Charting of Single-Cell Transcriptomes in Tissues.” <em>Nature Biotechnology</em>, 1–10.</p>
+<div id="ref-williams2021evolutionary" class="csl-entry">
+Williams, Marc J, Tyler Funnell, Ciara H O’Flanagan, Andrew McPherson, Sohrab Salehi, Ignacio Vázquez-Garcı́a, Farhia Kabeer, et al. 2021. <span>“Evolutionary Tracking of Cancer Haplotypes at Single-Cell Resolution.”</span> <em>bioRxiv</em>.
 </div>
-<div id="ref-williams2021evolutionary">
-<p>Williams, Marc J, Tyler Funnell, Ciara H O’Flanagan, Andrew McPherson, Sohrab Salehi, Ignacio Vázquez-Garcı́a, Farhia Kabeer, et al. 2021. “Evolutionary Tracking of Cancer Haplotypes at Single-Cell Resolution.” <em>bioRxiv</em>.</p>
-</div>
-<div id="ref-zhang2021supergnova">
-<p>Zhang, Yiliang, Qiongshi Lu, Yixuan Ye, Kunling Huang, Wei Liu, Yuchang Wu, Xiaoyuan Zhong, et al. 2021. “SUPERGNOVA: Local Genetic Correlation Analysis Reveals Heterogeneous Etiologic Sharing of Complex Traits.” <em>Genome Biology</em> 22 (1): 1–30. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w</a>.</p>
+<div id="ref-zhang2021supergnova" class="csl-entry">
+Zhang, Yiliang, Qiongshi Lu, Yixuan Ye, Kunling Huang, Wei Liu, Yuchang Wu, Xiaoyuan Zhong, et al. 2021. <span>“SUPERGNOVA: Local Genetic Correlation Analysis Reveals Heterogeneous Etiologic Sharing of Complex Traits.”</span> <em>Genome Biology</em> 22 (1): 1–30. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w</a>.
 </div>
 </div>
             </section>
@@ -350,7 +390,7 @@ Based on our analysis results, we provide guidelines for using supervised cell t
           </div>
         </div>
       </div>
-<a href="proteomics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="epigenomics.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="method-of-the-year.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
