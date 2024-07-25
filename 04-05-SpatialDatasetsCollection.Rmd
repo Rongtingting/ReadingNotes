@@ -2,6 +2,13 @@
 
 -   Readinglist
 
+[Spatial landscapes of cancers: insights and opportunities](https://www.nature.com/articles/s41571-024-00926-7)
+
+[shared link](https://www.nature.com/articles/s41571-024-00926-7.epdf?sharing_token=GNc_eiAuNQQXXGFjfD7Kz9RgN0jAjWel9jnR3ZoTv0MHjcqFYhINxQ2qcmoTpEHzNQAj3O3rn9odrZBd_LDLTzvupF49PpdT1TuLQEFlMTPjoCpw5MPA4eKqU39OI50crmunb320YA8fJd1osn9issYG6VPFpJJgFhZwbd54b7g%3D)
+
+![Overview of single-cell and spatial transcriptomics](./figs/spatialtech/Overview of single-cell and spatial transcriptomics.webp)
+
+
 [Systematic comparison of sequencing-based spatial transcriptomic methods](https://www.nature.com/articles/s41592-024-02325-3)
 
 ![spatialmethodscomparasion](./figs/spatialtech/spatialmethodscomparasion.webp)

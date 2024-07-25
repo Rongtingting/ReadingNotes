@@ -73,4 +73,3 @@ method-of-the-year-2022
 method-of-the-year-2021-protein-structure-prediction
 method-of-the-year-2020-spatially-resolved-transcriptomics
 method-of-the-year-2019-single-cell-multimodal-omics
-edger
