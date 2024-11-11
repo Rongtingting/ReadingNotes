@@ -1,7 +1,7 @@
 # ReadingNotes
 [你今天读论文了吗](https://rongtingting.github.io/ReadingNotes/)
 
-- [The Human Tumor Atlas Network (HTAN): exploring tumor evolution in time and space](https://www.nature.com/collections/fihchcjehc)
+- [(Collection) The Human Tumor Atlas Network (HTAN): exploring tumor evolution in time and space](https://www.nature.com/collections/fihchcjehc)
 
 
 # Useful resource
