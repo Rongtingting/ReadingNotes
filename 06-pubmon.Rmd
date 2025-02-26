@@ -113,5 +113,14 @@ two CNV papers
 
 
 
+## 2024-2025
+
+[Spatially exploring RNA biology in archival formalin-fixed paraffin-embedded tissues](https://www.cell.com/action/showPdf?pii=S0092-8674%2824%2901019-5)
+
+[Echidna: A Bayesian framework for quantifying gene dosage effect impacting phenotypic plasticity](https://www.biorxiv.org/content/10.1101/2024.12.15.628568v1)
+
+
+
+
 
 
