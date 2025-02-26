@@ -46,6 +46,7 @@ deconvolution
 deconvolution-of-bulk-tissue-and-spatial-transcriptomic-data
 omics-integration
 spatial-transcriptomics
+an-overview-of-spatial-omics-methods
 spatial-transcriptomics-methods
 spatial-datasets-collection
 d-biology
@@ -68,6 +69,7 @@ todo-list
 resources
 ppi-topic
 phd-year-4
+section-1
 method-of-the-year
 method-of-the-year-2022
 method-of-the-year-2021-protein-structure-prediction
