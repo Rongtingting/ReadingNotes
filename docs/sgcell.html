@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 SingleCell | ReadingNotes: Have you read today’s papers?</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 SingleCell | ReadingNotes: Have you read today’s papers?" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2025-02-26" />
+<meta name="date" content="2025-07-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -56,7 +56,7 @@
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -66,7 +66,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -92,7 +92,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -105,7 +105,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -128,6 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -253,6 +254,7 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="9.3" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-4"><i class="fa fa-check"></i><b>9.3</b> 2023-2024 PhD year 4</a></li>
 <li class="chapter" data-level="9.4" data-path="pubmon-1.html"><a href="pubmon-1.html#pre-postdoc"><i class="fa fa-check"></i><b>9.4</b> 2024-2025 Pre Postdoc</a></li>
+<li class="chapter" data-level="9.5" data-path="pubmon-1.html"><a href="pubmon-1.html#section-1"><i class="fa fa-check"></i><b>9.5</b> 2025</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="method-of-the-year.html"><a href="method-of-the-year.html"><i class="fa fa-check"></i><b>10</b> Method of the Year</a>
 <ul>
@@ -302,13 +304,13 @@ div.csl-indent {
 <h2><span class="header-section-number">2.2</span> Review<a href="sgcell.html#review" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <div id="review-2021-06" class="section level3 hasAnchor" number="2.2.1">
 <h3><span class="header-section-number">2.2.1</span> Review-2021-06<a href="sgcell.html#review-2021-06" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><a href="https://www.nature.com/articles/s41592-021-01171-x">The triumphs and limitations of computational methods for scRNA-seq</a><span class="citation">(<a href="#ref-kharchenko2021triumphs" role="doc-biblioref">Kharchenko 2021</a>)</span></p>
+<p><a href="https://www.nature.com/articles/s41592-021-01171-x">The triumphs and limitations of computational methods for scRNA-seq</a><span class="citation">(<a href="#ref-kharchenko2021triumphs">Kharchenko 2021</a>)</span></p>
 <p>Though computational approaches vary, most formulate (1) a statistical model of the measurement, (2) a representation of the data in reduced dimensions, and (3) an approximation of the expression manifold (Box 2), with a set of discrete transcriptional subpopulations being the simplest and the most common approximation. The problems motivating these steps, and the specific solutions and their assumptions, are the subject of this review.</p>
 <p><img src="figs/singleCell/preprocessing_review1.jpg" alt="Key preprocessing steps in single-cell RNA-seq analysis" />
 <a href="https://www.nature.com/articles/s41592-021-01171-x/figures/1">Key preprocessing steps in single-cell RNA-seq analysis</a></p>
-<div class="figure">
-<img src="figs/singleCell/key_analysis_review2.jpg" alt="" />
-<p class="caption">Key analysis steps in single-cell RNA-seq analysis</p>
+<div class="float">
+<img src="figs/singleCell/key_analysis_review2.jpg" alt="Key analysis steps in single-cell RNA-seq analysis" />
+<div class="figcaption">Key analysis steps in single-cell RNA-seq analysis</div>
 </div>
 <p><a href="https://www.nature.com/articles/s41592-021-01171-x/figures/2">Key analysis steps in single-cell RNA-seq analysis</a></p>
 <p><strong>Box 1 Select software tools</strong>
@@ -359,9 +361,9 @@ Tools for alignment, barcode correction, count matrix estimation, and quality co
 </div>
 <div id="section" class="section level4" number="2.2.1.4">
 <h4><span class="header-section-number">2.2.1.4</span> </h4>
-<div class="figure">
-<img src="figs/singleCell/scRNA-seq%20basics.jpg" alt="" />
-<p class="caption">scRNA-seq basics</p>
+<div class="float">
+<img src="figs/singleCell/scRNA-seq%20basics.jpg" alt="scRNA-seq basics" />
+<div class="figcaption">scRNA-seq basics</div>
 </div>
 <p><a href="https://www.nature.com/articles/s41592-021-01171-x/figures/3">scRNA-seq basics</a></p>
 <p>a, Beating Moore’s law. The number of cells measured by landmark scRNA-seq datasets over years (red), compared with the increase in the CPU transistor counts (black). The set of all published scRNA-seq studies83 is shown with small red dots. The estimated number of cells in a human body is shown by a green dashed line.
@@ -378,11 +380,11 @@ j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene acro
 </div>
 <div id="review-2021-07" class="section level3 hasAnchor" number="2.2.2">
 <h3><span class="header-section-number">2.2.2</span> Review-2021-07<a href="sgcell.html#review-2021-07" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><a href="https://www.nature.com/articles/s41587-021-00895-7">Computational principles and challenges in single-cell data integration</a><span class="citation">(<a href="#ref-argelaguet2021computational" role="doc-biblioref">Argelaguet et al. 2021</a>)</span></p>
+<p><a href="https://www.nature.com/articles/s41587-021-00895-7">Computational principles and challenges in single-cell data integration</a><span class="citation">(<a href="#ref-argelaguet2021computational">Argelaguet et al. 2021</a>)</span></p>
 </div>
 <div id="review-2021-10" class="section level3 hasAnchor" number="2.2.3">
 <h3><span class="header-section-number">2.2.3</span> Review-2021-10<a href="sgcell.html#review-2021-10" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02519-4">Over 1000 tools reveal trends in the single-cell RNA-seq analysis landscape</a><span class="citation">(<a href="#ref-zappia2021over" role="doc-biblioref">Zappia and Theis 2021</a>)</span></p>
+<p><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02519-4">Over 1000 tools reveal trends in the single-cell RNA-seq analysis landscape</a><span class="citation">(<a href="#ref-zappia2021over">Zappia and Theis 2021</a>)</span></p>
 <p>Single-cell gene expression measurements are cell type-specific (unlike DNA), more easily interpretable (compared to epigenetic modalities), and scalable to thousands of features (unlike antibody-based protein measurements) and thousands of cells. These features mean that scRNA-seq can be used as an anchor, often measured in parallel and used to link other modalities.</p>
 <p><a href="https://github.com/Rongtingting/awesome-single-cell">The Awesome Single Cell repository</a> is a community-curated list of software packages, resources, researchers, and publications for various single-cell technologies and <a href="https://docs.google.com/spreadsheets/d/1IPe2ozb1Mny8sLvJaSE57RJr3oruiBoSudAVhSH-O8M/edit?pli=1#gid=237186399">Albert Villela’s SingleCell Omics spreadsheet</a> tracks a range of information including technologies, companies, and software tools.</p>
 <p>The scRNA-tools database focuses specifically on the cataloging and manual curation of software tools for analyzing scRNA-seq data [23]. When tools become available (usually through a bioRxiv preprint), we classify them according to the analysis tasks they can be used for and record information such as associated preprints and publications, software licenses, code location, software repositories, and a short description. Most tools are added to the database within 30 days of the first preprint or publication (Additional file 1: Figure S1). All the recorded information is publicly available in an interactive format at <a href="https://www.scrna-tools.org/" class="uri">https://www.scrna-tools.org/</a> [24]. As the number of tools in the database has moved past 1000, we have taken this opportunity to provide an update on the current state of the database and explore trends in scRNA-seq analysis across the past 5 years. We find that the focus of tool developers has moved on from continuous ordering of cells to methods for integrating samples and classifying cells. The database also shows us that more new tools are built using Python while the relative usage of R is declining. We also examine the role of open science in the development of the field and find that open source practices lead to increased citations. While the scRNA-tools database does not record every scRNA-seq analysis tool, the large proportion it does include over the history of what is still a young field make these analyses possible and a reasonable estimate of trends across all tools.</p>
@@ -390,15 +392,15 @@ j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene acro
 </div>
 <div id="data-processing" class="section level2 hasAnchor" number="2.3">
 <h2><span class="header-section-number">2.3</span> Data processing<a href="sgcell.html#data-processing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><a href="https://www.nature.com/articles/s41587-021-00875-x">Bayesian inference of gene expression states from single-cell RNA-seq data</a><span class="citation">(<a href="#ref-breda2021bayesian" role="doc-biblioref">Breda, Zavolan, and Nimwegen 2021</a>)</span></p>
+<p><a href="https://www.nature.com/articles/s41587-021-00875-x">Bayesian inference of gene expression states from single-cell RNA-seq data</a><span class="citation">(<a href="#ref-breda2021bayesian">Breda, Zavolan, and Nimwegen 2021</a>)</span></p>
 <p><a href="https://www.nature.com/articles/s41587-021-00875-x/figures/1">summary of sanity approach</a></p>
-<div class="figure">
-<img src="figs/singleCell/summary_Sanity.jpg" alt="" />
-<p class="caption">summary of sanity approach</p>
+<div class="float">
+<img src="figs/singleCell/summary_Sanity.jpg" alt="summary of sanity approach" />
+<div class="figcaption">summary of sanity approach</div>
 </div>
-<div class="figure">
-<img src="figs/singleCell/sanity_notes.png" alt="" />
-<p class="caption">sanity notes</p>
+<div class="float">
+<img src="figs/singleCell/sanity_notes.png" alt="sanity notes" />
+<div class="figcaption">sanity notes</div>
 </div>
 </div>
 <div id="clustering-methods" class="section level2 hasAnchor" number="2.4">
@@ -406,20 +408,20 @@ j, Distribution of normalized expression magnitudes (CPM) for the CTSH gene acro
 </div>
 <div id="benchmarking" class="section level2 hasAnchor" number="2.5">
 <h2><span class="header-section-number">2.5</span> Benchmarking<a href="sgcell.html#benchmarking" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><a href="https://www.nature.com/articles/s41592-021-01336-8">Benchmarking atlas-level data integration in single-cell genomics</a><span class="citation">(<a href="#ref-luecken2021benchmarking" role="doc-biblioref">Luecken et al. 2021</a>)</span></p>
-<div class="figure">
-<img src="figs/singleCell/benchmarking1.jpg" alt="" />
-<p class="caption">Design of single-cell integration benchmarking (scIB).</p>
+<p><a href="https://www.nature.com/articles/s41592-021-01336-8">Benchmarking atlas-level data integration in single-cell genomics</a><span class="citation">(<a href="#ref-luecken2021benchmarking">Luecken et al. 2021</a>)</span></p>
+<div class="float">
+<img src="figs/singleCell/benchmarking1.jpg" alt="Design of single-cell integration benchmarking (scIB)." />
+<div class="figcaption">Design of single-cell integration benchmarking (scIB).</div>
 </div>
-<div class="figure">
-<img src="figs/singleCell/benchmarking2.jpg" alt="" />
-<p class="caption">Benchmarking results for the human immune cell task.</p>
+<div class="float">
+<img src="figs/singleCell/benchmarking2.jpg" alt="Benchmarking results for the human immune cell task." />
+<div class="figcaption">Benchmarking results for the human immune cell task.</div>
 </div>
 
 </div>
 </div>
 <h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-argelaguet2021computational" class="csl-entry">
 Argelaguet, Ricard, Anna SE Cuomo, Oliver Stegle, and John C Marioni. 2021. <span>“Computational Principles and Challenges in Single-Cell Data Integration.”</span> <em>Nature Biotechnology</em>, 1–14. <a href="https://www.nature.com/articles/s41587-021-00895-7">https://www.nature.com/articles/s41587-021-00895-7</a>.
 </div>
@@ -456,42 +458,42 @@ Zappia, Luke, and Fabian J Theis. 2021. <span>“Over 1000 Tools Reveal Trends i
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["ReadingNotes.pdf", "ReadingNotes.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["ReadingNotes.pdf", "ReadingNotes.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>

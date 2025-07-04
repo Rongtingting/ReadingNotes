@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 9 Pubmon | ReadingNotes: Have you read today’s papers?</title>
   <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
-  <meta name="generator" content="bookdown 0.40 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.43 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 9 Pubmon | ReadingNotes: Have you read today’s papers?" />
   <meta property="og:type" content="book" />
@@ -23,7 +23,7 @@
 <meta name="author" content="Rongting Huang rthuang@connect.hku.hk" />
 
 
-<meta name="date" content="2025-02-26" />
+<meta name="date" content="2025-07-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -56,7 +56,7 @@
 
 <style type="text/css">
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -66,7 +66,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -92,7 +92,7 @@ code span.al { color: #ff0000; font-weight: bold; } /* Alert */
 code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
 code span.at { color: #7d9029; } /* Attribute */
 code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
+code span.bu { color: #008000; } /* BuiltIn */
 code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
 code span.ch { color: #4070a0; } /* Char */
 code span.cn { color: #880000; } /* Constant */
@@ -105,7 +105,7 @@ code span.er { color: #ff0000; font-weight: bold; } /* Error */
 code span.ex { } /* Extension */
 code span.fl { color: #40a070; } /* Float */
 code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
+code span.im { color: #008000; font-weight: bold; } /* Import */
 code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
 code span.kw { color: #007020; font-weight: bold; } /* Keyword */
 code span.op { color: #666666; } /* Operator */
@@ -128,6 +128,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging div.csl-entry {
   margin-left:2em;
@@ -253,6 +254,7 @@ div.csl-indent {
 </ul></li>
 <li class="chapter" data-level="9.3" data-path="pubmon-1.html"><a href="pubmon-1.html#phd-year-4"><i class="fa fa-check"></i><b>9.3</b> 2023-2024 PhD year 4</a></li>
 <li class="chapter" data-level="9.4" data-path="pubmon-1.html"><a href="pubmon-1.html#pre-postdoc"><i class="fa fa-check"></i><b>9.4</b> 2024-2025 Pre Postdoc</a></li>
+<li class="chapter" data-level="9.5" data-path="pubmon-1.html"><a href="pubmon-1.html#section-1"><i class="fa fa-check"></i><b>9.5</b> 2025</a></li>
 </ul></li>
 <li class="chapter" data-level="10" data-path="method-of-the-year.html"><a href="method-of-the-year.html"><i class="fa fa-check"></i><b>10</b> Method of the Year</a>
 <ul>
@@ -306,27 +308,27 @@ div.csl-indent {
 <ul>
 <li>202109</li>
 </ul>
-<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2">Evaluation of some aspects in supervised cell type identification for single-cell RNA-seq: classifier, feature selection, and reference construction</a><span class="citation">(<a href="#ref-ma2021evaluation" role="doc-biblioref">Ma, Su, and Wu 2021</a>)</span></strong></p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2">Evaluation of some aspects in supervised cell type identification for single-cell RNA-seq: classifier, feature selection, and reference construction</a><span class="citation">(<a href="#ref-ma2021evaluation">Ma, Su, and Wu 2021</a>)</span></strong></p>
 <p><strong>Background</strong>
 Cell type identification is one of the most important questions in single-cell RNA sequencing (scRNA-seq) data analysis. With the accumulation of public scRNA-seq data, supervised cell type identification methods have gained increasing popularity due to better accuracy, robustness, and computational performance. Despite all the advantages, the performance of the supervised methods relies heavily on several key factors: feature selection, prediction method, and, most importantly, choice of the reference dataset.</p>
 <p><strong>Results</strong>
 In this work, we perform extensive real data analyses to systematically evaluate these strategies in supervised cell identification. We first benchmark nine classifiers along with six feature selection strategies and investigate the impact of reference data size and number of cell types in cell type prediction. Next, we focus on how discrepancies between reference and target datasets and how data preprocessing such as imputation and batch effect correction affect prediction performance. We also investigate the strategies of pooling and purifying reference data.</p>
 <p><strong>Conclusions</strong>
 Based on our analysis results, we provide guidelines for using supervised cell typing methods. We suggest combining all individuals from available datasets to construct the reference dataset and use multi-layer perceptron (MLP) as the classifier, along with F-test as the feature selection method. All the code used for our analysis is available on GitHub (<a href="https://github.com/marvinquiet/RefConstruction_supervisedCelltyping" class="uri">https://github.com/marvinquiet/RefConstruction_supervisedCelltyping</a>).</p>
-<div class="figure">
-<img src="figs/pubmon/2021-2022/CELLTYPE_ANNO_BENCHMARK.png" alt="" />
-<p class="caption">Study design</p>
+<div class="float">
+<img src="figs/pubmon/2021-2022/CELLTYPE_ANNO_BENCHMARK.png" alt="Study design" />
+<div class="figcaption">Study design</div>
 </div>
 <p>There are several other supervised cell typing methods available for scRNA-seq. For example, scSorter [27] borrows information from lowly expressed marker genes to assign cells; scPred [12] adopts a principal component analysis (PCA)-based feature selection; SingleCellNet [28] uses top-pair transformation on gene space and selects informative paired genes as features; CellAssign [29] builds a probabilistic model with some prior knowledge of cell markers, etc. But according to a recent comparison [20], SVM with rejection, scmap, and CHEAH are among the best performers, so we decide not to include more such methods. GEDFN is a method designed for predicting phenotype from bulk expression but can be directly applied to scRNA-seq cell typing. We include it because we want to understand whether incorporating gene network information can improve the results. ItClust is a semi-supervised method which only uses the reference data to obtain initial values for unsupervised clustering in target data. MARS uses a meta-learning concept to construct cell type landmarks by jointly embedding both annotated and unannotated data without removing the batch effects and then assigns cell types based on the learned embedding space. We want to evaluate the performances of these semi-supervised methods under different scenarios.</p>
-<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">SUPERGNOVA: local genetic correlation analysis reveals heterogeneous etiologic sharing of complex traits</a><span class="citation">(<a href="#ref-zhang2021supergnova" role="doc-biblioref">Zhang et al. 2021</a>)</span></strong></p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02478-w">SUPERGNOVA: local genetic correlation analysis reveals heterogeneous etiologic sharing of complex traits</a><span class="citation">(<a href="#ref-zhang2021supergnova">Zhang et al. 2021</a>)</span></strong></p>
 <p>Local genetic correlation quantifies the genetic similarity of complex traits in specific genomic regions. However, accurate estimation of local genetic correlation remains challenging, due to linkage disequilibrium in local genomic regions and sample overlap across studies. We introduce SUPERGNOVA, a statistical framework to estimate local genetic correlations using summary statistics from genome-wide association studies. We demonstrate that SUPERGNOVA outperforms existing methods through simulations and analyses of 30 complex traits. In particular, we show that the positive yet paradoxical genetic correlation between autism spectrum disorder and cognitive performance could be explained by two etiologically distinct genetic signatures with bidirectional local genetic correlations.</p>
-<div class="figure">
-<img src="figs/pubmon/2021-2022/SUPERGNOVA_workflow.png" alt="" />
-<p class="caption">SUPERGNOVA_workflow</p>
+<div class="float">
+<img src="figs/pubmon/2021-2022/SUPERGNOVA_workflow.png" alt="SUPERGNOVA_workflow" />
+<div class="figcaption">SUPERGNOVA_workflow</div>
 </div>
-<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x">Recovering genotypes and phenotypes using allele-specific genes</a><span class="citation">(<a href="#ref-gursoy2021recovering" role="doc-biblioref">Gürsoy et al. 2021</a>)</span></strong></p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x">Recovering genotypes and phenotypes using allele-specific genes</a><span class="citation">(<a href="#ref-gursoy2021recovering">Gürsoy et al. 2021</a>)</span></strong></p>
 <p>With the recent increase in RNA sequencing efforts using large cohorts of individuals, surveying allele-specific gene expression is becoming increasingly frequent. Here, we report that, despite not containing explicit variant information, a list of genes known to be allele-specific in an individual is enough to recover key variants and link the individuals back to their genotypes and phenotypes. This creates a privacy conundrum.</p>
-<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2">NanoCaller for accurate detection of SNPs and indels in difficult-to-map regions from long-read sequencing by haplotype-aware deep neural networks</a><span class="citation">(<a href="#ref-ahsan2021nanocaller" role="doc-biblioref">Ahsan et al. 2021</a>)</span></strong></p>
+<p><strong><a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2">NanoCaller for accurate detection of SNPs and indels in difficult-to-map regions from long-read sequencing by haplotype-aware deep neural networks</a><span class="citation">(<a href="#ref-ahsan2021nanocaller">Ahsan et al. 2021</a>)</span></strong></p>
 <p>Long-read sequencing enables variant detection in genomic regions that are considered difficult-to-map by short-read sequencing. To fully exploit the benefits of longer reads, here we present a deep learning method NanoCaller, which detects SNPs using long-range haplotype information, then phases long reads with called SNPs and calls indels with local realignment. Evaluation on 8 human genomes demonstrates that NanoCaller generally achieves better performance than competing approaches. We experimentally validate 41 novel variants in a widely used benchmarking genome, which could not be reliably detected previously. In summary, NanoCaller facilitates the discovery of novel variants in complex genomic regions from long-read sequencing.</p>
 <ul>
 <li>202110</li>
@@ -342,11 +344,11 @@ Based on our analysis results, we provide guidelines for using supervised cell t
 <ul>
 <li>202204 todolist</li>
 </ul>
-<p><strong><a href="https://www.biorxiv.org/content/10.1101/2022.04.09.487529v1">Experimental evolution in TP53 deficient gastric organoids recapitulates tumorigenesis</a><span class="citation">(<a href="#ref-karlsson2022experimental" role="doc-biblioref">Karlsson et al. 2022</a>)</span></strong></p>
-<p><strong><a href="https://www.nature.com/articles/s41587-022-01233-1">Spatial charting of single-cell transcriptomes in tissues</a><span class="citation">(<a href="#ref-wei2022spatial" role="doc-biblioref">Wei et al. 2022</a>)</span></strong></p>
+<p><strong><a href="https://www.biorxiv.org/content/10.1101/2022.04.09.487529v1">Experimental evolution in TP53 deficient gastric organoids recapitulates tumorigenesis</a><span class="citation">(<a href="#ref-karlsson2022experimental">Karlsson et al. 2022</a>)</span></strong></p>
+<p><strong><a href="https://www.nature.com/articles/s41587-022-01233-1">Spatial charting of single-cell transcriptomes in tissues</a><span class="citation">(<a href="#ref-wei2022spatial">Wei et al. 2022</a>)</span></strong></p>
 <p>two CNV papers</p>
-<p><strong><a href="https://www.biorxiv.org/content/10.1101/2022.02.07.479314v1">Haplotype-enhanced inference of somatic copy number profiles from single-cell transcriptomes</a><span class="citation">(<a href="#ref-gao2022haplotype" role="doc-biblioref">Gao et al. 2022</a>)</span></strong></p>
-<p><strong><a href="https://www.biorxiv.org/content/10.1101/2021.06.04.447031v1">Evolutionary tracking of cancer haplotypes at single-cell resolution</a><span class="citation">(<a href="#ref-williams2021evolutionary" role="doc-biblioref">Williams et al. 2021</a>)</span></strong></p>
+<p><strong><a href="https://www.biorxiv.org/content/10.1101/2022.02.07.479314v1">Haplotype-enhanced inference of somatic copy number profiles from single-cell transcriptomes</a><span class="citation">(<a href="#ref-gao2022haplotype">Gao et al. 2022</a>)</span></strong></p>
+<p><strong><a href="https://www.biorxiv.org/content/10.1101/2021.06.04.447031v1">Evolutionary tracking of cancer haplotypes at single-cell resolution</a><span class="citation">(<a href="#ref-williams2021evolutionary">Williams et al. 2021</a>)</span></strong></p>
 </div>
 <div id="resources" class="section level3 hasAnchor" number="9.2.1">
 <h3><span class="header-section-number">9.2.1</span> Resources<a href="pubmon-1.html#resources" class="anchor-section" aria-label="Anchor link to header"></a></h3>
@@ -364,11 +366,20 @@ Based on our analysis results, we provide guidelines for using supervised cell t
 <h2><span class="header-section-number">9.4</span> 2024-2025 Pre Postdoc<a href="pubmon-1.html#pre-postdoc" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><a href="https://www.cell.com/action/showPdf?pii=S0092-8674%2824%2901019-5">Spatially exploring RNA biology in archival formalin-fixed paraffin-embedded tissues</a></p>
 <p><a href="https://www.biorxiv.org/content/10.1101/2024.12.15.628568v1">Echidna: A Bayesian framework for quantifying gene dosage effect impacting phenotypic plasticity</a></p>
+</div>
+<div id="section-1" class="section level2 hasAnchor" number="9.5">
+<h2><span class="header-section-number">9.5</span> 2025<a href="pubmon-1.html#section-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><a href="https://www.nature.com/articles/s41592-024-02565-3">Method of the Year 2024: spatial proteomics</a></p>
+<p>Approaches for profiling the spatial proteome in tissues are the basis of atlas-scale projects that are delivering on their promise for understanding biological complexity in health and disease.</p>
+<p><a href="https://www.nature.com/collections/fihchcjehc">The Human Tumor Atlas Network (HTAN): exploring tumor evolution in time and space-Collection</a></p>
+<p>Studying the evolution of cancer malignancy in space and time provides clues that are crucial for understanding how tumors develop, how they evade the immune system, and how they resist therapy and recur.</p>
+<p><a href="https://www.nature.com/collections/aihihijabe">Human BioMolecular Atlas Program-Collection</a></p>
+<p>Inaugurated in 2018, the Human BioMolecular Atlas Program (HuBMAP) endeavours to construct comprehensive spatial maps that feature a range of biomolecules such as RNA, proteins, and metabolites in human organs at single-cell resolution. This collection features the research, datasets, methods and tools generated by this project, accompanied by a Perspective, a News and Views, and links to other resources.</p>
 
 </div>
 </div>
 <h3>References<a href="references.html#references" class="anchor-section" aria-label="Anchor link to header"></a></h3>
-<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-ahsan2021nanocaller" class="csl-entry">
 Ahsan, Mian Umair, Qian Liu, Li Fang, and Kai Wang. 2021. <span>“NanoCaller for Accurate Detection of SNPs and Indels in Difficult-to-Map Regions from Long-Read Sequencing by Haplotype-Aware Deep Neural Networks.”</span> <em>Genome Biology</em> 22 (1): 1–33. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02472-2</a>.
 </div>
@@ -379,7 +390,7 @@ Gao, Teng, Ruslan Soldatov, Hirak Sarkar, Adam Kurkiewicz, Evan Biederstedt, Po-
 Gürsoy, Gamze, Nancy Lu, Sarah Wagner, and Mark Gerstein. 2021. <span>“Recovering Genotypes and Phenotypes Using Allele-Specific Genes.”</span> <em>Genome Biology</em> 22 (1): 1–9. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02477-x</a>.
 </div>
 <div id="ref-karlsson2022experimental" class="csl-entry">
-Karlsson, Kasper, Moritz Przybilla, Hang Xu, Eran Kotler, Kremena Karagyozova, Alexandra Sockell, Katherine Liu, et al. 2022. <span>“Experimental Evolution in Tp53 Deficient Gastric Organoids Recapitulates Tumorigenesis.”</span> <em>bioRxiv</em>.
+Karlsson, Kasper, Moritz Przybilla, Hang Xu, Eran Kotler, Kremena Karagyozova, Alexandra Sockell, Katherine Liu, et al. 2022. <span>“Experimental Evolution in TP53 Deficient Gastric Organoids Recapitulates Tumorigenesis.”</span> <em>bioRxiv</em>.
 </div>
 <div id="ref-ma2021evaluation" class="csl-entry">
 Ma, Wenjing, Kenong Su, and Hao Wu. 2021. <span>“Evaluation of Some Aspects in Supervised Cell Type Identification for Single-Cell RNA-Seq: Classifier, Feature Selection, and Reference Construction.”</span> <em>Genome Biology</em> 22 (1): 1–23. <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2">https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02480-2</a>.
@@ -414,42 +425,42 @@ Zhang, Yiliang, Qiongshi Lu, Yixuan Ye, Kunling Huang, Wei Liu, Yuchang Wu, Xiao
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
-"sharing": {
-"github": false,
-"facebook": true,
-"twitter": true,
-"linkedin": false,
-"weibo": false,
-"instapaper": false,
-"vk": false,
-"whatsapp": false,
-"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
-},
-"fontsettings": {
-"theme": "white",
-"family": "sans",
-"size": 2
-},
-"edit": {
-"link": null,
-"text": null
-},
-"history": {
-"link": null,
-"text": null
-},
-"view": {
-"link": null,
-"text": null
-},
-"download": ["ReadingNotes.pdf", "ReadingNotes.epub"],
-"search": {
-"engine": "fuse",
-"options": null
-},
-"toc": {
-"collapse": "subsection"
-}
+  "sharing": {
+    "github": false,
+    "facebook": true,
+    "twitter": true,
+    "linkedin": false,
+    "weibo": false,
+    "instapaper": false,
+    "vk": false,
+    "whatsapp": false,
+    "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+  },
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": ["ReadingNotes.pdf", "ReadingNotes.epub"],
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  }
 });
 });
 </script>
