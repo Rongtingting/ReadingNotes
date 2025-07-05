@@ -1,21 +1,67 @@
 # Introduction {#intro}
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+## Rongting Reading Notes
 
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+Welcome to my **Reading Notes Notebook**, a collection of summaries, insights, and references from all the papers I've read or followed during my research journey. This notebook serves as both a reference for my work and a resource for anyone interested in the fields I've explored.
 
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
+## **About This Notebook**
+This notebook spans my academic and research career across three major fields:
 
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+1. **Post-translational Modifications (PTMs)** during my Master's research.
 
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
+2. **Single-cell Genomics** during my PhD work.
 
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+3. **Spatial Biology** in my postdoctoral studies.
+
+Each section is organized to reflect the progression of my studies and the papers that have influenced my understanding and contributions to these areas.
+
+---
+
+## **Topics Covered**
+**Post-translational Modifications (PTMs)**
+
+PTMs are key processes in molecular biology, providing functional diversity to proteins. My Master's research focused on understanding their roles in:
+
+- Cellular signaling pathways.
+
+- Disease mechanisms.
+
+- Protein interactions and modifications.
+
+**Single-cell Genomics**
+
+During my PhD, I dove deep into the world of single-cell genomics, exploring:
+
+- Advanced technologies like single-cell RNA sequencing (scRNA-seq).
+
+- Computational tools for analyzing single-cell data, especially in CNV detection.
+
+- The heterogeneity of cell populations.
+
+- Applications in cancer research, immunology, and developmental biology.
+
+**Spatial Biology**
+
+In my postdoc, my focus shifted to spatial biology, which combines spatial context with molecular data to provide a deeper understanding of:
+
+- Tissue architecture and microenvironments.
+
+- Spatial transcriptomics and proteomics.
+
+- Cutting-edge imaging and sequencing technologies.
+
+---
+
+## **How to Use This Notebook**
+
+- **Papers:** Each section contains summaries, key findings, and my notes on the papers I've read in that area.
+
+- **Resources:** Links to datasets, tools, and references used in the research are included.
+
+- **Insights:** Personal reflections on how each paper has influenced my understanding or contributed to my own work.
+
+Whether you're a student, researcher, or just curious about these fields, I hope this notebook serves as a helpful resource for learning and exploration.
+
+---
+
+Feel free to explore, learn, and reach out if you have questions or suggestions.

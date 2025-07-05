@@ -1,6 +1,8 @@
-fig:nice-fig
-tab:nice-tab
 intro
+rongting-reading-notes
+about-this-notebook
+topics-covered
+how-to-use-this-notebook
 sgcell
 technology
 single-cell

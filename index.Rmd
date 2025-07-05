@@ -18,12 +18,12 @@ This book is for Rongting's daily reading notes.
 # About the author {-}
 
 
-![1](./figs/Rongting/IMG-5393.jpg)
+![](./figs/Rongting/IMG-5393.jpg)
 
-![2](./figs/Rongting/IMG-6316.PNG)
+![](./figs/Rongting/IMG-6316.PNG)
 
 
-![3](./figs/Rongting/IMG-7418.JPG)
+![](./figs/Rongting/IMG-7418.JPG)
 
 
 ![Keep moving](./figs/Rongting/IMG-8010.JPG)
