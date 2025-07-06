@@ -32,6 +32,7 @@ singlecell-analysis-tools
 singlecell-analysis-sources
 spatial-technology
 sequencing-based-st
+image-based-st
 statmethods
 hmm-based-methods
 em-based-methods

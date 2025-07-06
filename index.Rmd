@@ -15,6 +15,8 @@ description: "This is a minimal example of using the bookdown package to write a
 
 This book is for Rongting's daily reading notes.
 
+<a href="https://rongtingting.github.io/" style="text-decoration:none;">Back to Home Page</a>
+
 # About the author {-}
 
 
@@ -22,14 +24,10 @@ This book is for Rongting's daily reading notes.
 
 ![](./figs/Rongting/IMG-6316.PNG)
 
-
 ![](./figs/Rongting/IMG-7418.JPG)
-
 
 ![Keep moving](./figs/Rongting/IMG-8010.JPG)
 
-
-# Research topics {-}
 
 # About the book {-}
 
