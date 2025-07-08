@@ -25,7 +25,7 @@
 
 -202108
 
-
+[Refer to pubmon record](https://hlab-pubmon.readthedocs.io/en/latest/)
 
 ## 2021-2022 PhD year 2
 
@@ -120,7 +120,7 @@ two CNV papers
 [Echidna: A Bayesian framework for quantifying gene dosage effect impacting phenotypic plasticity](https://www.biorxiv.org/content/10.1101/2024.12.15.628568v1)
 
 
-## 2025
+## 2025-2026 Postdoc Yr1
 [Method of the Year 2024: spatial proteomics](https://www.nature.com/articles/s41592-024-02565-3)
 
 Approaches for profiling the spatial proteome in tissues are the basis of atlas-scale projects that are delivering on their promise for understanding biological complexity in health and disease.

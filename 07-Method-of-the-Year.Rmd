@@ -1,16 +1,49 @@
 
 # Method of the Year
 
-## Method of the Year 2022: 
+
+## Year 2024: Spatial Proteomics
+
+[Method of the Year 2024: spatial proteomics](https://www.nature.com/articles/s41592-024-02565-3)
 
 
-## Method of the Year 2021: Protein structure prediction
+Approaches for profiling the spatial proteome in tissues are the basis of atlas-scale projects that are delivering on their promise for understanding biological complexity in health and disease.
 
 
-## Method of the Year 2020: spatially resolved transcriptomics
+## Year 2023:  Methods for modeling development
+
+[Method of the Year 2023: methods for modeling development](https://www.nature.com/articles/s41592-023-02134-0)
+
+In vitro embryo models supported by methods development in adjacent fields have revolutionized our understanding of embryogenesis.
 
 
-## Method of the Year 2019: Single-cell multimodal omics
+## Year 2022: Long-read sequencing
+
+[Method of the Year 2022: long-read sequencing](https://www.nature.com/articles/s41592-022-01759-x)
+
+Long-read sequencing powers a more complete reading of genomic information.
+
+
+
+## Year 2021: Protein structure prediction
+
+[Method of the Year 2021: Protein structure prediction](https://www.nature.com/articles/s41592-021-01380-4)
+
+Deep Learning based approaches for protein structure prediction have sent shock waves through the structural biology community. We anticipate far-reaching and long-lasting impact.
+
+
+## Year 2020: Spatially resolved transcriptomics
+
+[Method of the Year 2020: spatially resolved transcriptomics](https://www.nature.com/articles/s41592-020-01042-x)
+
+Spatially resolved transcriptomics methods are changing the way we understand complex tissues.
+
+
+## Year 2019: Single-cell multimodal omics
+
+[Method of the Year 2019: Single-cell multimodal omics](https://www.nature.com/articles/s41592-019-0703-5)
+
+Multimodal omics measurement offers opportunities for gaining holistic views of cells one by one.
 
 
 
