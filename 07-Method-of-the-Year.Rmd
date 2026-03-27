@@ -1,6 +1,12 @@
 
 # Method of the Year
 
+## Year 2025: electron microscopy-based connectomics
+
+[Method of the Year 2025: electron microscopy-based connectomics](https://www.nature.com/articles/s41592-025-02988-6)
+
+A large network of interconnected neurons serves as the basis of brain function and of behavior. Methodological advances have enabled the reconstruction of large-scale and even whole-brain connectomes of various organisms.
+
 
 ## Year 2024: Spatial Proteomics
 

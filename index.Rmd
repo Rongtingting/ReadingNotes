@@ -1,6 +1,6 @@
 --- 
 title: "ReadingNotes: Have you read today's papers?"
-author: "Rongting Huang rthuang@connect.hku.hk"
+author: "Rongting Huang rthuang@connect.hku.hk rthuang@stanford.edu"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book

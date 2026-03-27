@@ -1,6 +1,41 @@
 ## Spatial transcriptomics Methods
 
--   Readinglist
+
+- Video (with good explanation/visualization of the methods)
+
+[Spatial transcriptomics: ISH, ISS, ISC](https://youtu.be/q74euInZqm4?si=vQXTE4y0icSbQv-S)
+
+ST encompasses a variety of methods aimed to quantify RNA expression directly from intact tissues. 
+
+These methods can be broadly categorized into three main types:
+in-situ hybridization (ISH), in-situ sequencing (ISS), and in-situ capture (ISC).
+
+
+ISH techniques includes MERFISH, seqFISH, and seqFISH+.
+
+ISH techniques involve the use of fluorescently labeled probes to detect specific RNA molecules within tissue sections. This method allows for the visualization of gene expression patterns (RNA moleculars) in their native spatial context, providing insights into the localization and abundance of transcripts. (cost and labor++)
+
+
+ISS techniques, include barcoded padlock probes, fluorescence in-situ sequencing , and SATRmap.
+enable subcellular resolution and introduce 3D localization of transcripts.
+
+inherently limited by the need ton target known genes and also require specialized equipment.
+similar to ISH, Kits and equipment are being developed to increase their accessibility and ease of use.(FISSEQ Instrument)
+
+
+In-situ capturing, ISC techniques, include 10x visium, slide-seq and seq-scope. These technologies capture transcripts in situ and sequecing is then completetd ex situ, which enables **unbiased capture** of the entire transcriptome using widely avaible next generation sequencing platforms. These techniques currently suffer form lower transcript capture efficiency
+
+ISC methods typically involve the use of barcoded oligonucleotides that capture RNA molecules directly from tissue sections, followed by sequencing to identify the captured transcripts. This approach allows for high-throughput analysis of gene expression across large tissue areas, providing a comprehensive view of the spatial transcriptome. (10x Genomics Visium, Slide-seq, seq-scope)  do not reacch single cell resolution yet, but are likely to in the near future.
+
+while each ST technology has its own strengths and limitations, they all share the common goal of providing spatially resolved gene expression data from intact tissues. The choice of method depends on the specific research question, the required resolution, and the available resources. As these technologies continue to evolve, they are expected to become more accessible and widely adopted in various fields of biological research, including cancer biology, neuroscience, and developmental biology.
+
+they can be combined with single cell RNA sequencing (scRNA-seq) to maximize the resolution and depth of data. some of these methods include **mapping** and **deconvolution**, which integrate single cell RAN sequencing data with spatial data.
+
+Mapping seeks to assign a cell type resolved by singel cell rna sequencing  to its spatial counterpart in ISH or ISS imaging data.
+Deconvolution seeks to predict the proportion of single cell rna sequencing cell types present within the mixture of transcripts recovered from each capture spot in ISC data.  convert multi-cell resolution ISC data to single cell resolution.
+
+
+- Readinglist
 
 [Spatial landscapes of cancers: insights and opportunities](https://www.nature.com/articles/s41571-024-00926-7)
 
